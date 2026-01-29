@@ -1,0 +1,122 @@
+@media (max-width: 767.98px) {
+
+  /* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header */
+
+  .header__body {
+    display: flex;
+    flex-direction: column;
+    height: 133px;
+    padding-bottom: 30px;
+  }
+
+  .header__logo {
+    margin-top: 30px;
+    flex: 0 0 30px;
+    align-items: center;
+  }
+
+  .header__list {
+    margin: 0;
+    padding-right: 0;
+  }
+
+  /* description *//* description *//* description *//* description *//* description *//* description *//* description *//* description *//* description *//* description *//* description *//* description *//* description *//* description *//* description */
+
+  .description {
+    background: radial-gradient(49% 49% at 67.78% 84.57%, #555681 0%, #2E2B44 100%);
+  }
+
+  .description__desc {
+    padding: 0 0 135px 31px;
+  }
+
+  .description__image {
+    background-image: none;
+  }
+
+  /* benefits *//* benefits *//* benefits *//* benefits *//* benefits *//* benefits *//* benefits *//* benefits *//* benefits *//* benefits *//* benefits *//* benefits *//* benefits *//* benefits *//* benefits *//* benefits */
+
+  .benefits__descr {
+    padding-left: 199px;
+    margin-top: 80px;
+
+    background-image: url(../img/benefits-logo-510.png);
+    background-position: 7% 0%;
+    background-repeat: no-repeat;
+  }
+
+  .benefits__title {
+    max-width: 355px;
+  }
+
+  .benefits__bottom {
+    margin: 0;
+
+    padding: 0 15px;
+    margin-top: 23px;
+    margin-bottom: 56px;
+  }
+
+  .item-content {
+    max-width: 150px;
+  }
+
+  /* teachers *//* teachers *//* teachers *//* teachers *//* teachers *//* teachers *//* teachers *//* teachers *//* teachers *//* teachers *//* teachers *//* teachers *//* teachers *//* teachers *//* teachers *//* teachers */
+
+  .teachers {
+    padding-left: 19px;
+    padding-right: 20px;
+  }
+
+  .teachers__list-item:nth-child(n+3) {
+    margin-top: 20px;
+  }
+
+  .teachers__list-item img {
+    margin-bottom: 27px;
+
+    border-radius: 27px 27px 0 0;
+  }
+
+  /* courses *//* courses *//* courses *//* courses *//* courses *//* courses *//* courses *//* courses *//* courses *//* courses *//* courses *//* courses *//* courses *//* courses *//* courses *//* courses *//* courses */
+
+  .courses {
+    padding: 0 23px 0 19px;
+  }
+
+  .courses__title {
+    margin-top: 76px;
+
+  }
+
+  .courses__hours {
+    top: 12px;
+    right: 22px;
+  }
+
+  .courses__card-wrap {
+    padding: 29px 19px 30px 33px;
+  }
+
+  .courses__item-title {
+    font-size: 18px;
+    line-height: 130%;
+  }
+
+  .courses__card-wrap-bottom {
+    margin-top: 33px;
+  }
+
+  .courses__btn {
+    padding: 20.5px 49px;
+  }
+
+  /* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer */
+
+  .footer__top {
+    margin-top: 47px;
+  }
+
+
+}
+

@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
+	<title>SDP - D-31</title>
+	<link rel="shortcut icon" href="img/favicon.png">
+
+	<!-- fonts -->
+	<link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/PlayfairDisplay-Black.woff2" as="font" type="font/woff2" crossorigin>
+
+	<!-- styles -->
+	<!-- swiper -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" >
+
+	<!-- choices -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" >
+
+	<!-- hover-btn -->
+	<!-- <link rel="stylesheet" href="css/hover-min.css"> -->
+
+	<!-- my-styles -->
+	<link rel="stylesheet" href="css/main.min.css">
+
+
+
+	<!-- scripts -->
+
+	<!-- jQuery -->
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+	<!-- swiper -->
+	<script defer src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+	<!-- choices -->
+	<script defer src="js/choices.min.js"></script>
+
+	<!-- justvalidate -->
+	<script defer src="js/inputmask.min.js"></script>
+	<script defer src="js/just-validate.min.js"></script>
+
+	<!-- my-JS -->
+
+	<script defer src="js/burger.js"></script>
+	<script defer src="js/myValidate.js"></script>
+	<script defer src="js/myModals.js"></script>
+	<script defer src="js/myChoices.js"></script>
+	<script defer src="js/myD31.js"></script>
+	<!-- <script defer src="js/main.js"></script> -->
+
+</head>
+
+<body>
+	<header class="header">
+
+  <div class="header__top top">
+
+    <div class="top__container container">
+
+      <a class="top__logo-link" href="index.html">
+        <img class="top__logo" src="img/header-logo.png" alt="Логотип магазина SitDownPls">
+      </a>
+
+      <div class="top__left">
+        <div class="top__select-common">
+          <span class="top__select-name">Ваш регион:</span>
+
+
+          <div class="choices-1" tabindex="0">
+            <select class="top__select multi-default region-select" name="select" id="first-select" tabindex="0">
+              <option value="">Москва</option>
+              <option>Казань</option>
+              <option>Уфа</option>
+              <option>Пермь</option>
+            </select>
+          </div>
+
+
+        </div>
+        <a class="top__phone" href="tel:+74958854547" aria-label="телефон 74958854547">
+          <svg class="phone">
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+          +7 (495) 885-45-47
+        </a>
+      </div>
+
+      <ul class="top__right list-reset">
+        <li class="top__list-item">
+          <a class="top__list-link grey-link" href="#" aria-label="О компании">О&nbsp;компании</a>
+        </li>
+        <li class="top__list-item">
+          <a class="top__list-link grey-link" href="#" aria-label="Гарантия и возврат">Гарантия
+            и&nbsp;возврат</a>
+        </li>
+        <li class="top__list-item">
+          <a class="top__list-link grey-link" href="#" aria-label="Корпоративным клиентам">Корпоративным
+            клиентам</a>
+        </li>
+        <li class="top__list-item">
+          <a class="top__list-link grey-link" href="#" aria-label="Дизайн-решение">Дизайн-решение</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+
+  <div class="container header__container">
+
+    <ul class="header__list header-list list-reset">
+      <li class="header-list__item">
+        <a class="header-list__link grey-link" href="#" aria-label="О компании">О&nbsp;компании</a>
+      </li>
+      <li class="header-list__item">
+        <a class="header-list__link grey-link" href="#" aria-label="Гарантия и возврат">Гарантия
+          и&nbsp;возврат</a>
+      </li>
+      <li class="header-list__item">
+        <a class="header-list__link grey-link" href="#" aria-label="Корпоративным клиентам">Корпоративным
+          клиентам</a>
+      </li>
+      <li class="header-list__item">
+        <a class="header-list__link grey-link" href="#" aria-label="Дизайн-решение">Дизайн-решение</a>
+      </li>
+    </ul>
+
+    <a class="header__bot-logo-link" href="index.html">
+      <img class="header__bot-logo" src="img/header-logo.png" alt="Логотип магазина SitDownPls">
+    </a>
+
+    <button class="header__burger my-btn">
+      <span></span>
+    </button>
+
+    <nav class="header__bot-nav">
+      <ul class="header__bot-list list-reset">
+        <li class="header__bot-list-item">
+          <a class="item-link-bot black-link" href="catalog.html" aria-label="Каталог">Каталог</a>
+        </li>
+        <li class="header__bot-list-item">
+          <a class="item-link-bot black-link" href="#" aria-label="Магазины">Магазины</a>
+        </li>
+        <li class="header__bot-list-item">
+          <a class="item-link-bot black-link" href="#" aria-label="Шоу-рум">Шоу-рум</a>
+        </li>
+        <li class="header__bot-list-item">
+          <a class="item-link-bot black-link" href="#" aria-label="Доставка и оплата">Доставка и&nbsp;оплата</a>
+        </li>
+        <li class="header__bot-list-item">
+          <a class="item-link-bot black-link" href="#" aria-label="Дисконт">Дисконт</a>
+        </li>
+        <li class="header__bot-list-item">
+          <a class="item-link-bot black-link" href="#" aria-label="Контакты">Контакты</a>
+        </li>
+      </ul>
+
+      <ul class="header__bot-list-2 list-reset">
+        <li class="header__bot-list-2-item">
+          <a class="header__bot-list-2-item-link grey-link" href="#" aria-label="О компании">О&nbsp;компании</a>
+        </li>
+        <li class="header__bot-list-2-item">
+          <a class="header__bot-list-2-item-link grey-link" href="#" aria-label="Гарантия и возврат">Гарантия
+            и&nbsp;возврат</a>
+        </li>
+        <li class="header__bot-list-2-item">
+          <a class="header__bot-list-2-item-link grey-link" href="#" aria-label="Корпоративным клиентам">Корпоративным
+            клиентам</a>
+        </li>
+        <li class="header__bot-list-2-item">
+          <a class="header__bot-list-2-item-link grey-link" href="#" aria-label="Дизайн-решение">Дизайн-решение</a>
+        </li>
+      </ul>
+
+    </nav>
+
+    <form class="header__bot-form" action="#" aria-label="Введите Ваш запрос">
+      <svg class="search">
+        <use xlink:href="img/sprite.svg#search"></use>
+      </svg>
+      <input class="header__bot-input" id="search" placeholder="Я хочу купить...">
+      <button class="input-btn my-btn btn-effects">
+        <svg class="arrow" width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 11L19 16L14 21" stroke="#A65CF0" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <circle cx="16" cy="16" r="15" stroke="#A65CF0" stroke-width="2" />
+        </svg>
+      </button>
+    </form>
+
+    <div class="choices-2">
+      <select class="header__bot-select multi-default category-select" name="select" id="second-select">
+        <option value="">Категория</option>
+        <option>Диваны</option>
+        <option>Кресла</option>
+        <option>Пуфы</option>
+        <option>Кровати</option>
+        <option>Тумбы</option>
+        <option>Комоды</option>
+        <option>Стулья</option>
+        <option>Столы</option>
+        <option>Аксессуары</option>
+      </select>
+    </div>
+
+    <div class="header__lower-right">
+      <button class="header__lower-btn my-btn">
+        <svg class="lk">
+          <use xlink:href="img/sprite.svg#lk"></use>
+        </svg>
+      </button>
+      <button class="header__lower-btn my-btn margin">
+        <svg class="shopping-cart">
+          <use xlink:href="img/sprite.svg#shopping_cart"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+	<main>
+		<section class="sofa-sample">
+			<div class="container sofa-sample__container">
+
+				<div class="sofa-sample__links">
+					<ul class="sofa-sample__list breadcrumbs list-reset">
+						<li class="list-item">
+							<a class="item-link grey-link" href="index.html" aria-label="На главную">
+								Главная
+							</a>
+						</li>
+						<li class="list-item">
+							<a class="item-link grey-link" href="catalog.html" aria-label="Каталог">
+								Каталог
+							</a>
+						</li>
+						<li class="list-item">
+							<a class="item-link grey-link" href="#" aria-label="Диваны">
+								Диваны
+							</a>
+						</li>
+						<li class="list-item">
+							<a class="item-link grey-link" href="#" aria-label="Прямые диваны">
+								Прямые диваны
+							</a>
+						</li>
+						<li class="list-item">
+							<a class="item-link grey-link link-active" href="#" aria-label="Прямые диваны">
+								D-31
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="sofa-sample__content">
+
+					<div class="sofa-sample__content-top content-top">
+
+						<div class="content-top__big-swiper swiper big-swiper">
+
+							<ul class="big-swiper__swiper-wrapper swiper-wrapper list-reset">
+
+								<li class="big-swiper__swiper-slide swiper-slide">
+									<button class="big-swiper__btn my-btn modal-btn" data-path="modal-two">
+										<img class="big-swiper__loupe" src="img/loupe.webp" alt="Лупа">
+										<picture>
+											<source srcset="img/d-31-sofa-main-320.webp" media="(max-width: 500px)">
+											<source srcset="img/d-31-sofa-main-768.webp" media="(max-width: 800px)">
+											<source srcset="img/d-31-sofa-main-1024.webp" media="(max-width: 1100px)">
+											<img src="img/d-31-sofa-main.webp" alt="Основное изображение">
+										</picture>
+									</button>
+								</li>
+
+								<li class="big-swiper__swiper-slide swiper-slide">
+									<button class="big-swiper__btn my-btn modal-btn" data-path="modal-two">
+										<img class="big-swiper__loupe" src="img/loupe.webp" alt="Лупа">
+										<picture>
+											<source srcset="img/mini-img-1-320.webp" media="(max-width: 500px)">
+											<img src="img/mini-img-1.webp" alt="Основное изображение" >
+										</picture>
+									</button>
+								</li>
+
+								<li class="big-swiper__swiper-slide swiper-slide">
+									<button class="big-swiper__btn my-btn modal-btn" data-path="modal-two">
+										<img class="big-swiper__loupe" src="img/loupe.webp" alt="Лупа">
+										<picture>
+											<source srcset="img/mini-img-2-320.webp" media="(max-width: 500px)">
+											<img src="img/mini-img-2.webp" alt="Основное изображение" >
+										</picture>
+									</button>
+								</li>
+
+								<li class="big-swiper__swiper-slide swiper-slide">
+									<button class="big-swiper__btn my-btn modal-btn" data-path="modal-two">
+										<img class="big-swiper__loupe" src="img/loupe.webp" alt="Лупа">
+										<picture>
+											<source srcset="img/mini-img-3-320.webp" media="(max-width: 500px)">
+											<img src="img/mini-img-3.webp" alt="Основное изображение" >
+										</picture>
+									</button>
+								</li>
+
+								<li class="big-swiper__swiper-slide swiper-slide">
+									<button class="big-swiper__btn my-btn modal-btn" data-path="modal-two">
+										<img class="big-swiper__loupe" src="img/loupe.webp" alt="Лупа">
+										<picture>
+											<source srcset="img/mini-img-4-320.webp" media="(max-width: 500px)">
+											<img src="img/mini-img-4.webp" alt="Основное изображение" >
+										</picture>
+									</button>
+								</li>
+
+							</ul>
+						</div>
+
+						<div class="content-top__small-swiper swiper small-swiper">
+							<ul class="small-swiper__swiper-wrapper swiper-wrapper list-reset">
+								<li class="small-swiper__swiper-slide swiper-slide">
+									<img src="img/d-31-sofa-main.webp" alt="Маленькое изображение" width="123" height="61" >
+								</li>
+								<li class="small-swiper__swiper-slide swiper-slide">
+									<img src="img/mini-img-1.webp" alt="Маленькое изображение" width="123" height="61" >
+								</li>
+								<li class="small-swiper__swiper-slide swiper-slide">
+									<img src="img/mini-img-2.webp" alt="Маленькое изображение" style="margin-left: 20px;" width="66"
+										height="61" >
+								</li>
+								<li class="small-swiper__swiper-slide swiper-slide">
+									<img src="img/mini-img-3.webp" alt="Маленькое изображение" width="134" height="61" >
+								</li>
+								<li class="small-swiper__swiper-slide swiper-slide">
+									<img src="img/mini-img-4.webp" alt="Маленькое изображение" width="137" height="61" >
+								</li>
+							</ul>
+						</div>
+
+						<div class="content-top__descr sofa-sample__descr">
+							<span class="sofa-sample__rating">
+								<svg class="rating">
+									<use xlink:href="img/sprite.svg#rating-star"></use>
+								</svg>
+								4,8
+							</span>
+							<h1 class="sofa-sample__title">
+								<a href="common-sofa.html" aria-label="Переход на товар">
+									Диван тканевый прямой &laquo;D-31&raquo;
+								</a>
+							</h1>
+							<span class="sofa-sample__subdescr">
+								Мини 120&nbsp;см без ящика Stark синий (Рогожка)
+							</span>
+							<span class="sofa-sample__price">
+								28&nbsp;490 руб
+							</span>
+							<button class="sofa-sample__btn my-btn purple-btn modal-btn" data-path="modal-one">
+								Купить в&nbsp;один клик
+							</button>
+							<button class="sofa-sample__bask my-btn">
+								+ Добавить в&nbsp;корзину
+							</button>
+						</div>
+
+					</div>
+
+					<div class="sofa-sample__content-bottom content-bottom">
+						<div class="sofa-sample__bot-descr">
+							<div class="sofa-sample__body-content">
+								<h2 class="sofa-sample__bot-subtitle">
+									Опорный механизм
+								</h2>
+								<p class="sofa-sample__text margin">
+									Опорный механизм напоминает пантограф, к&nbsp;которому добавили дополнительную секцию. У&nbsp;опорного
+									дивана
+									сиденье &laquo;выпрыгивает&raquo; вперёд и&nbsp;вытаскивает вторую часть спального места.
+									Заключительный штрих &mdash;
+									опустить спинку.
+								</p>
+								<p class="sofa-sample__text">
+									Этот механизм не&nbsp;портит пол и&nbsp;не&nbsp;боится ковров. Требуется чуть больше силы, чтобы
+									разложить диван, но
+									подросток справится.
+								</p>
+							</div>
+							<ul class="sofa-sample__img-list list-reset img-list">
+								<li class="img-list__item">
+									<img src="img/sofa-transform-1.webp" alt="Как раскладывается диван">
+								</li>
+								<li class="img-list__item">
+									<img src="img/sofa-transform-2.webp" alt="Как раскладывается диван">
+								</li>
+							</ul>
+						</div>
+
+						<table class="sofa-sample__product-info">
+							<tbody class="sofa-sample__bot-list list-reset">
+								<tr class="list-item">
+									<td class="sofa-sample__question">Гарантия</td>
+									<td class="sofa-sample__points"></td>
+									<td class="sofa-sample__answer">18&nbsp;месяцев</td>
+								</tr>
+								<tr class="list-item">
+									<td class="sofa-sample__question">Артикул</td>
+									<td class="sofa-sample__points"></td>
+									<td class="sofa-sample__answer">AAA41269004</td>
+								</tr>
+								<tr class="list-item">
+									<td class="sofa-sample__question">Длина</td>
+									<td class="sofa-sample__points"></td>
+									<td class="sofa-sample__answer">163&nbsp;см</td>
+								</tr>
+								<tr class="list-item">
+									<td class="sofa-sample__question">Высота</td>
+									<td class="sofa-sample__points"></td>
+									<td class="sofa-sample__answer">90&nbsp;см</td>
+								</tr>
+								<tr class="list-item">
+									<td class="sofa-sample__question">Глубина</td>
+									<td class="sofa-sample__points"></td>
+									<td class="sofa-sample__answer">108&nbsp;см</td>
+								</tr>
+								<tr class="list-item">
+									<td class="sofa-sample__question">Спальное место</td>
+									<td class="sofa-sample__points"></td>
+									<td class="sofa-sample__answer">200&nbsp;см х&nbsp;125&nbsp;см</td>
+								</tr>
+								<tr class="list-item">
+									<td class="sofa-sample__question">Высота посадки</td>
+									<td class="sofa-sample__points"></td>
+									<td class="sofa-sample__answer">45&nbsp;см</td>
+								</tr>
+								<tr class="list-item">
+									<td class="sofa-sample__question">Механизм</td>
+									<td class="sofa-sample__points"></td>
+									<td class="sofa-sample__answer">Опорный</td>
+								</tr>
+								<tr class="list-item">
+									<td class="sofa-sample__question">Тип обивки</td>
+									<td class="sofa-sample__points"></td>
+									<td class="sofa-sample__answer">Рогожка</td>
+								</tr>
+								<tr class="list-item">
+									<td class="sofa-sample__question">Цвет</td>
+									<td class="sofa-sample__points"></td>
+									<td class="sofa-sample__answer">Синий</td>
+								</tr>
+								<tr class="list-item">
+									<td class="sofa-sample__question">Наполнитель</td>
+									<td class="sofa-sample__points"></td>
+									<td class="sofa-sample__answer">Независимый пружинный блок</td>
+								</tr>
+								<tr class="list-item">
+									<td class="sofa-sample__question">Материал каркаса</td>
+									<td class="sofa-sample__points"></td>
+									<td class="sofa-sample__answer">Металл. рама с&nbsp;дерев. латами</td>
+								</tr>
+								<tr class="list-item">
+									<td class="sofa-sample__question">Количество мест</td>
+									<td class="sofa-sample__points"></td>
+									<td class="sofa-sample__answer">Двухместные</td>
+								</tr>
+								<tr class="list-item">
+									<td class="sofa-sample__question">Категория</td>
+									<td class="sofa-sample__points"></td>
+									<td class="sofa-sample__answer">Прямые тканевые диваны</td>
+								</tr>
+								<tr class="list-item">
+									<td class="sofa-sample__question">Возврат</td>
+									<td class="sofa-sample__points"></td>
+									<td class="sofa-sample__answer">Условия</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<div class="sofa-sample__swiper-content">
+					<h2 class="sofa-sample__subtitle">
+						Похожие товары
+					</h2>
+
+					<div class="sofa-sample__swiper-btns">
+						<button
+							class="sofa-sample__swiper-button-prev sofa-sample__swiper-btn swiper-button-prev my-btn btn-effects">
+							<svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M18 11L13 16L18 21" stroke="#A65CF0" stroke-width="2" stroke-linecap="round"
+									stroke-linejoin="round" />
+								<circle r="15" transform="matrix(-1 0 0 1 16 16)" stroke="#A65CF0" stroke-width="2" />
+							</svg>
+						</button>
+						<button
+							class="sofa-sample__swiper-button-next sofa-sample__swiper-btn swiper-button-next my-btn btn-effects">
+							<svg class="arrow" width="32" height="32" viewbox="0 0 32 32" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path d="M14 11L19 16L14 21" stroke="#A65CF0" stroke-width="2" stroke-linecap="round"
+									stroke-linejoin="round" />
+								<circle cx="16" cy="16" r="15" stroke="#A65CF0" stroke-width="2" />
+							</svg>
+						</button>
+					</div>
+
+					<div class="sofa-sample__bottom-swiper swiper">
+
+						<ul class="sofa-sample__swiper-wrapper swiper-wrapper list-reset">
+
+							<!-- R85 -->
+							<li class="sofa-sample__swiper-slide common-list-item swiper-slide">
+								<article class="sofa-sample__product common-product">
+									<span class="sofa-sample__card-rating common-rating">
+										<svg class="rating">
+											<use xlink:href="img/sprite.svg#rating-star"></use>
+										</svg>
+										4,5
+									</span>
+									<div class="sofa-sample__img common-img">
+										<picture>
+											<source srcset="img/R-85-320.webp" media="(max-width: 500px)">
+											<img src="img/R-85.webp" alt="Картинка дивана">
+										</picture>
+									</div>
+									<div class="sofa-sample__card-text common-text">
+										<h3 class="sofa-sample__card-subtitle common-subtitle">
+											<a class="sofa-sample__link black-link common-link" href="#" aria-label="Переход на товар">
+												Диван велюровый
+												<span>&#8220;R-85&#8221;</span>
+											</a>
+										</h3>
+										<div class="sofa-sample__card-price common-price">
+											<span class="price">
+												34&nbsp;990 руб
+											</span>
+										</div>
+									</div>
+									<button class="sofa-sample__card-btn my-btn transp-btn"
+										aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+								</article>
+							</li>
+
+							<!-- H58 -->
+							<li class="sofa-sample__swiper-slide common-list-item swiper-slide">
+								<article class="sofa-sample__product common-product">
+									<span class="sofa-sample__card-rating common-rating">
+										<svg class="rating">
+											<use xlink:href="img/sprite.svg#rating-star"></use>
+										</svg>
+										4,6
+									</span>
+									<div class="sofa-sample__img common-img">
+										<picture>
+											<source srcset="img/H-58-320.webp" media="(max-width: 500px)">
+											<img src="img/H-58.webp" alt="Картинка дивана">
+										</picture>
+									</div>
+									<div class="sofa-sample__card-text common-text">
+										<h3 class="sofa-sample__card-subtitle common-subtitle">
+											<a class="sofa-sample__link black-link common-link" href="#" aria-label="Переход на товар">
+												Диван флоковый
+												<span>&#8220;H-58&#8221;</span>
+											</a>
+										</h3>
+										<div class="sofa-sample__card-price common-price">
+											<span class="price">
+												23&nbsp;990 руб
+											</span>
+										</div>
+									</div>
+									<button class="sofa-sample__card-btn my-btn transp-btn"
+										aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+								</article>
+							</li>
+
+							<!-- S44 -->
+							<li class="sofa-sample__swiper-slide common-list-item swiper-slide">
+								<article class="sofa-sample__product common-product">
+									<span class="sofa-sample__card-rating common-rating">
+										<svg class="rating">
+											<use xlink:href="img/sprite.svg#rating-star"></use>
+										</svg>
+										4,5
+									</span>
+									<div class="sofa-sample__img common-img">
+										<picture>
+											<source srcset="img/S-44-320.webp" media="(max-width: 500px)">
+											<img src="img/S-44.webp" alt="Картинка дивана">
+										</picture>
+									</div>
+									<div class="sofa-sample__card-text common-text">
+										<h3 class="sofa-sample__card-subtitle common-subtitle">
+											<a class="sofa-sample__link black-link common-link" href="#" aria-label="Переход на товар">
+												Диван велюровый
+												<span>&#8220;S-44&#8221;</span>
+											</a>
+										</h3>
+										<div class="sofa-sample__card-price common-price">
+											<span class="price">
+												19&nbsp;990 руб
+											</span>
+										</div>
+									</div>
+									<button class="sofa-sample__card-btn my-btn transp-btn"
+										aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+								</article>
+							</li>
+
+							<!-- V43 -->
+							<li class="sofa-sample__swiper-slide common-list-item swiper-slide">
+								<article class="sofa-sample__product common-product">
+									<span class="sofa-sample__card-rating common-rating">
+										<svg class="rating">
+											<use xlink:href="img/sprite.svg#rating-star"></use>
+										</svg>
+										4,8
+									</span>
+									<div class="sofa-sample__img common-img">
+										<picture>
+											<source srcset="img/V-43-320.webp" media="(max-width: 500px)">
+											<img src="img/V-43.webp" alt="Картинка дивана">
+										</picture>
+									</div>
+									<div class="sofa-sample__card-text common-text">
+										<h3 class="sofa-sample__card-subtitle common-subtitle">
+											<a class="sofa-sample__link black-link common-link" href="#" aria-label="Переход на товар">
+												Диван шиниловый
+												<span>&#8220;V-43&#8221;</span>
+											</a>
+										</h3>
+										<div class="sofa-sample__card-price common-price">
+											<span class="price">
+												19&nbsp;990 руб
+											</span>
+										</div>
+									</div>
+									<button class="sofa-sample__card-btn my-btn transp-btn"
+										aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+								</article>
+							</li>
+
+							<!-- U58 -->
+							<li class="sofa-sample__swiper-slide common-list-item swiper-slide">
+								<article class="sofa-sample__product common-product">
+									<span class="sofa-sample__card-rating common-rating">
+										<svg class="rating">
+											<use xlink:href="img/sprite.svg#rating-star"></use>
+										</svg>
+										4,6
+									</span>
+									<div class="sofa-sample__img common-img">
+										<picture>
+											<source srcset="img/U-58-320.webp" media="(max-width: 500px)">
+											<img src="img/U-58.webp" alt="Картинка дивана">
+										</picture>
+									</div>
+									<div class="sofa-sample__card-text common-text">
+										<h3 class="sofa-sample__card-subtitle common-subtitle">
+											<a class="sofa-sample__link black-link common-link" href="#" aria-label="Переход на товар">
+												Диван велюровый
+												<span>&#8220;U-58&#8221;</span>
+											</a>
+										</h3>
+										<div class="sofa-sample__card-price common-price">
+											<span class="price">
+												21&nbsp;990 руб
+											</span>
+										</div>
+									</div>
+									<button class="sofa-sample__card-btn my-btn transp-btn"
+										aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+								</article>
+							</li>
+
+							<!-- C42 -->
+							<li class="sofa-sample__swiper-slide common-list-item swiper-slide">
+								<article class="sofa-sample__product common-product">
+									<span class="sofa-sample__card-rating common-rating">
+										<svg class="rating">
+											<use xlink:href="img/sprite.svg#rating-star"></use>
+										</svg>
+										4,6
+									</span>
+									<div class="sofa-sample__img common-img">
+										<picture>
+											<source srcset="img/C-42-320.webp" media="(max-width: 500px)">
+											<img src="img/C-42.webp" alt="Картинка дивана">
+										</picture>
+									</div>
+									<div class="sofa-sample__card-text common-text">
+										<h3 class="sofa-sample__card-subtitle common-subtitle">
+											<a class="sofa-sample__link black-link common-link" href="#" aria-label="Переход на товар">
+												Диван из шинила
+												<span>&#8220;C-42&#8221;</span>
+											</a>
+										</h3>
+										<div class="sofa-sample__card-price common-price">
+											<span class="price">
+												18&nbsp;990 руб
+											</span>
+										</div>
+									</div>
+									<button class="sofa-sample__card-btn my-btn transp-btn"
+										aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+								</article>
+							</li>
+
+							<!-- F41 -->
+							<li class="sofa-sample__swiper-slide common-list-item swiper-slide">
+								<article class="sofa-sample__product common-product">
+									<span class="sofa-sample__card-rating common-rating">
+										<svg class="rating">
+											<use xlink:href="img/sprite.svg#rating-star"></use>
+										</svg>
+										4,5
+									</span>
+									<div class="sofa-sample__img common-img">
+										<picture>
+											<source srcset="img/F-41-320.webp" media="(max-width: 500px)">
+											<img src="img/F-41.webp" alt="Картинка дивана">
+										</picture>
+									</div>
+									<div class="sofa-sample__card-text common-text">
+										<h3 class="sofa-sample__card-subtitle common-subtitle">
+											<a class="sofa-sample__link black-link common-link" href="#" aria-label="Переход на товар">
+												Диван флоковый
+												<span>&#8220;F-41&#8221;</span>
+											</a>
+										</h3>
+										<div class="sofa-sample__card-price common-price">
+											<span class="price">
+												17&nbsp;990 руб
+											</span>
+										</div>
+									</div>
+									<button class="sofa-sample__card-btn my-btn transp-btn"
+										aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+								</article>
+							</li>
+
+							<!-- G41 -->
+							<li class="sofa-sample__swiper-slide common-list-item swiper-slide">
+								<article class="sofa-sample__product common-product">
+									<span class="sofa-sample__card-rating common-rating">
+										<svg class="rating">
+											<use xlink:href="img/sprite.svg#rating-star"></use>
+										</svg>
+										4,8
+									</span>
+									<div class="sofa-sample__img common-img">
+										<picture>
+											<source srcset="img/G-41-320.webp" media="(max-width: 500px)">
+											<img src="img/G-41.webp" alt="Картинка дивана">
+										</picture>
+									</div>
+									<div class="sofa-sample__card-text common-text">
+										<h3 class="sofa-sample__card-subtitle common-subtitle">
+											<a class="sofa-sample__link black-link common-link" href="#" aria-label="Переход на товар">
+												Диван флоковый
+												<span>&#8220;G-41&#8221;</span>
+											</a>
+										</h3>
+										<div class="sofa-sample__card-price common-price">
+											<span class="price">
+												17&nbsp;990 руб
+											</span>
+										</div>
+									</div>
+									<button class="sofa-sample__card-btn my-btn transp-btn"
+										aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+								</article>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__top">
+      <div class="footer__picture">
+        <a class="footer__logo" aria-label="Логотип" tabindex="-1">
+          <img src="img/footer-logo.webp" alt="Логотип магазина SDP">
+        </a>
+        <ul class="footer__list-social list-reset">
+
+          <li class="social-list-item">
+            <a class="footer__social-link" href="#" aria-label="Ссылка на социальную сеть фэйсбук">
+              <svg class="social" width="30" height="30">
+                <use xlink:href="img/sprite.svg#fb"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social-list-item">
+            <a class="footer__social-link" href="#" aria-label="Ссылка на социальную сеть ВКонтакте">
+              <svg class="social" width="30" height="30">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social-list-item">
+            <a class="footer__social-link" href="#" aria-label="Ссылка на социальную сеть Инстаграм">
+              <svg class="social" width="30" height="30">
+                <use xlink:href="img/sprite.svg#inst"></use>
+              </svg>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+
+      <ul class="footer__lists list-reset">
+
+        <li class="footer__lists-item lists-item">
+          <ul class="lists-item__list list-common list-reset">
+            <li class="list-common__item item">
+              <a class="item__link black-link" style="pointer-events: none;" href="#" aria-label="О нас">О&nbsp;нас</a>
+            </li>
+            <li class="list-common__item item">
+              <a class="item__link grey-link" href="#" aria-label="О компании">О&nbsp;компании</a>
+            </li>
+            <li class="list-common__item item">
+              <a class="item__link grey-link" href="#" aria-label="Блог">Блог</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="footer__lists-item lists-item">
+          <ul class="lists-item__list list-common list-reset">
+            <li class="list-common__item item">
+              <a class="item__link black-link" style="pointer-events: none;" href="#" aria-label="Услуги">Услуги</a>
+            </li>
+            <li class="list-common__item item">
+              <a class="item__link grey-link" href="#" aria-label="Доставка">Доставка</a>
+            </li>
+            <li class="list-common__item item">
+              <a class="item__link grey-link" href="#" aria-label="Рассрочка и кредит">Рассрочка и&nbsp;кредит</a>
+            </li>
+            <li class="list-common__item item">
+              <a class="item__link grey-link" href="#" aria-label="Сборка и установка">Сборка и&nbsp;установка</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="footer__lists-item lists-item">
+          <ul class="lists-item__list list-common list-reset">
+            <li class="list-common__item item">
+              <a class="item__link black-link" style="pointer-events: none;" href="#" aria-label="Связь с нами">Связь
+                с&nbsp;нами</a>
+            </li>
+            <li class="list-common__item item">
+              <a class="item__link grey-link" href="#" aria-label="Обратная связь">Обратная связь</a>
+            </li>
+            <li class="list-common__item item">
+              <a class="item__link grey-link" href="#" aria-label="Контакты">Контакты</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="footer__lists-item lists-item">
+          <ul class="lists-item__list list-common list-reset">
+            <li class="list-common__item item">
+              <a class="item__link black-link" style="pointer-events: none;" href="#"
+                aria-label="Сотрудничество">Сотрудничество</a>
+            </li>
+            <li class="list-common__item item">
+              <a class="item__link grey-link" href="partnership.html" target="_blank"
+                aria-label="Поставщикам">Поставщикам</a>
+            </li>
+            <li class="list-common__item item">
+              <a class="item__link grey-link" href="#" aria-label="Оптовикам">Оптовикам</a>
+            </li>
+            <li class="list-common__item item">
+              <a class="item__link grey-link" href="#" aria-label="Карьера">Карьера</a>
+            </li>
+          </ul>
+        </li>
+
+
+      </ul>
+
+    </div>
+    <div class="footer__copy">
+      <div class="footer__copy-text">
+        SDP<sup class="reg">&reg;</sup>
+        <span>2011-2021</span>
+      </div>
+    </div>
+  </div>
+</footer>
+	<div class="modals">
+  <div class="modal-overlay">
+
+    <!-- Модалка с диванами -->
+    <div class="modal modal-sofa" data-target="modal-two">
+      <div class="modal-wrap">
+
+        <div class="modal-content">
+
+
+          <div class="modal-d31-swiper-big swiper">
+
+            <ul class="swiper-wrapper list-reset">
+
+              <li class="swiper-slide">
+                <picture>
+                  <source media="(max-width: 500px)" srcset="img/d31-modal-sofa-1-top-320.webp">
+                  <source media="(max-width: 800px)" srcset="img/d31-modal-sofa-1-768.webp">
+                  <source media="(max-width: 1100px)" srcset="img/d31-modal-sofa-1-1024.webp">
+                  <img src="img/d31-modal-sofa-1.webp" alt="Изображение дивана " />
+                </picture>
+              </li>
+
+              <li class="swiper-slide">
+                <picture>
+                  <source media="(max-width: 500px)" srcset="img/d31-modal-sofa-2-top-320.webp">
+                  <source media="(max-width: 800px)" srcset="img/d31-modal-sofa-2-768.webp">
+                  <img src="img/d31-modal-top-2.webp" alt="Изображение дивана " />
+                </picture>
+              </li>
+
+              <li class="swiper-slide">
+                <picture>
+                  <source media="(max-width: 500px)" srcset="img/d31-modal-sofa-3-top-320.webp">
+                  <source media="(max-width: 800px)" srcset="img/d31-modal-sofa-3-768.webp">
+                  <img src="img/d31-modal-top-3.webp" alt="Изображение дивана " />
+                </picture>
+              </li>
+
+              <li class="swiper-slide">
+                <picture>
+                  <source media="(max-width: 500px)" srcset="img/d31-modal-sofa-4-top-320.webp">
+                  <source media="(max-width: 800px)" srcset="img/d31-modal-sofa-4-768.webp">
+                  <img src="img/d31-modal-top-4.webp" alt="Изображение дивана " />
+                </picture>
+              </li>
+
+              <li class="swiper-slide">
+                <picture>
+                  <source media="(max-width: 500px)" srcset="img/d31-modal-sofa-5-top-320.webp">
+                  <source media="(max-width: 800px)" srcset="img/d31-modal-sofa-5-768.webp">
+                  <img src="img/d31-modal-top-5.webp" alt="Изображение дивана " />
+                </picture>
+              </li>
+
+            </ul>
+
+
+
+          </div>
+
+
+          <div class="modal-small-swiper-content">
+
+            <div class="modal-d31-swiper-small swiper">
+
+              <ul class="swiper-wrapper list-reset">
+
+                <li class="swiper-slide">
+                  <picture>
+                    <source media="(max-width: 600px)" srcset="img/d31-modal-sofa-1-bottom-320.webp">
+                    <img src="img/d31-modal-sofa-1.webp" alt="Картинка дивана" />
+                  </picture>
+                </li>
+
+                <li class="swiper-slide">
+                  <picture>
+                    <source media="(max-width: 600px)" srcset="img/d31-modal-sofa-2-bottom-320.webp">
+                    <img src="img/d31-modal-sofa-2.webp" alt="Картинка дивана" />
+                  </picture>
+                </li>
+
+                <li class="swiper-slide">
+                  <picture>
+                    <source media="(max-width: 600px)" srcset="img/d31-modal-sofa-3-bottom-320.webp">
+                    <img src="img/d31-modal-sofa-3.webp" alt="Картинка дивана" style="display: flex; margin: 0 auto;" />
+                  </picture>
+                </li>
+
+                <li class="swiper-slide">
+                  <picture>
+                    <source media="(max-width: 600px)" srcset="img/d31-modal-sofa-4-bottom-320.webp">
+                    <img src="img/d31-modal-sofa-4.webp" alt="Картинка дивана" />
+                  </picture>
+                </li>
+
+                <li class="swiper-slide">
+                  <picture>
+                    <source media="(max-width: 600px)" srcset="img/d31-modal-sofa-5-bottom-320.webp">
+                    <img src="img/d31-modal-sofa-5.webp" alt="Картинка дивана" />
+                  </picture>
+                </li>
+
+              </ul>
+            </div>
+
+            <button class="swiper-modal-button-prev swiper-button-prev my-btn">
+              <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 11L13 16L18 21" stroke="#A65CF0" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <circle r="15" transform="matrix(-1 0 0 1 16 16)" stroke="#A65CF0" stroke-width="2" />
+              </svg>
+            </button>
+
+            <button class="swiper-modal-button-next swiper-button-next my-btn">
+              <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 11L19 16L14 21" stroke="#A65CF0" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <circle cx="16" cy="16" r="15" stroke="#A65CF0" stroke-width="2" />
+              </svg>
+            </button>
+          </div>
+
+
+        </div>
+
+
+      </div>
+      <button class="close-modal-btn my-btn">
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Купить в один клик -->
+    <div class="modal modal--1" data-target="modal-one">
+      <div class="modal-wrap">
+        <div class="modal-content">
+          <h2 class="modal-title">
+            Купить в&nbsp;один клик
+          </h2>
+          <p class="modal-text">
+            Чтобы оформить заказ&nbsp;&mdash; заполните формы ниже и&nbsp;наш менеджер свяжется с&nbsp;вами
+            в&nbsp;течении часа.
+          </p>
+          <form class="modal-form" action="#">
+
+            <label class="modal-label" for="name">
+              <input class="modal-input input-common" type="text" id="name" data-validate-field="name"
+                placeholder="Как вас зовут?">
+            </label>
+
+            <label class="modal-label" for="tel">
+              <input class="modal-input input-common" type="tel" id="tel" data-validate-field="tel"
+                placeholder="Ваш телефон">
+            </label>
+
+            <button class="modal-form-btn my-btn purple-btn">Отправить</button>
+
+            <div class="modal-checkbox checkbox-common">
+              <input class="modal-input input-checkbox" type="checkbox" checked="checked"
+                aria-label="Нажмите, если принимаете пользовательское соглашение">
+              <span>
+                Принимаю
+                <a class="rules-link" href="#" aria-label="Нажмите чтобы прочитать пользовательское соглашение">
+                  пользовательское соглашение
+                </a>
+              </span>
+            </div>
+
+          </form>
+        </div>
+      </div>
+      <button class="close-modal-btn my-btn">
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Модалка спасибо за покупку -->
+    <div class="modal modal--3" data-target="modal-thanks">
+      <div class="modal-content">
+        <picture>
+          <source media="(max-width: 500px)" srcset="img/elephant-thanks-320px.webp">
+          <img src="img/elephant-thanks.webp" alt="Логотип компании">
+        </picture>
+        <strong class="modal-thank-text">Спасибо, мы&nbsp;Вам перезвоним!</strong>
+      </div>
+      <button class="close-modal-btn my-btn" type="button">
+        <span></span>
+      </button>
+    </div>
+
+  </div>
+</div>
+</body>
+
+</html>

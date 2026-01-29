@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="РумТибет — туры в горные регионы. Насладись прогулкой в горах с командой единомышленников.">
+  <title>РумТибет — Туры в горы</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="logo">
+        <img src="img/logo.svg" alt="РумТибет" class="logo__img" width="137" height="72">
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#hero" class="nav__link">Главная</a></li>
+          <li><a href="#about" class="nav__link">Про гида</a></li>
+          <li><a href="#programs" class="nav__link">Программа тура</a></li>
+          <li><a href="#destinations" class="nav__link">Стоимость</a></li>
+          <li><a href="#blog" class="nav__link">Блог</a></li>
+          <li><a href="#footer" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+      <a href="#subscribe" class="btn btn--primary header__btn">Консультация</a>
+      <button class="burger" id="burger" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+    <div class="container hero__inner">
+      <h1 class="hero__title"></h1>
+      <form class="hero__form" id="heroForm">
+        <div class="hero__form-group">
+          <div class="custom-select" data-placeholder="Локация для тура">
+            <div class="custom-select__trigger">
+              <span class="custom-select__value">Локация для тура</span>
+              <svg class="custom-select__arrow" width="12" height="8" viewBox="0 0 12 8"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+            </div>
+            <div class="custom-select__options">
+              <div class="custom-select__option" data-value="tibet">Тибет</div>
+              <div class="custom-select__option" data-value="nepal">Непал</div>
+              <div class="custom-select__option" data-value="altai">Алтай</div>
+              <div class="custom-select__option" data-value="kavkaz">Кавказ</div>
+              <div class="custom-select__option" data-value="himalayi">Гималаи</div>
+            </div>
+          </div>
+          <span class="hero__form-hint">выберите локацию</span>
+        </div>
+        <div class="hero__form-group">
+          <div class="custom-select" data-placeholder="Дата похода">
+            <div class="custom-select__trigger">
+              <span class="custom-select__value">Дата похода</span>
+              <svg class="custom-select__arrow" width="16" height="16" viewBox="0 0 16 16"><rect x="1" y="3" width="14" height="12" rx="1" stroke="currentColor" fill="none" stroke-width="1.2"/><line x1="1" y1="7" x2="15" y2="7" stroke="currentColor" stroke-width="1.2"/><line x1="5" y1="1" x2="5" y2="5" stroke="currentColor" stroke-width="1.2"/><line x1="11" y1="1" x2="11" y2="5" stroke="currentColor" stroke-width="1.2"/></svg>
+            </div>
+            <div class="custom-select__options">
+              <div class="custom-select__option" data-value="june2026">Июнь 2026</div>
+              <div class="custom-select__option" data-value="july2026">Июль 2026</div>
+              <div class="custom-select__option" data-value="aug2026">Август 2026</div>
+              <div class="custom-select__option" data-value="sep2026">Сентябрь 2026</div>
+            </div>
+          </div>
+          <span class="hero__form-hint">выберите дату</span>
+        </div>
+        <div class="hero__form-group">
+          <div class="custom-select" data-placeholder="Участники">
+            <div class="custom-select__trigger">
+              <span class="custom-select__value">Участники</span>
+              <svg class="custom-select__arrow" width="12" height="8" viewBox="0 0 12 8"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+            </div>
+            <div class="custom-select__options">
+              <div class="custom-select__option" data-value="1">1 участник</div>
+              <div class="custom-select__option" data-value="2">2 участника</div>
+              <div class="custom-select__option" data-value="3">3 участника</div>
+              <div class="custom-select__option" data-value="4">4 участника</div>
+              <div class="custom-select__option" data-value="5+">5+ участников</div>
+            </div>
+          </div>
+          <span class="hero__form-hint">количество участников</span>
+        </div>
+        <button type="submit" class="btn btn--primary hero__form-btn">Найти программу</button>
+      </form>
+      <a href="#programs" class="btn btn--primary hero__mobile-btn">Найти программу</a>
+    </div>
+  </section>
+
+  <!-- О наших походах -->
+  <section class="about" id="about">
+    <div class="container about__inner">
+      <div class="about__images">
+        <div class="about__img about__img--back" style="background-image: url('https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=700&fit=crop&auto=format'); background-size: cover; background-position: center;"></div>
+        <div class="about__img about__img--front" style="background-image: url('https://images.unsplash.com/photo-1551632811-561732d1e306?w=700&fit=crop&auto=format'); background-size: cover; background-position: center;"></div>
+      </div>
+      <div class="about__content">
+        <span class="section-subtitle" id="aboutSubtitle">О НАШИХ ПОХОДАХ</span>
+        <h2 class="section-title" id="aboutTitle">Исследуйте все горные массивы мира вместе с нами</h2>
+        <p class="about__text" id="aboutText1">Это давно установленный факт, что читатель будет отвлекаться на удобочитаемое содержание страницы при рассматривании её макета. Смысл использования Lorem Ipsum в том, что он имеет более или менее нормальное распределение букв, в отличие от использования «Здесь будет текст», что делает его похожим на читаемый текст.</p>
+        <p class="about__text" id="aboutText2">Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию. Ричард МакКлинток, профессор латыни из колледжа Хампден-Сиднэй, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur" и занялся его поисками в классической латинской литературе.</p>
+        <a href="#programs" class="btn btn--outline">Программа тура</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Лучшие программы -->
+  <section class="programs" id="programs">
+    <div class="container programs__inner">
+      <div class="programs__content">
+        <span class="section-subtitle">НАШЕ ПРЕДЛОЖЕНИЕ</span>
+        <h2 class="section-title">Лучшие программы для тебя</h2>
+        <p class="programs__desc">Это давно установленный факт, что читатель будет отвлекаться на удобочитаемое содержание страницы при рассматривании её макета. Ричард МакКлинток, профессор латыни из колледжа.</p>
+        <div class="programs__features">
+          <div class="programs__feature">
+            <div class="programs__feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 20c0-4 4-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <div class="programs__feature-text">
+              <h4>Опытный гид</h4>
+              <p>Для современного мира большой вклад развития предпринимателей создаёт условия активизации.</p>
+            </div>
+          </div>
+          <div class="programs__feature">
+            <div class="programs__feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0112 2a8 8 0 018 8.2c0 7.3-8 11.8-8 11.8z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <div class="programs__feature-text">
+              <h4>Безопасный поход</h4>
+              <p>Для современного мира большой вклад развития предпринимателей создаёт условия активизации.</p>
+            </div>
+          </div>
+          <div class="programs__feature">
+            <div class="programs__feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M2 12h20" stroke="currentColor" stroke-width="2"/><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="2" opacity="0.3"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <div class="programs__feature-text">
+              <h4>Полезные цены</h4>
+              <p>Для современного мира большой вклад развития предпринимателей создаёт условия активизации.</p>
+            </div>
+          </div>
+        </div>
+        <a href="#destinations" class="btn btn--outline">Стоимость программы</a>
+      </div>
+      <div class="programs__grid">
+        <div class="programs__img" style="background-image: url('https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=500&fit=crop&auto=format'); background-size: cover; background-position: center;"></div>
+        <div class="programs__img" style="background-image: url('https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=500&fit=crop&auto=format'); background-size: cover; background-position: center;"></div>
+        <div class="programs__img" style="background-image: url('https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?w=500&fit=crop&auto=format'); background-size: cover; background-position: center;"></div>
+        <div class="programs__img" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&fit=crop&auto=format'); background-size: cover; background-position: center;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Популярные направления -->
+  <section class="destinations" id="destinations">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">ИЗ НАШИХ СТРАН/РЕГИОНОВ</span>
+        <h2 class="section-title">Популярные направления</h2>
+      </div>
+      <div class="destinations__cards">
+        <div class="destinations__card">
+          <div class="destinations__card-img" style="background-image: url('https://images.unsplash.com/photo-1511497584788-876760111969?w=600&h=280&fit=crop&auto=format'); background-size: cover; background-position: center;">
+            <span class="destinations__card-rating">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M7 0l2.2 4.4 4.8.7-3.5 3.4.8 4.8L7 11.1l-4.3 2.2.8-4.8L0 5.1l4.8-.7z"/></svg>
+              4.8
+            </span>
+          </div>
+          <div class="destinations__card-body">
+            <h3 class="destinations__card-title">Озеро возле гор</h3>
+            <span class="destinations__card-price">340 $</span>
+          </div>
+        </div>
+        <div class="destinations__card">
+          <div class="destinations__card-img" style="background-image: url('https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?w=600&h=280&fit=crop&auto=format'); background-size: cover; background-position: center;">
+            <span class="destinations__card-rating">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M7 0l2.2 4.4 4.8.7-3.5 3.4.8 4.8L7 11.1l-4.3 2.2.8-4.8L0 5.1l4.8-.7z"/></svg>
+              4.8
+            </span>
+          </div>
+          <div class="destinations__card-body">
+            <h3 class="destinations__card-title">Ночь в горах</h3>
+            <span class="destinations__card-price">500 $</span>
+          </div>
+        </div>
+        <div class="destinations__card">
+          <div class="destinations__card-img" style="background-image: url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&h=280&fit=crop&auto=format'); background-size: cover; background-position: center;">
+            <span class="destinations__card-rating">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M7 0l2.2 4.4 4.8.7-3.5 3.4.8 4.8L7 11.1l-4.3 2.2.8-4.8L0 5.1l4.8-.7z"/></svg>
+              5.0
+            </span>
+          </div>
+          <div class="destinations__card-body">
+            <h3 class="destinations__card-title">Йога в горах</h3>
+            <span class="destinations__card-price">230 $</span>
+          </div>
+        </div>
+      </div>
+      <div class="section-footer">
+        <a href="#" class="btn btn--outline">Рейтинг направлений</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Блог -->
+  <section class="blog" id="blog">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">ДЕЛИМСЯ ВПЕЧАТЛЕНИЯМИ</span>
+        <h2 class="section-title">Блог о путешествиях</h2>
+      </div>
+      <div class="blog__grid">
+        <article class="blog__card">
+          <div class="blog__card-img" style="background-image: url('https://images.unsplash.com/photo-1534445867742-43195f401b6c?w=400&fit=crop&auto=format'); background-size: cover; background-position: center;"></div>
+          <div class="blog__card-content">
+            <h3 class="blog__card-title">Красивая Италия, какая она в реальности?</h3>
+            <p class="blog__card-text">Для современного мира предпринимателей создаёт необходимость условий активизации инновационных методов.</p>
+            <div class="blog__card-footer">
+              <span class="blog__card-date">12/04/2025</span>
+              <a href="#" class="blog__card-link">читать статью</a>
+            </div>
+          </div>
+        </article>
+        <article class="blog__card">
+          <div class="blog__card-img" style="background-image: url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&fit=crop&auto=format'); background-size: cover; background-position: center;"></div>
+          <div class="blog__card-content">
+            <h3 class="blog__card-title">Долой сомнения! Весь мир открыт для вас!</h3>
+            <p class="blog__card-text">Для современного мира предпринимателей создаёт необходимость условий активизации – налаживание международного контроля.</p>
+            <div class="blog__card-footer">
+              <span class="blog__card-date">12/04/2025</span>
+              <a href="#" class="blog__card-link">читать статью</a>
+            </div>
+          </div>
+        </article>
+        <article class="blog__card">
+          <div class="blog__card-img" style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&fit=crop&auto=format'); background-size: cover; background-position: center;"></div>
+          <div class="blog__card-content">
+            <h3 class="blog__card-title">Как подготовиться к путешествию в одиночку?</h3>
+            <p class="blog__card-text">Для современного мира большой вклад развития предпринимателей.</p>
+            <div class="blog__card-footer">
+              <span class="blog__card-date">12/04/2025</span>
+              <a href="#" class="blog__card-link">читать статью</a>
+            </div>
+          </div>
+        </article>
+        <article class="blog__card">
+          <div class="blog__card-img" style="background-image: url('https://images.unsplash.com/photo-1548013146-72479768bada?w=400&fit=crop&auto=format'); background-size: cover; background-position: center;"></div>
+          <div class="blog__card-content">
+            <h3 class="blog__card-title">Индия ... летим?</h3>
+            <p class="blog__card-text">Для современного мира большой вклад развития.</p>
+            <div class="blog__card-footer">
+              <span class="blog__card-date">12/04/2025</span>
+              <a href="#" class="blog__card-link">читать статью</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="section-footer">
+        <a href="#" class="btn btn--outline">Другие материалы</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Фотоотчет -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">ФОТО ОТЧЁТ</span>
+        <h2 class="section-title">Делимся впечатлениями</h2>
+      </div>
+      <div class="gallery__grid">
+        <div class="gallery__item gallery__item--wide">
+          <div class="gallery__img" data-index="0" style="background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&fit=crop&auto=format'); background-size: cover; background-position: center;"></div>
+        </div>
+        <div class="gallery__item">
+          <div class="gallery__img" data-index="1" style="background-image: url('https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=600&fit=crop&auto=format'); background-size: cover; background-position: center;"></div>
+        </div>
+        <div class="gallery__item">
+          <div class="gallery__img" data-index="2" style="background-image: url('https://images.unsplash.com/photo-1540390769625-2fc3f8b1d50c?w=600&fit=crop&auto=format'); background-size: cover; background-position: center;"></div>
+        </div>
+        <div class="gallery__item">
+          <div class="gallery__img" data-index="3" style="background-image: url('https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&fit=crop&auto=format'); background-size: cover; background-position: center;"></div>
+        </div>
+        <div class="gallery__item">
+          <div class="gallery__img" data-index="4" style="background-image: url('https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=600&fit=crop&auto=format'); background-size: cover; background-position: center;"></div>
+        </div>
+        <div class="gallery__item gallery__item--wide">
+          <div class="gallery__img" data-index="5" style="background-image: url('https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?w=800&fit=crop&auto=format'); background-size: cover; background-position: center;"></div>
+        </div>
+      </div>
+      <div class="section-footer">
+        <a href="#" class="btn btn--outline">Наш pinterest</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Подписка -->
+  <section class="subscribe" id="subscribe">
+    <div class="container subscribe__inner">
+      <div class="subscribe__text">
+        <h2 class="subscribe__title">Получайте полезные рассылки о путешествиях</h2>
+      </div>
+      <form class="subscribe__form" id="subscribeForm">
+        <div class="subscribe__form-row">
+          <input type="email" class="subscribe__input" placeholder="Введите e-mail адрес" required>
+          <button type="submit" class="btn btn--accent subscribe__btn">Подписаться на новости</button>
+        </div>
+        <p class="subscribe__disclaimer">Подписываясь на новости, вы автоматически соглашаетесь с условиями обработки персональных данных и правилами привлечения данных</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <h4 class="footer__heading">Компания «РумТибет»</h4>
+          <p class="footer__text">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney.</p>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Наши услуги</h4>
+          <ul class="footer__list">
+            <li><a href="#">Прогулка в горы лайт</a></li>
+            <li><a href="#">Ночная прогулка в горы</a></li>
+            <li><a href="#">Корпоративный отдых</a></li>
+            <li><a href="#">Поход в горы</a></li>
+            <li><a href="#">Прогулки и пикник</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Важное для путешествий</h4>
+          <ul class="footer__list">
+            <li><a href="#">Как собрать в рюкзак поход?</a></li>
+            <li><a href="#">Какую обувь выбрать?</a></li>
+            <li><a href="#">Правила первого туриста</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Контакты</h4>
+          <ul class="footer__contacts">
+            <li><a href="mailto:info@rumtibet.com">info@rumtibet.com</a></li>
+            <li><a href="tel:+71234567890">+7 (123) 456-78-90</a></li>
+          </ul>
+          <div class="footer__socials">
+            <a href="#" class="footer__social" aria-label="VK">
+              <img src="img/vk.svg" alt="VK" width="20" height="20">
+            </a>
+            <a href="#" class="footer__social" aria-label="Telegram">
+              <img src="img/tg.svg" alt="Telegram" width="20" height="20">
+            </a>
+            <a href="#" class="footer__social" aria-label="Pinterest">
+              <img src="img/pinterest.svg" alt="Pinterest" width="20" height="20">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>ИП Константинопольский К.К., 2025</span>
+        <a href="#">Политика обработки персональных данных</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" aria-label="Закрыть">&times;</button>
+    <button class="lightbox__prev" aria-label="Назад">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2"/></svg>
+    </button>
+    <div class="lightbox__content">
+      <div class="lightbox__img"></div>
+    </div>
+    <button class="lightbox__next" aria-label="Вперёд">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2"/></svg>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js';
+    import { getFirestore, doc, getDoc, getDocs, collection } from 'https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.js';
+    import { firebaseConfig } from './firebase-config.js';
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    const titleEl = document.querySelector('.hero__title');
+    const bgEl = document.querySelector('.hero__bg');
+    const defaultTitle = 'Насладись прогулкой в горах\nс командой единомышленников';
+
+    try {
+      const [heroSnap, aboutSnap] = await Promise.all([
+        getDoc(doc(db, 'content', 'hero')),
+        getDoc(doc(db, 'content', 'about'))
+      ]);
+
+      if (heroSnap.exists()) {
+        const { title, bgUrl } = heroSnap.data();
+        titleEl.textContent = title || defaultTitle;
+        if (bgUrl) bgEl.style.backgroundImage = `url(${bgUrl})`;
+      } else {
+        titleEl.textContent = defaultTitle;
+      }
+      requestAnimationFrame(() => titleEl.classList.add('hero__title--visible'));
+
+      if (aboutSnap.exists()) {
+        const { subtitle, title, text1, text2 } = aboutSnap.data();
+        if (subtitle) document.getElementById('aboutSubtitle').textContent = subtitle;
+        if (title)    document.getElementById('aboutTitle').textContent = title;
+        if (text1)    document.getElementById('aboutText1').textContent = text1;
+        if (text2)    document.getElementById('aboutText2').textContent = text2;
+      }
+    } catch (e) {
+      titleEl.textContent = defaultTitle;
+      requestAnimationFrame(() => titleEl.classList.add('hero__title--visible'));
+    }
+  </script>
+</body>
+</html>

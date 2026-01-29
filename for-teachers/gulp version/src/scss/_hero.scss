@@ -1,0 +1,181 @@
+.hero {
+  padding-top: 43px;
+  background: #FFF06A;
+
+  &__container {
+    position: relative;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 79px;
+  }
+
+  &__content-left {
+    position: relative;
+  }
+
+  &__left-swiper {
+    width: 274px;
+    height: 820px;
+    position: absolute;
+    top: -211px;
+    left: -23px;
+    z-index: 20;
+  }
+
+  &__content-right {
+    padding-right: 140px;
+  }
+
+  &__title {
+    margin-bottom: 46px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 65px;
+    color: var(--brown-color);
+  }
+
+  &__descr {
+    position: relative;
+    padding-left: 34px;
+  }
+
+  &__descr::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/for-hero.webp);
+    top: -11px;
+    left: -7px;
+    width: 25px;
+    height: 27px;
+  }
+
+  &__swiper {
+    max-width: 480px;
+  }
+
+  &__swiper-slide {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__descr q {
+    margin-bottom: 12px;
+    font-size: 12.4775px;
+    line-height: 16px;
+    color: var(--brown-color);
+  }
+
+  &__descr cite {
+    font-style: normal;
+    font-size: 9.35814px;
+    line-height: 12px;
+    color: var(--brown-color);
+  }
+
+  &__btn {
+    margin-top: 73px;
+    margin-left: 16px;
+    align-self: flex-start;
+  }
+
+  &__btn span {
+    padding-left: 23px;
+  }
+}
+
+
+@media (max-width: 1150px) {
+
+  .hero {
+
+    &__content {
+      justify-content: center;
+      padding-bottom: 50px;
+    }
+
+    &__content-left {
+      display: none;
+    }
+
+    &__left-swiper {
+      display: none;
+    }
+
+    &__content-right {
+      padding: 0;
+    }
+
+    &__btn {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero {
+    &__title {
+      font-size: calc(28px + 32 * (100vw - 320px)/ 680);
+    }
+
+    &__descr q {
+      font-size: calc(9px + 3.4 * (100vw - 320px)/ 680);
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .hero {
+
+    &__title {
+
+      margin-bottom: 10px;
+      line-height: 50px;
+    }
+
+    &__descr {
+      padding: 0;
+    }
+
+    &__descr::before {
+      display: none;
+    }
+
+    &__swiper {
+      max-width: 420px;
+    }
+
+    &__btn {
+      margin-top: 13px;
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .hero {
+
+    padding-top: 0;
+
+    &__content-right {
+      text-align: center;
+    }
+
+    &__swiper {
+      max-width: 300px;
+    }
+
+    &__btn {
+      margin-top: 30px;
+      font-size: 14px;
+      padding: 11px 22px;
+    }
+
+    &__btn span {
+      padding-left: 15px;
+      font-size: 12px;
+    }
+  }
+}

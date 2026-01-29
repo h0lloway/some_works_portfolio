@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Specialty Coffee Catalog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="catalog">
+
+  <div class="catalog__top">
+    <div class="catalog__header">
+      <h1 class="catalog__title">Specialty Coffee <span class="catalog__title-accent">Collection</span></h1>
+      <p class="catalog__subtitle">Showing 1–6 of 24 single-origin roasts</p>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropdown__btn" id="sortBtn" aria-haspopup="listbox" aria-expanded="false">
+        <span class="dropdown__label">Default sorting</span>
+        <svg class="dropdown__caret" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <ul class="dropdown__menu" id="sortMenu" role="listbox">
+        <li class="dropdown__item" role="option">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2L12 22M5 9l7-7 7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Sort by Latest
+        </li>
+        <li class="dropdown__item" role="option">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M18 20V10M12 20V4M6 20v-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Sort by popularity
+        </li>
+        <li class="dropdown__item" role="option">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          Sort by average rating
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="catalog__grid">
+
+    <!-- 1. Ethiopia Yirgacheffe -->
+    <article class="card">
+      <div class="card__image-wrap">
+        <div class="card__image">
+          <img class="card__img card__img--1" src="img/3164_big.jpg" alt="Bazzara Dodicigrancru 250g">
+          <img class="card__img card__img--2" src="img/3468_big.jpg" alt="Bazzara Grancappuccino">
+          <span class="card__zone card__zone--left"></span>
+          <span class="card__zone card__zone--right"></span>
+          <div class="card__indicator">
+            <span class="card__dot card__dot--left"></span>
+            <span class="card__dot card__dot--right"></span>
+          </div>
+        </div>
+        <span class="card__badge card__badge--hot">Best Seller</span>
+        <button class="card__fav" aria-label="Add to favourites">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+            <path d="M12 21C12 21 3 14.5 3 8.5C3 5.42 5.42 3 8.5 3C10.24 3 11.91 3.81 13 5.08C14.09 3.81 15.76 3 17.5 3C20.58 3 23 5.42 23 8.5C23 14.5 12 21 12 21Z" stroke="#C4784A" stroke-width="1.8" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <div class="card__body">
+        <div class="card__info">
+          <div class="card__origin">
+            <span class="card__flag">🇪🇹</span> Ethiopia · Light roast
+          </div>
+          <h2 class="card__name">Yirgacheffe Natural</h2>
+          <p class="card__notes">Blueberry · Jasmine · Citrus zest</p>
+          <div class="card__rating">
+              <span class="stars">★★★★★</span>
+              <span class="card__count">2.1k</span>
+            </div>
+        </div>
+        <div class="card__footer">
+          <p class="card__price"><strong>$34</strong><span>/ 250g</span></p>
+          <button class="card__cta">
+            Order Now
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <circle cx="9" cy="21" r="1" stroke="currentColor" stroke-width="2"/>
+              <circle cx="20" cy="21" r="1" stroke="currentColor" stroke-width="2"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- 2. Yemen Mocha Matari -->
+    <article class="card">
+      <div class="card__image-wrap">
+        <div class="card__image">
+          <img class="card__img card__img--1" src="img/3163_big.jpg" alt="Bazzara Santo Domingo">
+          <img class="card__img card__img--2" src="img/3467_big.jpg" alt="Bazzara Dolcevivace">
+          <span class="card__zone card__zone--left"></span>
+          <span class="card__zone card__zone--right"></span>
+          <div class="card__indicator">
+            <span class="card__dot card__dot--left"></span>
+            <span class="card__dot card__dot--right"></span>
+          </div>
+        </div>
+        <span class="card__badge card__badge--rare">Rare</span>
+        <button class="card__fav" aria-label="Add to favourites">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+            <path d="M12 21C12 21 3 14.5 3 8.5C3 5.42 5.42 3 8.5 3C10.24 3 11.91 3.81 13 5.08C14.09 3.81 15.76 3 17.5 3C20.58 3 23 5.42 23 8.5C23 14.5 12 21 12 21Z" stroke="#C4784A" stroke-width="1.8" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <div class="card__body">
+        <div class="card__info">
+          <div class="card__origin">
+            <span class="card__flag">🇾🇪</span> Yemen · Medium roast
+          </div>
+          <h2 class="card__name">Mocha Matari</h2>
+          <p class="card__notes">Dark chocolate · Wine · Dried fruit</p>
+          <div class="card__rating">
+              <span class="stars">★★★★★</span>
+              <span class="card__count">487</span>
+            </div>
+        </div>
+        <div class="card__footer">
+          <p class="card__price"><strong>$68</strong><span>/ 250g</span></p>
+          <button class="card__cta">
+            Order Now
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <circle cx="9" cy="21" r="1" stroke="currentColor" stroke-width="2"/>
+              <circle cx="20" cy="21" r="1" stroke="currentColor" stroke-width="2"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- 3. Colombia Huila -->
+    <article class="card">
+      <div class="card__image-wrap">
+        <div class="card__image">
+          <img class="card__img card__img--1" src="img/3470_big.jpg" alt="Bazzara Aromamore 250g">
+          <img class="card__img card__img--2" src="img/3471_big.jpg" alt="Bazzara Grancappuccino 250g">
+          <span class="card__zone card__zone--left"></span>
+          <span class="card__zone card__zone--right"></span>
+          <div class="card__indicator">
+            <span class="card__dot card__dot--left"></span>
+            <span class="card__dot card__dot--right"></span>
+          </div>
+        </div>
+        <span class="card__badge card__badge--organic">Organic</span>
+        <button class="card__fav card__fav--active" aria-label="Add to favourites">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+            <path d="M12 21C12 21 3 14.5 3 8.5C3 5.42 5.42 3 8.5 3C10.24 3 11.91 3.81 13 5.08C14.09 3.81 15.76 3 17.5 3C20.58 3 23 5.42 23 8.5C23 14.5 12 21 12 21Z" stroke="#C4784A" stroke-width="1.8" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <div class="card__body">
+        <div class="card__info">
+          <div class="card__origin">
+            <span class="card__flag">🇨🇴</span> Colombia · Light roast
+          </div>
+          <h2 class="card__name">Huila Washed</h2>
+          <p class="card__notes">Caramel · Red apple · Brown sugar</p>
+          <div class="card__rating">
+              <span class="stars">★★★★★</span>
+              <span class="card__count">1.3k</span>
+            </div>
+        </div>
+        <div class="card__footer">
+          <p class="card__price"><strong>$28</strong><span>/ 250g</span></p>
+          <button class="card__cta">
+            Order Now
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <circle cx="9" cy="21" r="1" stroke="currentColor" stroke-width="2"/>
+              <circle cx="20" cy="21" r="1" stroke="currentColor" stroke-width="2"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- 4. Jamaica Blue Mountain -->
+    <article class="card">
+      <div class="card__image-wrap">
+        <div class="card__image">
+          <img class="card__img card__img--1" src="img/3469_big.jpg" alt="Bazzara Piacerepuro">
+          <img class="card__img card__img--2" src="img/3472_big.jpg" alt="Bazzara Dolcevivace 250g">
+          <span class="card__zone card__zone--left"></span>
+          <span class="card__zone card__zone--right"></span>
+          <div class="card__indicator">
+            <span class="card__dot card__dot--left"></span>
+            <span class="card__dot card__dot--right"></span>
+          </div>
+        </div>
+        <span class="card__badge card__badge--premium">Premium</span>
+        <button class="card__fav" aria-label="Add to favourites">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+            <path d="M12 21C12 21 3 14.5 3 8.5C3 5.42 5.42 3 8.5 3C10.24 3 11.91 3.81 13 5.08C14.09 3.81 15.76 3 17.5 3C20.58 3 23 5.42 23 8.5C23 14.5 12 21 12 21Z" stroke="#C4784A" stroke-width="1.8" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <div class="card__body">
+        <div class="card__info">
+          <div class="card__origin">
+            <span class="card__flag">🇯🇲</span> Jamaica · Medium roast
+          </div>
+          <h2 class="card__name">Blue Mountain No.1</h2>
+          <p class="card__notes">Milk chocolate · Walnut · Sweet cream</p>
+          <div class="card__rating">
+              <span class="stars">★★★★★</span>
+              <span class="card__count">312</span>
+            </div>
+        </div>
+        <div class="card__footer">
+          <p class="card__price"><strong>$89</strong><span>/ 250g</span></p>
+          <button class="card__cta">
+            Order Now
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <circle cx="9" cy="21" r="1" stroke="currentColor" stroke-width="2"/>
+              <circle cx="20" cy="21" r="1" stroke="currentColor" stroke-width="2"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- 5. Guatemala Antigua -->
+    <article class="card">
+      <div class="card__image-wrap">
+        <div class="card__image">
+          <img class="card__img card__img--1" src="img/3191_big.jpg" alt="Bazzara Kenya AA">
+          <img class="card__img card__img--2" src="img/3150_big.jpg" alt="Bazzara Etiopia Sidamo">
+          <span class="card__zone card__zone--left"></span>
+          <span class="card__zone card__zone--right"></span>
+          <div class="card__indicator">
+            <span class="card__dot card__dot--left"></span>
+            <span class="card__dot card__dot--right"></span>
+          </div>
+        </div>
+        <button class="card__fav" aria-label="Add to favourites">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+            <path d="M12 21C12 21 3 14.5 3 8.5C3 5.42 5.42 3 8.5 3C10.24 3 11.91 3.81 13 5.08C14.09 3.81 15.76 3 17.5 3C20.58 3 23 5.42 23 8.5C23 14.5 12 21 12 21Z" stroke="#C4784A" stroke-width="1.8" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <div class="card__body">
+        <div class="card__info">
+          <div class="card__origin">
+            <span class="card__flag">🇬🇹</span> Guatemala · Dark roast
+          </div>
+          <h2 class="card__name">Antigua Dark</h2>
+          <p class="card__notes">Smoky cocoa · Molasses · Spice</p>
+          <div class="card__rating">
+              <span class="stars">★★★★☆</span>
+              <span class="card__count">891</span>
+            </div>
+        </div>
+        <div class="card__footer">
+          <p class="card__price"><strong>$24</strong><span>/ 250g</span></p>
+          <button class="card__cta">
+            Order Now
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <circle cx="9" cy="21" r="1" stroke="currentColor" stroke-width="2"/>
+              <circle cx="20" cy="21" r="1" stroke="currentColor" stroke-width="2"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- 6. Kenya AA -->
+    <article class="card">
+      <div class="card__image-wrap">
+        <div class="card__image">
+          <img class="card__img card__img--1" src="img/3155_big.jpg" alt="Bazzara Guatemala">
+          <img class="card__img card__img--2" src="img/3145_big.jpg" alt="Bazzara Colombia Supremo">
+          <span class="card__zone card__zone--left"></span>
+          <span class="card__zone card__zone--right"></span>
+          <div class="card__indicator">
+            <span class="card__dot card__dot--left"></span>
+            <span class="card__dot card__dot--right"></span>
+          </div>
+        </div>
+        <span class="card__badge card__badge--new">New</span>
+        <button class="card__fav" aria-label="Add to favourites">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+            <path d="M12 21C12 21 3 14.5 3 8.5C3 5.42 5.42 3 8.5 3C10.24 3 11.91 3.81 13 5.08C14.09 3.81 15.76 3 17.5 3C20.58 3 23 5.42 23 8.5C23 14.5 12 21 12 21Z" stroke="#C4784A" stroke-width="1.8" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <div class="card__body">
+        <div class="card__info">
+          <div class="card__origin">
+            <span class="card__flag">🇰🇪</span> Kenya · Light roast
+          </div>
+          <h2 class="card__name">Kenya AA Kirinyaga</h2>
+          <p class="card__notes">Blackcurrant · Grapefruit · Rose</p>
+          <div class="card__rating">
+              <span class="stars">★★★★★</span>
+              <span class="card__count">654</span>
+            </div>
+        </div>
+        <div class="card__footer">
+          <p class="card__price"><strong>$31</strong><span>/ 250g</span></p>
+          <button class="card__cta">
+            Order Now
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <circle cx="9" cy="21" r="1" stroke="currentColor" stroke-width="2"/>
+              <circle cx="20" cy="21" r="1" stroke="currentColor" stroke-width="2"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- 7. Bazzara Costarica -->
+    <article class="card">
+      <div class="card__image-wrap">
+        <div class="card__image">
+          <img class="card__img card__img--1" src="img/3147_big.jpg" alt="Bazzara Costarica">
+          <img class="card__img card__img--2" src="img/3149_big.jpg" alt="Bazzara Dodicigrancru 1kg">
+          <span class="card__zone card__zone--left"></span>
+          <span class="card__zone card__zone--right"></span>
+          <div class="card__indicator">
+            <span class="card__dot card__dot--left"></span>
+            <span class="card__dot card__dot--right"></span>
+          </div>
+        </div>
+        <span class="card__badge card__badge--organic">Organic</span>
+        <button class="card__fav" aria-label="Add to favourites">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+            <path d="M12 21C12 21 3 14.5 3 8.5C3 5.42 5.42 3 8.5 3C10.24 3 11.91 3.81 13 5.08C14.09 3.81 15.76 3 17.5 3C20.58 3 23 5.42 23 8.5C23 14.5 12 21 12 21Z" stroke="#C4784A" stroke-width="1.8" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <div class="card__body">
+        <div class="card__info">
+          <div class="card__origin">
+            <span class="card__flag">🇨🇷</span> Costa Rica · Medium roast
+          </div>
+          <h2 class="card__name">Costarica</h2>
+          <p class="card__notes">Honey · Peach · Almonds</p>
+          <div class="card__rating">
+              <span class="stars">★★★★★</span>
+              <span class="card__count">743</span>
+            </div>
+        </div>
+        <div class="card__footer">
+          <p class="card__price"><strong>$38</strong><span>/ 1kg</span></p>
+          <button class="card__cta">
+            Order Now
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <circle cx="9" cy="21" r="1" stroke="currentColor" stroke-width="2"/>
+              <circle cx="20" cy="21" r="1" stroke="currentColor" stroke-width="2"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- 8. Bazzara Colombia Supremo -->
+    <article class="card">
+      <div class="card__image-wrap">
+        <div class="card__image">
+          <img class="card__img card__img--1" src="img/3145_big.jpg" alt="Bazzara Colombia Supremo">
+          <img class="card__img card__img--2" src="img/3466_big.jpg" alt="Bazzara Aromamore 1kg">
+          <span class="card__zone card__zone--left"></span>
+          <span class="card__zone card__zone--right"></span>
+          <div class="card__indicator">
+            <span class="card__dot card__dot--left"></span>
+            <span class="card__dot card__dot--right"></span>
+          </div>
+        </div>
+        <span class="card__badge card__badge--new">New</span>
+        <button class="card__fav" aria-label="Add to favourites">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+            <path d="M12 21C12 21 3 14.5 3 8.5C3 5.42 5.42 3 8.5 3C10.24 3 11.91 3.81 13 5.08C14.09 3.81 15.76 3 17.5 3C20.58 3 23 5.42 23 8.5C23 14.5 12 21 12 21Z" stroke="#C4784A" stroke-width="1.8" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <div class="card__body">
+        <div class="card__info">
+          <div class="card__origin">
+            <span class="card__flag">🇨🇴</span> Colombia · Light roast
+          </div>
+          <h2 class="card__name">Colombia Supremo</h2>
+          <p class="card__notes">Caramel · Nuts · Brown sugar</p>
+          <div class="card__rating">
+              <span class="stars">★★★★☆</span>
+              <span class="card__count">528</span>
+            </div>
+        </div>
+        <div class="card__footer">
+          <p class="card__price"><strong>$29</strong><span>/ 1kg</span></p>
+          <button class="card__cta">
+            Order Now
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <circle cx="9" cy="21" r="1" stroke="currentColor" stroke-width="2"/>
+              <circle cx="20" cy="21" r="1" stroke="currentColor" stroke-width="2"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <nav class="pagination" aria-label="Pagination">
+    <a href="#" class="pagination__item pagination__item--active">1</a>
+    <a href="#" class="pagination__item">2</a>
+    <a href="#" class="pagination__item">3</a>
+    <a href="#" class="pagination__item pagination__item--dots" aria-hidden="true">···</a>
+    <a href="#" class="pagination__item">24</a>
+    <a href="#" class="pagination__item pagination__item--arrow" aria-label="Next page">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </nav>
+
+</section>
+
+<script>
+  const btn = document.getElementById('sortBtn');
+  const menu = document.getElementById('sortMenu');
+
+  btn.addEventListener('click', () => {
+    const open = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!open));
+    menu.classList.toggle('dropdown__menu--open', !open);
+  });
+
+  menu.querySelectorAll('.dropdown__item').forEach(item => {
+    item.addEventListener('click', () => {
+      btn.querySelector('.dropdown__label').textContent = item.textContent.trim();
+      btn.setAttribute('aria-expanded', 'false');
+      menu.classList.remove('dropdown__menu--open');
+    });
+  });
+
+  document.addEventListener('click', e => {
+    if (!btn.closest('.dropdown').contains(e.target)) {
+      btn.setAttribute('aria-expanded', 'false');
+      menu.classList.remove('dropdown__menu--open');
+    }
+  });
+
+  document.querySelectorAll('.card__fav').forEach(favBtn => {
+    favBtn.addEventListener('click', () => {
+      favBtn.classList.toggle('card__fav--active');
+    });
+  });
+</script>
+</body>
+</html>

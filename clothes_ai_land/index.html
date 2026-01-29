@@ -1,0 +1,1980 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<title>cLOTHES AI — подбор образа с помощью ИИ</title>
+	<link rel="icon" type="image/svg+xml" href="favicon.svg">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="index-page">
+
+	<div class="wrapper">
+
+		<!-- modal -->
+		<div class="modal modal-case" id="faq-modal">
+			<div class="modal__wrapper">
+				<div class="modal__main">
+					<div class="modal__header">
+						<h2 class="modal__title item-title">Оставьте заявку</h2>
+						<div class="modal__sub text">
+							<p>Оставьте ваши контактные данные в форме обратной связи, наши менеджеры свяжутся с вами в ближайшее
+								время
+							</p>
+						</div>
+						<!-- close -->
+						<div class="modal__close">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g opacity="0.6">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M19.2559 5.92259C19.5814 5.59715 19.5814 5.06951 19.2559 4.74408C18.9305 4.41864 18.4028 4.41864 18.0774 4.74408L12 10.8215L5.92259 4.74408C5.59715 4.41864 5.06952 4.41864 4.74408 4.74408C4.41864 5.06951 4.41864 5.59715 4.74408 5.92259L10.8215 12L4.74408 18.0774C4.41864 18.4028 4.41864 18.9305 4.74408 19.2559C5.06951 19.5814 5.59715 19.5814 5.92259 19.2559L12 13.1785L18.0774 19.2559C18.4028 19.5814 18.9305 19.5814 19.2559 19.2559C19.5814 18.9305 19.5814 18.4028 19.2559 18.0774L13.1785 12L19.2559 5.92259Z"
+										fill="#383838" />
+								</g>
+							</svg>
+						</div>
+						<!-- end -->
+					</div>
+					<form action="#" class="modal__form">
+						<div class="modal__content">
+							<div class="modal__inputs">
+								<div class="modal__input">
+									<label for="" class="modal__label">Имя</label>
+									<input type="text" class="input modal__input">
+								</div>
+								<div class="modal__input">
+									<label for="" class="modal__label">Почта</label>
+									<input type="text" class="input modal__input">
+								</div>
+								<div class="modal__textarea">
+									<label for="" class="modal__label">Ваш вопрос</label>
+									<textarea name="" id="" class="textarea"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="modal__bottom">
+							<button class="modal__btn accent-btn">Отправить</button>
+							<p class="modal__privacy">Нажимая на кнопку “Отправить”, Вы соглашаетесь<br>
+								с <a href="privacy.html" target="_blank">политикой конфиденциальности</a></p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<header class="header">
+			<div class="container">
+				<div class="header__block">
+					<div class="header__left">
+						<a href="#" class="header__logo">
+							<span class="header__logo-img">
+								<img src="img/header/logo.svg" alt="лого clothes ai">
+							</span>
+						</a>
+						<div class="header-menu">
+							<ul>
+								<li><a href="#stages">Как проходит подбор</a></li>
+								<li><a href="#clients">Для кого подходит</a></li>
+								<li><a href="#benefits">Преимущества</a></li>
+								<li><a href="#faq">Вопросы и ответы</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="header__right">
+						<a href="#" class="header__btn accent-btn">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+						<div class="header-burger">
+							<span class="header-burger__line"></span>
+						</div>
+						<div class="header-burger-overflow">
+							<div class="header-burger-menu">
+								<div class="header-burger-menu__close">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M25.6746 7.89679C26.1085 7.46287 26.1085 6.75935 25.6746 6.32544C25.2406 5.89152 24.5371 5.89152 24.1032 6.32544L16 14.4287L7.89679 6.32544C7.46287 5.89152 6.75935 5.89152 6.32544 6.32544C5.89152 6.75935 5.89152 7.46287 6.32544 7.89679L14.4287 16L6.32544 24.1032C5.89152 24.5371 5.89152 25.2406 6.32544 25.6746C6.75935 26.1085 7.46287 26.1085 7.89679 25.6746L16 17.5713L24.1032 25.6746C24.5371 26.1085 25.2406 26.1085 25.6746 25.6746C26.1085 25.2406 26.1085 24.5371 25.6746 24.1032L17.5713 16L25.6746 7.89679Z"
+											fill="#6BADFF" />
+									</svg>
+								</div>
+								<div class="header-burger-menu__content">
+									<div class="header-burger-menu__list">
+										<p class="header-burger-menu__label">Меню</p>
+										<div class="header-burger-menu__items">
+											<ul>
+												<li><a href="#stages">Как проходит подбор</a></li>
+												<li><a href="#clients">Для кого подходит</a></li>
+												<li><a href="#benefits">Преимущества</a></li>
+												<li><a href="#faq">Вопросы и ответы</a></li>
+											</ul>
+										</div>
+									</div>
+									<a href="#" class="header-burger-menu__btn double-btn">
+										<span class="double-btn-text">
+											<span>ЗАРЕГИСТРИРОВАТЬСЯ</span>
+										</span>
+										<span class="double-btn-circles">
+											<span class="double-btn-circle"></span><span class="double-btn-circle"></span><span
+												class="double-btn-circle"></span><span class="double-btn-circle"></span>
+										</span>
+										<span class="double-btn-arrow">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M4 11V13H16V15H18V13H20V11H18V9H16V11H4ZM14 7H16V9H14V7ZM14 7H12V5H14V7ZM14 17H16V15H14V17ZM14 17H12V19H14V17Z"
+													fill="white" />
+											</svg>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+
+			<section class="main">
+				<div class="container">
+					<div class="main__block">
+						<div class="main__desc">
+							<div class="main__wrap">
+								<h1 class="title-page main__title">Создайте идеальный <span class="text-2">образ<br> с помощью</span>
+									cLOTHES AI</h1>
+								<div class="main__img main__img-1">
+									<img src="img/main/img-1.png" alt="фото">
+								</div>
+								<div class="main__img main__img-2">
+									<img src="img/main/img-2.png" alt="фото">
+								</div>
+							</div>
+							<div class="main__group">
+								<a href="#" class="main__btn double-btn">
+									<span class="double-btn-text">
+										<span>ПОДОБРАТЬ СТИЛЬ</span>
+									</span>
+									<span class="double-btn-circles">
+										<span class="double-btn-circle"></span><span class="double-btn-circle"></span><span
+											class="double-btn-circle"></span><span class="double-btn-circle"></span>
+									</span>
+									<span class="double-btn-arrow">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M4 11V13H16V15H18V13H20V11H18V9H16V11H4ZM14 7H16V9H14V7ZM14 7H12V5H14V7ZM14 17H16V15H14V17ZM14 17H12V19H14V17Z"
+												fill="white" />
+										</svg>
+									</span>
+								</a>
+								<div class="main__text text sub">
+									<p>Персональные рекомендации одежды<br> на основе анализа внешности и индивидуальности</p>
+								</div>
+							</div>
+						</div>
+						<div class="main__images">
+							<div class="main__bg">
+								<img src="img/main/bg-image.png" alt="декор">
+							</div>
+							<div class="main__woman">
+								<img src="img/main/woman.png" alt="фото девушки">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--  -->
+			<section class="running-clothes">
+				<div class="container">
+					<div class="running-clothes__block">
+						<div class="running-clothes__track">
+							<div class="running-clothes__items">
+								<div class="running-clothes__item running-clothes__item--dress">
+									<div class="box">
+										<img src="img/running-clothes/image-1.png" alt="фото">
+									</div>
+								</div>
+								<div class="running-clothes__item running-clothes__item--blazer">
+									<div class="box">
+										<img src="img/running-clothes/image-2.png" alt="фото">
+									</div>
+								</div>
+								<div class="running-clothes__item running-clothes__item--blazer-two">
+									<div class="box">
+										<img src="img/running-clothes/image-3.png" alt="фото">
+									</div>
+								</div>
+								<div class="running-clothes__item running-clothes__item--shirt">
+									<div class="box">
+										<img src="img/running-clothes/image-4.png" alt="фото">
+									</div>
+								</div>
+								<div class="running-clothes__item running-clothes__item--trousers">
+									<div class="box">
+										<img src="img/running-clothes/image-5.png" alt="фото">
+									</div>
+								</div>
+								<div class="running-clothes__item running-clothes__item--dress-two">
+									<div class="box">
+										<img src="img/running-clothes/image-6.png" alt="фото">
+									</div>
+								</div>
+								<div class="running-clothes__item running-clothes__item--jeans">
+									<div class="box">
+										<img src="img/running-clothes/image-7.png" alt="фото">
+									</div>
+								</div>
+							</div>
+							<div class="running-clothes__items">
+								<div class="running-clothes__item running-clothes__item--dress">
+									<div class="box">
+										<img src="img/running-clothes/image-1.png" alt="фото">
+									</div>
+								</div>
+								<div class="running-clothes__item running-clothes__item--blazer">
+									<div class="box">
+										<img src="img/running-clothes/image-2.png" alt="фото">
+									</div>
+								</div>
+								<div class="running-clothes__item running-clothes__item--blazer-two">
+									<div class="box">
+										<img src="img/running-clothes/image-3.png" alt="фото">
+									</div>
+								</div>
+								<div class="running-clothes__item running-clothes__item--shirt">
+									<div class="box">
+										<img src="img/running-clothes/image-4.png" alt="фото">
+									</div>
+								</div>
+								<div class="running-clothes__item running-clothes__item--trousers">
+									<div class="box">
+										<img src="img/running-clothes/image-5.png" alt="фото">
+									</div>
+								</div>
+								<div class="running-clothes__item running-clothes__item--dress-two">
+									<div class="box">
+										<img src="img/running-clothes/image-6.png" alt="фото">
+									</div>
+								</div>
+								<div class="running-clothes__item running-clothes__item--jeans">
+									<div class="box">
+										<img src="img/running-clothes/image-7.png" alt="фото">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="running-clothes-phone">
+							<div class="running-clothes-phone__img">
+								<img src="img/running-clothes/phone.png" alt="телефон">
+							</div>
+							<div class="running-clothes-phone__content running-clothes-phone__content--dress">
+								<p class="running-clothes-phone__name">Платье макси трикотажное с подкладкой-майкой</p>
+								<div class="running-clothes-phone__result">
+									<div class="running-clothes-phone__text">
+										<div class="running-clothes-phone__icon">
+											<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M4.6875 9.375C2.44378 9.375 0.625 7.55622 0.625 5.3125C0.625 3.06878 2.44378 1.25 4.6875 1.25C6.93122 1.25 8.75 3.06878 8.75 5.3125C8.75 7.55622 6.93122 9.375 4.6875 9.375ZM4.20934 6.18188L3.08606 5.05778L2.65625 5.48759L3.92334 6.7555C3.99953 6.83166 4.10284 6.87444 4.21056 6.87444C4.31829 6.87444 4.4216 6.83166 4.49778 6.7555L6.91578 4.33831L6.48434 3.90687L4.20934 6.18188Z"
+													fill="#04C91F" />
+											</svg>
+										</div>
+										<p>Подходит вам на 87%</p>
+									</div>
+									<div class="running-clothes-phone__progress">
+										<div class="running-clothes-phone__progress--active" style="width: 87%;"></div>
+									</div>
+								</div>
+							</div>
+							<div class="running-clothes-phone__content running-clothes-phone__content--blazer">
+								<p class="running-clothes-phone__name">Пиджак с подкладкой-майкой</p>
+								<div class="running-clothes-phone__result">
+									<div class="running-clothes-phone__text">
+										<div class="running-clothes-phone__icon">
+											<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M4.6875 9.375C2.44378 9.375 0.625 7.55622 0.625 5.3125C0.625 3.06878 2.44378 1.25 4.6875 1.25C6.93122 1.25 8.75 3.06878 8.75 5.3125C8.75 7.55622 6.93122 9.375 4.6875 9.375ZM4.20934 6.18188L3.08606 5.05778L2.65625 5.48759L3.92334 6.7555C3.99953 6.83166 4.10284 6.87444 4.21056 6.87444C4.31829 6.87444 4.4216 6.83166 4.49778 6.7555L6.91578 4.33831L6.48434 3.90687L4.20934 6.18188Z"
+													fill="#04C91F" />
+											</svg>
+										</div>
+										<p>Подходит вам на 87%</p>
+									</div>
+									<div class="running-clothes-phone__progress">
+										<div class="running-clothes-phone__progress--active" style="width: 87%;"></div>
+									</div>
+								</div>
+							</div>
+							<div class="running-clothes-phone__content running-clothes-phone__content--blazer-two">
+								<p class="running-clothes-phone__name">Пиджак макси трикотажное с подкладкой-майкой</p>
+								<div class="running-clothes-phone__result">
+									<div class="running-clothes-phone__text">
+										<div class="running-clothes-phone__icon">
+											<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M4.6875 9.375C2.44378 9.375 0.625 7.55622 0.625 5.3125C0.625 3.06878 2.44378 1.25 4.6875 1.25C6.93122 1.25 8.75 3.06878 8.75 5.3125C8.75 7.55622 6.93122 9.375 4.6875 9.375ZM4.20934 6.18188L3.08606 5.05778L2.65625 5.48759L3.92334 6.7555C3.99953 6.83166 4.10284 6.87444 4.21056 6.87444C4.31829 6.87444 4.4216 6.83166 4.49778 6.7555L6.91578 4.33831L6.48434 3.90687L4.20934 6.18188Z"
+													fill="#04C91F" />
+											</svg>
+										</div>
+										<p>Подходит вам на 87%</p>
+									</div>
+									<div class="running-clothes-phone__progress">
+										<div class="running-clothes-phone__progress--active" style="width: 87%;"></div>
+									</div>
+								</div>
+							</div>
+							<div class="running-clothes-phone__content running-clothes-phone__content--shirt">
+								<p class="running-clothes-phone__name">Рубашка с подкладкой-майкой</p>
+								<div class="running-clothes-phone__result">
+									<div class="running-clothes-phone__text">
+										<div class="running-clothes-phone__icon">
+											<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M4.6875 9.375C2.44378 9.375 0.625 7.55622 0.625 5.3125C0.625 3.06878 2.44378 1.25 4.6875 1.25C6.93122 1.25 8.75 3.06878 8.75 5.3125C8.75 7.55622 6.93122 9.375 4.6875 9.375ZM4.20934 6.18188L3.08606 5.05778L2.65625 5.48759L3.92334 6.7555C3.99953 6.83166 4.10284 6.87444 4.21056 6.87444C4.31829 6.87444 4.4216 6.83166 4.49778 6.7555L6.91578 4.33831L6.48434 3.90687L4.20934 6.18188Z"
+													fill="#04C91F" />
+											</svg>
+										</div>
+										<p>Подходит вам на 87%</p>
+									</div>
+									<div class="running-clothes-phone__progress">
+										<div class="running-clothes-phone__progress--active" style="width: 87%;"></div>
+									</div>
+								</div>
+							</div>
+							<div class="running-clothes-phone__content running-clothes-phone__content--trousers">
+								<p class="running-clothes-phone__name">Брюки с подкладкой-майкой</p>
+								<div class="running-clothes-phone__result">
+									<div class="running-clothes-phone__text">
+										<div class="running-clothes-phone__icon">
+											<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M4.6875 9.375C2.44378 9.375 0.625 7.55622 0.625 5.3125C0.625 3.06878 2.44378 1.25 4.6875 1.25C6.93122 1.25 8.75 3.06878 8.75 5.3125C8.75 7.55622 6.93122 9.375 4.6875 9.375ZM4.20934 6.18188L3.08606 5.05778L2.65625 5.48759L3.92334 6.7555C3.99953 6.83166 4.10284 6.87444 4.21056 6.87444C4.31829 6.87444 4.4216 6.83166 4.49778 6.7555L6.91578 4.33831L6.48434 3.90687L4.20934 6.18188Z"
+													fill="#04C91F" />
+											</svg>
+										</div>
+										<p>Подходит вам на 87%</p>
+									</div>
+									<div class="running-clothes-phone__progress">
+										<div class="running-clothes-phone__progress--active" style="width: 87%;"></div>
+									</div>
+								</div>
+							</div>
+							<div class="running-clothes-phone__content running-clothes-phone__content--dress-two">
+								<p class="running-clothes-phone__name">Платье макси трикотажное с подкладкой-майкой</p>
+								<div class="running-clothes-phone__result">
+									<div class="running-clothes-phone__text">
+										<div class="running-clothes-phone__icon">
+											<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M4.6875 9.375C2.44378 9.375 0.625 7.55622 0.625 5.3125C0.625 3.06878 2.44378 1.25 4.6875 1.25C6.93122 1.25 8.75 3.06878 8.75 5.3125C8.75 7.55622 6.93122 9.375 4.6875 9.375ZM4.20934 6.18188L3.08606 5.05778L2.65625 5.48759L3.92334 6.7555C3.99953 6.83166 4.10284 6.87444 4.21056 6.87444C4.31829 6.87444 4.4216 6.83166 4.49778 6.7555L6.91578 4.33831L6.48434 3.90687L4.20934 6.18188Z"
+													fill="#04C91F" />
+											</svg>
+										</div>
+										<p>Подходит вам на 87%</p>
+									</div>
+									<div class="running-clothes-phone__progress">
+										<div class="running-clothes-phone__progress--active" style="width: 87%;"></div>
+									</div>
+								</div>
+							</div>
+							<div class="running-clothes-phone__content running-clothes-phone__content--jeans">
+								<p class="running-clothes-phone__name">Джинсы с подкладкой-майкой</p>
+								<div class="running-clothes-phone__result">
+									<div class="running-clothes-phone__text">
+										<div class="running-clothes-phone__icon">
+											<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M4.6875 9.375C2.44378 9.375 0.625 7.55622 0.625 5.3125C0.625 3.06878 2.44378 1.25 4.6875 1.25C6.93122 1.25 8.75 3.06878 8.75 5.3125C8.75 7.55622 6.93122 9.375 4.6875 9.375ZM4.20934 6.18188L3.08606 5.05778L2.65625 5.48759L3.92334 6.7555C3.99953 6.83166 4.10284 6.87444 4.21056 6.87444C4.31829 6.87444 4.4216 6.83166 4.49778 6.7555L6.91578 4.33831L6.48434 3.90687L4.20934 6.18188Z"
+													fill="#04C91F" />
+											</svg>
+										</div>
+										<p>Подходит вам на 87%</p>
+									</div>
+									<div class="running-clothes-phone__progress">
+										<div class="running-clothes-phone__progress--active" style="width: 87%;"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="running">
+					<div class="running__wrap">
+						<div class="running__items">
+							<div class="running__item">
+								<div class="running__image">
+									<img src="img/running/logo.svg" alt="лого">
+								</div>
+							</div>
+							<div class="running__item">
+								<div class="running__image">
+									<img src="img/running/logo.svg" alt="лого">
+								</div>
+							</div>
+							<div class="running__item">
+								<div class="running__image">
+									<img src="img/running/logo.svg" alt="лого">
+								</div>
+							</div>
+							<div class="running__item">
+								<div class="running__image">
+									<img src="img/running/logo.svg" alt="лого">
+								</div>
+							</div>
+							<div class="running__item">
+								<div class="running__image">
+									<img src="img/running/logo.svg" alt="лого">
+								</div>
+							</div>
+							<div class="running__item">
+								<div class="running__image">
+									<img src="img/running/logo.svg" alt="лого">
+								</div>
+							</div>
+							<div class="running__item">
+								<div class="running__image">
+									<img src="img/running/logo.svg" alt="лого">
+								</div>
+							</div>
+							<div class="running__item">
+								<div class="running__image">
+									<img src="img/running/logo.svg" alt="лого">
+								</div>
+							</div>
+							<div class="running__item">
+								<div class="running__image">
+									<img src="img/running/logo.svg" alt="лого">
+								</div>
+							</div>
+							<div class="running__item">
+								<div class="running__image">
+									<img src="img/running/logo.svg" alt="лого">
+								</div>
+							</div>
+							<div class="running__item">
+								<div class="running__image">
+									<img src="img/running/logo.svg" alt="лого">
+								</div>
+							</div>
+							<div class="running__item">
+								<div class="running__image">
+									<img src="img/running/logo.svg" alt="лого">
+								</div>
+							</div>
+						</div>
+						<div class="running__items">
+							<div class="running__item">
+								<div class="running__image">
+									<img src="img/running/logo.svg" alt="лого">
+								</div>
+							</div>
+							<div class="running__item">
+								<div class="running__image">
+									<img src="img/running/logo.svg" alt="лого">
+								</div>
+							</div>
+							<div class="running__item">
+								<div class="running__image">
+									<img src="img/running/logo.svg" alt="лого">
+								</div>
+							</div>
+							<div class="running__item">
+								<div class="running__image">
+									<img src="img/running/logo.svg" alt="лого">
+								</div>
+							</div>
+							<div class="running__item">
+								<div class="running__image">
+									<img src="img/running/logo.svg" alt="лого">
+								</div>
+							</div>
+							<div class="running__item">
+								<div class="running__image">
+									<img src="img/running/logo.svg" alt="лого">
+								</div>
+							</div>
+							<div class="running__item">
+								<div class="running__image">
+									<img src="img/running/logo.svg" alt="лого">
+								</div>
+							</div>
+							<div class="running__item">
+								<div class="running__image">
+									<img src="img/running/logo.svg" alt="лого">
+								</div>
+							</div>
+							<div class="running__item">
+								<div class="running__image">
+									<img src="img/running/logo.svg" alt="лого">
+								</div>
+							</div>
+							<div class="running__item">
+								<div class="running__image">
+									<img src="img/running/logo.svg" alt="лого">
+								</div>
+							</div>
+							<div class="running__item">
+								<div class="running__image">
+									<img src="img/running/logo.svg" alt="лого">
+								</div>
+							</div>
+							<div class="running__item">
+								<div class="running__image">
+									<img src="img/running/logo.svg" alt="лого">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- как походит подбор одежды -->
+			<section class="stages section" id="stages">
+				<div class="container">
+					<div class="stages__block">
+						<div class="stages__header">
+							<h2 class="section-title stages__title">как проходит подбор одежды</h2>
+							<div class="stages__swipe lottie-icon"></div>
+						</div>
+						<div class="tabs stages-tabs">
+							<div class="stages-tabs__nav">
+								<div class="tabs__nav">
+									<div class="stages-tabs__wrap">
+										<button class="tabs__btn tabs__btn_active">
+											<span>Этап 1.</span>
+											<span>Определение цветотипа</span>
+										</button>
+									</div>
+									<div class="stages-tabs__wrap">
+										<button class="tabs__btn">
+											<span>Этап 2.</span>
+											<span>Определение фигуры</span>
+										</button>
+									</div>
+									<div class="stages-tabs__wrap">
+										<button class="tabs__btn">
+											<span>Этап 3.</span>
+											<span>Опрос предпочтений</span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__content">
+								<div class="tabs__pane tabs__pane_show">
+									<div class="stages-tabs__content">
+										<!--  -->
+										<div class="stages-tabs__desc">
+											<div class="stages-tabs__text text sub">
+												<p>Наш сервис использует искусственный интеллект, чтобы точно определить ваш цветотип и
+													подобрать идеальные оттенки для одежды, макияжа и аксессуаров</p>
+											</div>
+											<div class="stages-tabs__frame">
+												<div class="stages-tabs__image">
+													<img src="img/stages/device-frame.png" alt="фото">
+												</div>
+											</div>
+										</div>
+										<!--  -->
+										<div class="stages-tabs__center">
+											<div class="stages-tabs-scheme">
+												<div class="stages-tabs-scheme__wrap">
+													<div class="stages-tabs-scheme__image">
+														<div class="box">
+															<img src="img/stages/girl.jpg" alt="фото">
+														</div>
+													</div>
+													<div class="stages-tabs-scheme__elements">
+														<div class="stages-tabs-scheme__elem stages-tabs-scheme__elem--hair">
+															<div class="stages-tabs-scheme__shape">
+																<span>Цвет волос</span>
+															</div>
+															<div class="stages-tabs-scheme__line">
+																<svg width="65" height="33" viewBox="0 0 65 33" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<rect width="64.4111" height="2"
+																		transform="matrix(-0.904659 -0.426136 -0.426136 0.904659 60.5974 27.7328)"
+																		fill="white" />
+																	<circle cx="4.5" cy="4.5" r="4.5"
+																		transform="matrix(-0.999288 -0.0377209 -0.0377209 0.999288 63.9177 23.5511)"
+																		fill="white" />
+																	<circle opacity="0.2" cx="2.5" cy="2.5" r="2.5"
+																		transform="matrix(-0.999288 -0.0377209 -0.0377209 0.999288 61.8435 25.475)"
+																		fill="#383838" />
+																</svg>
+															</div>
+														</div>
+														<div class="stages-tabs-scheme__elem stages-tabs-scheme__elem--skin">
+															<div class="stages-tabs-scheme__shape">
+																<span>Тон кожи</span>
+															</div>
+															<div class="stages-tabs-scheme__line">
+																<svg width="132" height="60" viewBox="0 0 132 60" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<rect x="3.16406" y="55.3027" width="139" height="2"
+																		transform="rotate(-23.0608 3.16406 55.3027)" fill="white" />
+																	<circle cx="4.5" cy="55.499" r="4.5" fill="white" />
+																	<circle opacity="0.2" cx="4.5" cy="55.499" r="2.5" fill="#383838" />
+																</svg>
+															</div>
+														</div>
+														<div class="stages-tabs-scheme__elem stages-tabs-scheme__elem--eyes">
+															<div class="stages-tabs-scheme__shape">
+																<span>Цвет глаз</span>
+															</div>
+															<div class="stages-tabs-scheme__line">
+																<svg width="93" height="43" viewBox="0 0 93 43" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<rect x="3.16406" y="37.6117" width="96.0195" height="2"
+																		transform="rotate(-23.0608 3.16406 37.6117)" fill="white" />
+																	<circle cx="4.5" cy="37.807" r="4.5" fill="white" />
+																	<circle opacity="0.2" cx="4.5" cy="37.807" r="2.5" fill="#383838" />
+																</svg>
+															</div>
+														</div>
+														<div class="stages-tabs-scheme__elem stages-tabs-scheme__elem--cheekbones">
+															<div class="stages-tabs-scheme__shape">
+																<span>Скулы</span>
+															</div>
+															<div class="stages-tabs-scheme__line">
+																<svg width="95" height="44" viewBox="0 0 95 44" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<rect x="91.6719" y="4.69165" width="98.4544" height="2"
+																		transform="rotate(156.939 91.6719 4.69165)" fill="white" />
+																	<circle cx="90.3359" cy="4.49536" r="4.5" transform="rotate(180 90.3359 4.49536)"
+																		fill="white" />
+																	<circle opacity="0.2" cx="90.3359" cy="4.49536" r="2.5"
+																		transform="rotate(180 90.3359 4.49536)" fill="#383838" />
+																</svg>
+															</div>
+														</div>
+														<div class="stages-tabs-scheme__elem stages-tabs-scheme__elem--face">
+															<div class="stages-tabs-scheme__shape">
+																<span>Овал лица</span>
+															</div>
+															<div class="stages-tabs-scheme__line">
+																<svg class="desk" width="132" height="60" viewBox="0 0 132 60" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<rect width="139" height="2"
+																		transform="matrix(0.92009 0.391708 0.391708 -0.92009 3.16406 4.69727)"
+																		fill="white" />
+																	<circle cx="4.5" cy="4.5" r="4.5" transform="matrix(1 0 0 -1 0 9.00098)"
+																		fill="white" />
+																	<circle opacity="0.2" cx="2.5" cy="2.5" r="2.5" transform="matrix(1 0 0 -1 2 7.00098)"
+																		fill="#383838" />
+																</svg>
+																<svg class="mob" width="91" height="42" viewBox="0 0 91 42" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<rect width="94.4715" height="2"
+																		transform="matrix(0.92009 0.391708 0.391708 -0.92009 3.16406 4.69727)"
+																		fill="white" />
+																	<circle cx="4.5" cy="4.5" r="4.5" transform="matrix(1 0 0 -1 0 9.00098)"
+																		fill="white" />
+																	<circle opacity="0.2" cx="2.5" cy="2.5" r="2.5" transform="matrix(1 0 0 -1 2 7.00098)"
+																		fill="#383838" />
+																</svg>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--  -->
+										<div class="stages-tabs__instruction">
+											<div class="stages-tabs-list">
+												<div class="stages-tabs-list__item">
+													<p class="stages-tabs-list__title">1.1 Загрузите фотографию</p>
+													<div class="stages-tabs-list__text text">
+														<p>Загрузите вашу фотографию в приложение. Желательно сделать фото при хорошем освещении</p>
+													</div>
+												</div>
+												<div class="stages-tabs-list__item">
+													<p class="stages-tabs-list__title">1.2 Заполните мини-анкету</p>
+													<div class="stages-tabs-list__text text">
+														<p>Небольшой список уточняющих вопросов. Они помогут точнее распознать твой тип внешности
+														</p>
+													</div>
+												</div>
+												<div class="stages-tabs-list__item">
+													<p class="stages-tabs-list__title">1.3 Анализ и готовая палитра</p>
+													<div class="stages-tabs-list__text text">
+														<p>Ты получишь подборку оттенков, которые подчёркивают твою естественную красоту для одежды,
+															макияжа и аксессуаров</p>
+													</div>
+												</div>
+											</div>
+											<a href="#" class="stages-tabs__btn double-btn">
+												<span class="double-btn-text">
+													<span>Начать пользоваться</span>
+												</span>
+												<span class="double-btn-circles">
+													<span class="double-btn-circle"></span><span class="double-btn-circle"></span><span
+														class="double-btn-circle"></span><span class="double-btn-circle"></span>
+												</span>
+												<span class="double-btn-arrow">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M4 11V13H16V15H18V13H20V11H18V9H16V11H4ZM14 7H16V9H14V7ZM14 7H12V5H14V7ZM14 17H16V15H14V17ZM14 17H12V19H14V17Z"
+															fill="white" />
+													</svg>
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="tabs__pane">
+									<div class="stages-tabs__content">
+										<!--  -->
+										<div class="stages-tabs__desc">
+											<div class="stages-tabs__text text sub">
+												<p>Точно определит ваш тип фигуры и даст персонализированные рекомендации по подбору одежды,
+													которая идеально подчеркнёт ваши достоинства</p>
+											</div>
+											<div class="stages-tabs__frame">
+												<div class="stages-tabs__image">
+													<img src="img/stages/device-frame-2.png" alt="фото">
+												</div>
+											</div>
+										</div>
+										<!--  -->
+										<div class="stages-tabs__center">
+											<div class="stages-tabs-scheme">
+												<div class="stages-tabs-scheme__wrap">
+													<div class="stages-tabs-scheme__image">
+														<div class="box">
+															<img src="img/stages/image-2.jpg" alt="фото">
+														</div>
+													</div>
+													<div class="stages-tabs-scheme__elements">
+														<div class="stages-tabs-scheme__elem stages-tabs-scheme__elem--shoulders">
+															<div class="stages-tabs-scheme__shape">
+																<span>Ширина плеч</span>
+															</div>
+															<div class="stages-tabs-scheme__line">
+																<svg width="43" height="22" viewBox="0 0 43 22" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<rect x="39.2695" y="5.89258" width="40.7899" height="2"
+																		transform="rotate(156.939 39.2695 5.89258)" fill="white" />
+																	<circle cx="38.5" cy="4.50024" r="4.5" transform="rotate(180 38.5 4.50024)"
+																		fill="white" />
+																	<circle opacity="0.2" cx="38.5" cy="4.50024" r="2.5"
+																		transform="rotate(180 38.5 4.50024)" fill="#383838" />
+																</svg>
+															</div>
+														</div>
+														<div class="stages-tabs-scheme__elem stages-tabs-scheme__elem--neck">
+															<div class="stages-tabs-scheme__shape">
+																<span>Длина шеи</span>
+															</div>
+															<div class="stages-tabs-scheme__line">
+																<svg width="130" height="47" viewBox="0 0 130 47" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<rect x="5.97266" y="3.39355" width="130.295" height="2"
+																		transform="rotate(18.5106 5.97266 3.39355)" fill="white" />
+																	<circle cx="4.5" cy="4.5" r="4.5" fill="white" />
+																	<circle opacity="0.2" cx="4.5" cy="4.5" r="2.5" fill="#383838" />
+																</svg>
+															</div>
+														</div>
+														<div class="stages-tabs-scheme__elem stages-tabs-scheme__elem--breast">
+															<div class="stages-tabs-scheme__shape">
+																<span>Объём груди</span>
+															</div>
+															<div class="stages-tabs-scheme__line">
+																<svg width="57" height="46" viewBox="0 0 57 46" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<rect x="52.6641" y="4.00732" width="64.4111" height="2"
+																		transform="rotate(140.426 52.6641 4.00732)" fill="white" />
+																	<circle cx="50.8413" cy="4.66611" r="4.5" transform="rotate(177.838 50.8413 4.66611)"
+																		fill="white" />
+																	<circle opacity="0.2" cx="50.8411" cy="4.66542" r="2.5"
+																		transform="rotate(177.838 50.8411 4.66542)" fill="#383838" />
+																</svg>
+															</div>
+														</div>
+														<div class="stages-tabs-scheme__elem stages-tabs-scheme__elem--waist">
+															<div class="stages-tabs-scheme__shape">
+																<span>Высота талии</span>
+															</div>
+															<div class="stages-tabs-scheme__line">
+																<svg width="55" height="38" viewBox="0 0 55 38" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<rect width="57.4145" height="2"
+																		transform="matrix(0.844911 0.534907 0.534907 -0.844911 5.17969 6.51196)"
+																		fill="white" />
+																	<circle cx="4.5" cy="4.5" r="4.5" transform="matrix(1 0 0 -1 0 9)" fill="white" />
+																	<circle opacity="0.2" cx="2.5" cy="2.5" r="2.5" transform="matrix(1 0 0 -1 2 7)"
+																		fill="#383838" />
+																</svg>
+															</div>
+														</div>
+														<div class="stages-tabs-scheme__elem stages-tabs-scheme__elem--hips">
+															<div class="stages-tabs-scheme__shape">
+																<span>Ширина бёдер</span>
+															</div>
+															<div class="stages-tabs-scheme__line">
+																<svg width="43" height="22" viewBox="0 0 43 22" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<rect x="39.2695" y="5.89233" width="40.7899" height="2"
+																		transform="rotate(156.939 39.2695 5.89233)" fill="white" />
+																	<circle cx="38.5" cy="4.5" r="4.5" transform="rotate(180 38.5 4.5)" fill="white" />
+																	<circle opacity="0.2" cx="38.5" cy="4.5" r="2.5" transform="rotate(180 38.5 4.5)"
+																		fill="#383838" />
+																</svg>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--  -->
+										<div class="stages-tabs__instruction">
+											<div class="stages-tabs-list">
+												<div class="stages-tabs-list__item">
+													<p class="stages-tabs-list__title">1.1 Загрузите фотографию</p>
+													<div class="stages-tabs-list__text text">
+														<p>Загрузите вашу фотографию в приложение. Желательно сделать фото при хорошем освещении</p>
+													</div>
+												</div>
+												<div class="stages-tabs-list__item">
+													<p class="stages-tabs-list__title">1.2 Заполните мини-анкету</p>
+													<div class="stages-tabs-list__text text">
+														<p>Небольшой список уточняющих вопросов. Они помогут точнее распознать твой тип внешности
+														</p>
+													</div>
+												</div>
+												<div class="stages-tabs-list__item">
+													<p class="stages-tabs-list__title">1.3 Анализ и готовые образы</p>
+													<div class="stages-tabs-list__text text">
+														<p>Ты получишь подборку одежды, которая подчёркивает твою естественную красоту</p>
+													</div>
+												</div>
+											</div>
+											<a href="#" class="stages-tabs__btn double-btn">
+												<span class="double-btn-text">
+													<span>Начать пользоваться</span>
+												</span>
+												<span class="double-btn-circles">
+													<span class="double-btn-circle"></span><span class="double-btn-circle"></span><span
+														class="double-btn-circle"></span><span class="double-btn-circle"></span>
+												</span>
+												<span class="double-btn-arrow">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M4 11V13H16V15H18V13H20V11H18V9H16V11H4ZM14 7H16V9H14V7ZM14 7H12V5H14V7ZM14 17H16V15H14V17ZM14 17H12V19H14V17Z"
+															fill="white" />
+													</svg>
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="tabs__pane">
+									<div class="stages-tabs__content">
+										<!--  -->
+										<div class="stages-tabs__desc">
+											<div class="stages-tabs__text text sub">
+												<p>Наш ИИ-стилист анализирует ваши уникальные параметры и предпочтения, чтобы мгновенно
+													предложить персонализированные варианты образов</p>
+											</div>
+											<div class="stages-tabs__frame">
+												<div class="stages-tabs__image">
+													<img src="img/stages/device-frame-3.png" alt="фото">
+												</div>
+											</div>
+										</div>
+										<!--  -->
+										<div class="stages-tabs__center">
+											<div class="stages-tabs-scheme">
+												<div class="stages-tabs-scheme__wrap">
+													<div class="stages-tabs-scheme__image">
+														<div class="box">
+															<img src="img/stages/image-3.svg" alt="фото">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--  -->
+										<div class="stages-tabs__instruction">
+											<div class="stages-tabs-list">
+												<div class="stages-tabs-list__item">
+													<p class="stages-tabs-list__title">1.1 Загрузите фотографию</p>
+													<div class="stages-tabs-list__text text">
+														<p>Загрузите вашу фотографию в приложение. Желательно сделать фото при хорошем освещении</p>
+													</div>
+												</div>
+												<div class="stages-tabs-list__item">
+													<p class="stages-tabs-list__title">1.2 Заполните мини-анкету</p>
+													<div class="stages-tabs-list__text text">
+														<p>Небольшой список уточняющих вопросов. Они помогут точнее распознать твой тип внешности
+														</p>
+													</div>
+												</div>
+												<div class="stages-tabs-list__item">
+													<p class="stages-tabs-list__title">1.3 Анализ и готовые образы</p>
+													<div class="stages-tabs-list__text text">
+														<p>Ты получишь подборку оттенков, которые подчёркивают твою естественную красоту для одежды,
+															макияжа и аксессуаров</p>
+													</div>
+												</div>
+											</div>
+											<a href="#" class="stages-tabs__btn double-btn">
+												<span class="double-btn-text">
+													<span>Начать пользоваться</span>
+												</span>
+												<span class="double-btn-circles">
+													<span class="double-btn-circle"></span><span class="double-btn-circle"></span><span
+														class="double-btn-circle"></span><span class="double-btn-circle"></span>
+												</span>
+												<span class="double-btn-arrow">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M4 11V13H16V15H18V13H20V11H18V9H16V11H4ZM14 7H16V9H14V7ZM14 7H12V5H14V7ZM14 17H16V15H14V17ZM14 17H12V19H14V17Z"
+															fill="white" />
+													</svg>
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--  -->
+			<section class="gallery section">
+				<div class="container">
+					<div class="gallery__header">
+						<div class="gallery__text text">
+							<p>Люди, которые собрали образ вместе с нами</p>
+						</div>
+						<div class="gallery__text text">
+							<p>Более 560 пользователей. Присоединяйся!</p>
+						</div>
+					</div>
+					<div class="gallery-running">
+						<div class="gallery-running__wrap">
+							<div class="gallery-running__items">
+								<div class="gallery-running__item">
+									<div class="gallery-running__image">
+										<div class="box">
+											<img src="img/gallery/image-1.jpg" alt="фото">
+										</div>
+									</div>
+								</div>
+								<div class="gallery-running__item">
+									<div class="gallery-running__image">
+										<div class="box">
+											<img src="img/gallery/image-2.jpg" alt="фото">
+										</div>
+									</div>
+								</div>
+								<div class="gallery-running__item">
+									<div class="gallery-running__image">
+										<div class="box">
+											<img src="img/gallery/image-3.jpg" alt="фото">
+										</div>
+									</div>
+								</div>
+								<div class="gallery-running__item">
+									<div class="gallery-running__image">
+										<div class="box">
+											<img src="img/gallery/image-4.jpg" alt="фото">
+										</div>
+									</div>
+								</div>
+								<div class="gallery-running__item">
+									<div class="gallery-running__image">
+										<div class="box">
+											<img src="img/gallery/image-5.jpg" alt="фото">
+										</div>
+									</div>
+								</div>
+								<div class="gallery-running__item">
+									<div class="gallery-running__image">
+										<div class="box">
+											<img src="img/gallery/image-1.jpg" alt="фото">
+										</div>
+									</div>
+								</div>
+								<div class="gallery-running__item">
+									<div class="gallery-running__image">
+										<div class="box">
+											<img src="img/gallery/image-2.jpg" alt="фото">
+										</div>
+									</div>
+								</div>
+								<div class="gallery-running__item">
+									<div class="gallery-running__image">
+										<div class="box">
+											<img src="img/gallery/image-3.jpg" alt="фото">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="gallery-running__items">
+								<div class="gallery-running__item">
+									<div class="gallery-running__image">
+										<div class="box">
+											<img src="img/gallery/image-1.jpg" alt="фото">
+										</div>
+									</div>
+								</div>
+								<div class="gallery-running__item">
+									<div class="gallery-running__image">
+										<div class="box">
+											<img src="img/gallery/image-2.jpg" alt="фото">
+										</div>
+									</div>
+								</div>
+								<div class="gallery-running__item">
+									<div class="gallery-running__image">
+										<div class="box">
+											<img src="img/gallery/image-3.jpg" alt="фото">
+										</div>
+									</div>
+								</div>
+								<div class="gallery-running__item">
+									<div class="gallery-running__image">
+										<div class="box">
+											<img src="img/gallery/image-4.jpg" alt="фото">
+										</div>
+									</div>
+								</div>
+								<div class="gallery-running__item">
+									<div class="gallery-running__image">
+										<div class="box">
+											<img src="img/gallery/image-5.jpg" alt="фото">
+										</div>
+									</div>
+								</div>
+								<div class="gallery-running__item">
+									<div class="gallery-running__image">
+										<div class="box">
+											<img src="img/gallery/image-1.jpg" alt="фото">
+										</div>
+									</div>
+								</div>
+								<div class="gallery-running__item">
+									<div class="gallery-running__image">
+										<div class="box">
+											<img src="img/gallery/image-2.jpg" alt="фото">
+										</div>
+									</div>
+								</div>
+								<div class="gallery-running__item">
+									<div class="gallery-running__image">
+										<div class="box">
+											<img src="img/gallery/image-3.jpg" alt="фото">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Получите свои персональные рекомендации уже сейчас -->
+			<section class="banner banner-accent section">
+				<div class="container">
+					<div class="banner__block">
+						<div class="banner__content">
+							<h2 class="section-title banner__title">Получите свои персональные рекомендации уже сейчас</h2>
+							<div class="banner__text text sub">
+								<p>Наш сервис использует искусственный интеллект, чтобы точно определить ваш цветотип и подобрать
+									идеальные оттенки для одежды, макияжа и аксессуаров</p>
+							</div>
+							<a href="#" class="main__btn double-btn-light">
+								<span class="double-btn-text">
+									<span>ПОДОБРАТЬ СТИЛЬ</span>
+								</span>
+								<span class="double-btn-circles">
+									<span class="double-btn-circle"></span><span class="double-btn-circle"></span><span
+										class="double-btn-circle"></span><span class="double-btn-circle"></span>
+								</span>
+								<span class="double-btn-arrow">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M4 11V13H16V15H18V13H20V11H18V9H16V11H4ZM14 7H16V9H14V7ZM14 7H12V5H14V7ZM14 17H16V15H14V17ZM14 17H12V19H14V17Z"
+											fill="#383838" />
+									</svg>
+								</span>
+							</a>
+						</div>
+						<div class="banner__images">
+							<div class="banner__image">
+								<img src="img/banner/image-1.png" alt="фото">
+							</div>
+							<div class="banner__stars">
+								<div class="banner__star-1">
+									<img src="img/banner/stars.png" alt="декор">
+								</div>
+								<div class="banner__star-2">
+									<img src="img/banner/star-big.png" alt="декор">
+								</div>
+								<div class="banner__star-3">
+									<img src="img/banner/star-big.png" alt="декор">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- для кого подходит -->
+			<section class="clients section" id="clients">
+				<div class="container">
+					<div class="clients__block">
+						<div class="clients__header">
+							<h2 class="section-title clients__title">для кого подходит</h2>
+							<div class="clients__swipe lottie-icon"></div>
+						</div>
+						<div class="clients__content">
+							<div class="clients__items">
+								<div class="clients__item clients__item--1">
+									<div class="clients__image">
+										<div class="box">
+											<img src="img/clients/image-1.jpg" alt="фото">
+										</div>
+									</div>
+									<div class="clients__desc">
+										<h3 class="clients__name item-title">Создатели контента</h3>
+										<div class="clients__text text">
+											<p>Важно выглядеть эффектно и разнообразно, и такой сервис экономит время, предлагая образы для
+												фото/видео</p>
+										</div>
+									</div>
+								</div>
+								<div class="clients__item clients__item--2">
+									<div class="clients__image">
+										<div class="box">
+											<img src="img/clients/image-2.jpg" alt="фото">
+										</div>
+									</div>
+									<div class="clients__desc">
+										<h3 class="clients__name item-title">Занятые люди</h3>
+										<div class="clients__text text">
+											<p>Нет времени на долгие походы по магазинам и подбор луков, но есть потребность выглядеть
+												стильно и уместно</p>
+										</div>
+									</div>
+								</div>
+								<div class="clients__item clients__item--3">
+									<div class="clients__image">
+										<div class="box">
+											<img src="img/clients/image-3.jpg" alt="фото">
+										</div>
+									</div>
+									<div class="clients__desc">
+										<h3 class="clients__name item-title">Стилисты</h3>
+										<div class="clients__text text">
+											<p>Автоматический анализ цветотипа, типа фигуры и особенностей внешности ускоряет процесс
+												составления гардероба</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="clients-running">
+								<div class="clients-running__wrap">
+									<div class="clients-running__items">
+										<div class="clients-running__item">
+											<p>fashion</p>
+											<span>
+												<svg width="72" height="96" viewBox="0 0 72 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M36 31.3955C38.295 43.8531 48.0425 53.6006 60.5 55.8955C48.0425 58.1905 38.295 67.9379 36 80.3955C33.7051 67.9379 23.9576 58.1905 11.5 55.8955C23.9576 53.6006 33.7051 43.8531 36 31.3955Z"
+														fill="#6BADFF" />
+												</svg>
+											</span>
+										</div>
+										<div class="clients-running__item">
+											<p>clothes</p>
+											<span>
+												<svg width="72" height="96" viewBox="0 0 72 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M36 31.3955C38.295 43.8531 48.0425 53.6006 60.5 55.8955C48.0425 58.1905 38.295 67.9379 36 80.3955C33.7051 67.9379 23.9576 58.1905 11.5 55.8955C23.9576 53.6006 33.7051 43.8531 36 31.3955Z"
+														fill="#6BADFF" />
+												</svg>
+											</span>
+										</div>
+										<div class="clients-running__item">
+											<p>trends</p>
+											<span>
+												<svg width="72" height="96" viewBox="0 0 72 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M36 31.3955C38.295 43.8531 48.0425 53.6006 60.5 55.8955C48.0425 58.1905 38.295 67.9379 36 80.3955C33.7051 67.9379 23.9576 58.1905 11.5 55.8955C23.9576 53.6006 33.7051 43.8531 36 31.3955Z"
+														fill="#6BADFF" />
+												</svg>
+											</span>
+										</div>
+										<div class="clients-running__item">
+											<p>fashion</p>
+											<span>
+												<svg width="72" height="96" viewBox="0 0 72 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M36 31.3955C38.295 43.8531 48.0425 53.6006 60.5 55.8955C48.0425 58.1905 38.295 67.9379 36 80.3955C33.7051 67.9379 23.9576 58.1905 11.5 55.8955C23.9576 53.6006 33.7051 43.8531 36 31.3955Z"
+														fill="#6BADFF" />
+												</svg>
+											</span>
+										</div>
+										<div class="clients-running__item">
+											<p>clothes</p>
+											<span>
+												<svg width="72" height="96" viewBox="0 0 72 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M36 31.3955C38.295 43.8531 48.0425 53.6006 60.5 55.8955C48.0425 58.1905 38.295 67.9379 36 80.3955C33.7051 67.9379 23.9576 58.1905 11.5 55.8955C23.9576 53.6006 33.7051 43.8531 36 31.3955Z"
+														fill="#6BADFF" />
+												</svg>
+											</span>
+										</div>
+										<div class="clients-running__item">
+											<p>trends</p>
+											<span>
+												<svg width="72" height="96" viewBox="0 0 72 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M36 31.3955C38.295 43.8531 48.0425 53.6006 60.5 55.8955C48.0425 58.1905 38.295 67.9379 36 80.3955C33.7051 67.9379 23.9576 58.1905 11.5 55.8955C23.9576 53.6006 33.7051 43.8531 36 31.3955Z"
+														fill="#6BADFF" />
+												</svg>
+											</span>
+										</div>
+									</div>
+									<div class="clients-running__items">
+										<div class="clients-running__item">
+											<p>fashion</p>
+											<span>
+												<svg width="72" height="96" viewBox="0 0 72 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M36 31.3955C38.295 43.8531 48.0425 53.6006 60.5 55.8955C48.0425 58.1905 38.295 67.9379 36 80.3955C33.7051 67.9379 23.9576 58.1905 11.5 55.8955C23.9576 53.6006 33.7051 43.8531 36 31.3955Z"
+														fill="#6BADFF" />
+												</svg>
+											</span>
+										</div>
+										<div class="clients-running__item">
+											<p>clothes</p>
+											<span>
+												<svg width="72" height="96" viewBox="0 0 72 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M36 31.3955C38.295 43.8531 48.0425 53.6006 60.5 55.8955C48.0425 58.1905 38.295 67.9379 36 80.3955C33.7051 67.9379 23.9576 58.1905 11.5 55.8955C23.9576 53.6006 33.7051 43.8531 36 31.3955Z"
+														fill="#6BADFF" />
+												</svg>
+											</span>
+										</div>
+										<div class="clients-running__item">
+											<p>trends</p>
+											<span>
+												<svg width="72" height="96" viewBox="0 0 72 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M36 31.3955C38.295 43.8531 48.0425 53.6006 60.5 55.8955C48.0425 58.1905 38.295 67.9379 36 80.3955C33.7051 67.9379 23.9576 58.1905 11.5 55.8955C23.9576 53.6006 33.7051 43.8531 36 31.3955Z"
+														fill="#6BADFF" />
+												</svg>
+											</span>
+										</div>
+										<div class="clients-running__item">
+											<p>fashion</p>
+											<span>
+												<svg width="72" height="96" viewBox="0 0 72 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M36 31.3955C38.295 43.8531 48.0425 53.6006 60.5 55.8955C48.0425 58.1905 38.295 67.9379 36 80.3955C33.7051 67.9379 23.9576 58.1905 11.5 55.8955C23.9576 53.6006 33.7051 43.8531 36 31.3955Z"
+														fill="#6BADFF" />
+												</svg>
+											</span>
+										</div>
+										<div class="clients-running__item">
+											<p>clothes</p>
+											<span>
+												<svg width="72" height="96" viewBox="0 0 72 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M36 31.3955C38.295 43.8531 48.0425 53.6006 60.5 55.8955C48.0425 58.1905 38.295 67.9379 36 80.3955C33.7051 67.9379 23.9576 58.1905 11.5 55.8955C23.9576 53.6006 33.7051 43.8531 36 31.3955Z"
+														fill="#6BADFF" />
+												</svg>
+											</span>
+										</div>
+										<div class="clients-running__item">
+											<p>trends</p>
+											<span>
+												<svg width="72" height="96" viewBox="0 0 72 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M36 31.3955C38.295 43.8531 48.0425 53.6006 60.5 55.8955C48.0425 58.1905 38.295 67.9379 36 80.3955C33.7051 67.9379 23.9576 58.1905 11.5 55.8955C23.9576 53.6006 33.7051 43.8531 36 31.3955Z"
+														fill="#6BADFF" />
+												</svg>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Преимущества  -->
+			<section class="benefits section" id="benefits">
+				<div class="container">
+					<div class="benefits__block">
+						<div class="benefits__header">
+							<h2 class="section-title benefits__title">Преимущества</h2>
+						</div>
+						<div class="benefits__items">
+							<div class="benefits-item benefits-item--image">
+								<div class="benefits-item__image">
+									<img src="img/benefits/image-1.png" alt="фото">
+								</div>
+							</div>
+							<div class="benefits-item">
+								<div class="benefits-item__bg">
+									<div class="benefits-item__fon">
+										<svg class="desk" width="416" height="214" viewBox="0 0 416 214" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M330 0C330 6.89655 335.373 12.4873 342 12.4873C348.524 12.4873 353.832 7.06988 353.996 0.322266L354 0H396C407.046 1.03081e-06 416 8.95431 416 20V194C416 205.046 407.046 214 396 214H354C354 207.373 348.627 202 342 202C335.373 202 330 207.373 330 214H20C8.95431 214 8.85912e-08 205.046 0 194V20C0 8.95431 8.95431 1.93277e-07 20 0H330Z"
+												fill="#D3E7FF" />
+										</svg>
+										<svg class="tablet" width="350" height="229" viewBox="0 0 350 229" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M271.263 0C271.238 0.329886 271.225 0.663395 271.225 1C271.225 7.89639 276.582 13.4871 283.19 13.4873C289.799 13.4873 295.156 7.89655 295.156 1C295.156 0.663397 295.144 0.329884 295.119 0H330C341.046 0 350 8.95431 350 20V209C350 220.046 341.046 229 330 229H295.156C295.156 222.373 289.799 217 283.19 217C276.582 217 271.225 222.373 271.225 229H20C8.95431 229 0 220.046 0 209V20C0 8.95431 8.95431 6.03992e-08 20 0H271.263Z"
+												fill="#D3E7FF" />
+										</svg>
+										<svg class="mob" width="328" height="197" viewBox="0 0 328 197" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M252 0C252 6.75931 257.373 12.2393 264 12.2393C270.524 12.2393 275.832 6.92896 275.996 0.31543L276 0H308C319.046 2.57703e-07 328 8.95431 328 20V177C328 188.046 319.046 197 308 197H275.956C275.438 190.973 270.284 186.239 264 186.239C257.716 186.239 252.562 190.973 252.044 197H20C8.95431 197 0 188.046 0 177V20C2.1584e-06 8.95431 8.95431 2.57703e-07 20 0H252Z"
+												fill="#D3E7FF" />
+										</svg>
+									</div>
+									<div class="benefits-item__border">
+										<img src="img/benefits/border.png" alt="иконка">
+									</div>
+								</div>
+								<div class="benefits-item__content">
+									<p class="benefits-item__num">01</p>
+									<div class="benefits-item__group">
+										<h3 class="benefits-item__name item-title">Экономия времени и денег</h3>
+										<div class="benefits-item__text text">
+											<p>Больше никаких лишних покупок и бесконечных поисков — только точные рекомендации за считанные
+												минуты</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="benefits-item">
+								<div class="benefits-item__bg">
+									<div class="benefits-item__fon">
+										<svg class="desk" width="416" height="214" viewBox="0 0 416 214" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M330 0C330 6.89655 335.373 12.4873 342 12.4873C348.524 12.4873 353.832 7.06988 353.996 0.322266L354 0H396C407.046 1.03081e-06 416 8.95431 416 20V194C416 205.046 407.046 214 396 214H354C354 207.373 348.627 202 342 202C335.373 202 330 207.373 330 214H20C8.95431 214 8.85912e-08 205.046 0 194V20C0 8.95431 8.95431 1.93277e-07 20 0H330Z"
+												fill="#F9F4ED" />
+										</svg>
+										<svg class="tablet" width="350" height="229" viewBox="0 0 350 229" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M271.486 0C271.461 0.329886 271.449 0.663394 271.449 1C271.449 7.89655 276.791 13.4873 283.381 13.4873C289.971 13.4872 295.312 7.89646 295.312 1C295.312 0.663382 295.299 0.329898 295.274 0H330C341.046 0 350 8.95431 350 20V209C350 220.046 341.046 229 330 229H295.312C295.312 222.373 289.971 217 283.381 217C276.791 217 271.449 222.373 271.449 229H20C8.95431 229 0 220.046 0 209V20C0 8.95431 8.95431 6.03992e-08 20 0H271.486Z"
+												fill="#F9F4ED" />
+										</svg>
+										<svg class="mob" width="328" height="197" viewBox="0 0 328 197" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M252 0C252 6.75931 257.373 12.2393 264 12.2393C270.524 12.2393 275.832 6.92896 275.996 0.31543L276 0H308C319.046 2.57703e-07 328 8.95431 328 20V177C328 188.046 319.046 197 308 197H275.956C275.438 190.973 270.284 186.239 264 186.239C257.716 186.239 252.562 190.973 252.044 197H20C8.95431 197 0 188.046 0 177V20C2.1584e-06 8.95431 8.95431 2.57703e-07 20 0H252Z"
+												fill="#F9F4ED" />
+										</svg>
+									</div>
+									<div class="benefits-item__border">
+										<img src="img/benefits/border.png" alt="иконка">
+									</div>
+								</div>
+								<div class="benefits-item__content">
+									<p class="benefits-item__num">02</p>
+									<div class="benefits-item__group">
+										<h3 class="benefits-item__name item-title">Простота использования </h3>
+										<div class="benefits-item__text text">
+											<p>Интеграция с любимыми магазинами и маркетплейсами «Wildberries, Ozon, Lamoda и другие — все в
+												одном месте»</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="benefits-item">
+								<div class="benefits-item__bg">
+									<div class="benefits-item__fon">
+										<svg class="desk" width="416" height="214" viewBox="0 0 416 214" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M330 0C330 6.89655 335.373 12.4873 342 12.4873C348.524 12.4873 353.832 7.06988 353.996 0.322266L354 0H396C407.046 1.03081e-06 416 8.95431 416 20V194C416 205.046 407.046 214 396 214H354C354 207.373 348.627 202 342 202C335.373 202 330 207.373 330 214H20C8.95431 214 8.85912e-08 205.046 0 194V20C0 8.95431 8.95431 1.93277e-07 20 0H330Z"
+												fill="#F9F4ED" />
+										</svg>
+										<svg class="tablet" width="350" height="229" viewBox="0 0 350 229" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M271.486 0C271.461 0.329886 271.449 0.663394 271.449 1C271.449 7.89655 276.791 13.4873 283.381 13.4873C289.971 13.4872 295.312 7.89646 295.312 1C295.312 0.663382 295.299 0.329898 295.274 0H330C341.046 0 350 8.95431 350 20V209C350 220.046 341.046 229 330 229H295.312C295.312 222.373 289.971 217 283.381 217C276.791 217 271.449 222.373 271.449 229H20C8.95431 229 0 220.046 0 209V20C0 8.95431 8.95431 6.03992e-08 20 0H271.486Z"
+												fill="#F9F4ED" />
+										</svg>
+										<svg class="mob" width="328" height="197" viewBox="0 0 328 197" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M252 0C252 6.75931 257.373 12.2393 264 12.2393C270.524 12.2393 275.832 6.92896 275.996 0.31543L276 0H308C319.046 2.57703e-07 328 8.95431 328 20V177C328 188.046 319.046 197 308 197H275.956C275.438 190.973 270.284 186.239 264 186.239C257.716 186.239 252.562 190.973 252.044 197H20C8.95431 197 0 188.046 0 177V20C2.1584e-06 8.95431 8.95431 2.57703e-07 20 0H252Z"
+												fill="#F9F4ED" />
+										</svg>
+									</div>
+									<div class="benefits-item__border">
+										<img src="img/benefits/border.png" alt="иконка">
+									</div>
+								</div>
+								<div class="benefits-item__content">
+									<p class="benefits-item__num">03</p>
+									<div class="benefits-item__group">
+										<h3 class="benefits-item__name item-title">Персонализация на основе ИИ</h3>
+										<div class="benefits-item__text text">
+											<p>Рекомендации идеально подходят именно тебе, потому что учитывают твою фигуру, цвета, образ
+												жизни и личность</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="benefits-item benefits-item--image">
+								<div class="benefits-item__dop">
+									<div class="benefits-item__image benefits-item__image--border">
+										<img src="img/benefits/image-2.png" alt="фото">
+									</div>
+								</div>
+							</div>
+							<div class="benefits-item benefits-item--4">
+								<div class="benefits-item__bg">
+									<div class="benefits-item__fon">
+										<svg class="desk" width="416" height="214" viewBox="0 0 416 214" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M330 0C330 6.89655 335.373 12.4873 342 12.4873C348.524 12.4873 353.832 7.06988 353.996 0.322266L354 0H396C407.046 1.03081e-06 416 8.95431 416 20V194C416 205.046 407.046 214 396 214H354C354 207.373 348.627 202 342 202C335.373 202 330 207.373 330 214H20C8.95431 214 8.85912e-08 205.046 0 194V20C0 8.95431 8.95431 1.93277e-07 20 0H330Z"
+												fill="#D3E7FF" />
+										</svg>
+										<svg class="tablet" width="350" height="229" viewBox="0 0 350 229" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M271.263 0C271.238 0.329886 271.225 0.663395 271.225 1C271.225 7.89639 276.582 13.4871 283.19 13.4873C289.799 13.4873 295.156 7.89655 295.156 1C295.156 0.663397 295.144 0.329884 295.119 0H330C341.046 0 350 8.95431 350 20V209C350 220.046 341.046 229 330 229H295.156C295.156 222.373 289.799 217 283.19 217C276.582 217 271.225 222.373 271.225 229H20C8.95431 229 0 220.046 0 209V20C0 8.95431 8.95431 6.03992e-08 20 0H271.263Z"
+												fill="#D3E7FF" />
+										</svg>
+										<svg class="mob" width="328" height="197" viewBox="0 0 328 197" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M252 0C252 6.75931 257.373 12.2393 264 12.2393C270.524 12.2393 275.832 6.92896 275.996 0.31543L276 0H308C319.046 2.57703e-07 328 8.95431 328 20V177C328 188.046 319.046 197 308 197H275.956C275.438 190.973 270.284 186.239 264 186.239C257.716 186.239 252.562 190.973 252.044 197H20C8.95431 197 0 188.046 0 177V20C2.1584e-06 8.95431 8.95431 2.57703e-07 20 0H252Z"
+												fill="#D3E7FF" />
+										</svg>
+									</div>
+									<div class="benefits-item__border">
+										<img src="img/benefits/border.png" alt="иконка">
+									</div>
+								</div>
+								<div class="benefits-item__content">
+									<p class="benefits-item__num">04</p>
+									<div class="benefits-item__group">
+										<h3 class="benefits-item__name item-title">Уверенность<br> в стильности</h3>
+										<div class="benefits-item__text text">
+											<p>ИИ подбирает образы по внешности, вкусам и образу жизни — чтобы вы выглядели стильно, без
+												сомнений и примерок</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Регулярные персонализированные подборки одежды -->
+			<section class="banner banner-light-two section">
+				<div class="container">
+					<div class="banner__block">
+						<div class="banner__content">
+							<h2 class="section-title banner__title">Регулярные персонализированные подборки одежды</h2>
+							<div class="banner__text text sub">
+								<p>Получайте еще больше рекомендаций с учетом планов, стиля и настроения</p>
+							</div>
+							<a href="#" class="main__btn double-btn">
+								<span class="double-btn-text">
+									<span>ЗАРЕГИСТРИРОВАТЬСЯ</span>
+								</span>
+								<span class="double-btn-circles">
+									<span class="double-btn-circle"></span><span class="double-btn-circle"></span><span
+										class="double-btn-circle"></span><span class="double-btn-circle"></span>
+								</span>
+								<span class="double-btn-arrow">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M4 11V13H16V15H18V13H20V11H18V9H16V11H4ZM14 7H16V9H14V7ZM14 7H12V5H14V7ZM14 17H16V15H14V17ZM14 17H12V19H14V17Z"
+											fill="white" />
+									</svg>
+								</span>
+							</a>
+						</div>
+						<div class="banner__images">
+							<div class="banner__image">
+								<img src="img/banner/image-2.png" alt="фото">
+							</div>
+							<div class="banner__stars">
+								<div class="banner__star-1">
+									<img src="img/banner/star-big-2.png" alt="декор">
+								</div>
+								<div class="banner__star-2">
+									<img src="img/banner/star-big-2.png" alt="декор">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Как это работает  -->
+			<section class="how-work section">
+				<div class="container">
+					<div class="how-work__block">
+						<div class="how-work__header">
+							<h2 class="section-title how-work__title">Как это работает</h2>
+						</div>
+						<div class="how-work__content">
+							<div class="how-work__images">
+								<div class="how-work__frame">
+									<div class="how-work__image how-work__image--1">
+										<img src="img/how-work/image-1.png" alt="фото">
+									</div>
+									<div class="how-work__image how-work__image--2">
+										<img src="img/how-work/image-2.png" alt="фото">
+									</div>
+									<div class="how-work__image how-work__image--3">
+										<img src="img/how-work/image-3.png" alt="фото">
+									</div>
+									<div class="how-work__image how-work__image--4">
+										<img src="img/how-work/image-4.png" alt="фото">
+									</div>
+								</div>
+							</div>
+							<div class="how-work__desc">
+								<div class="how-work__item how-work__item--1">
+									<div class="how-work__num">
+										<span>01</span>
+									</div>
+									<div class="how-work__group">
+										<h3 class="how-work__name item-title">Зарегистрируйтесь — откройте доступ к рекомендациям</h3>
+										<div class="how-work__text text">
+											<p>Создайте личный аккаунт с помощью email или соцсетей. Регистрация открывает доступ
+												к персональным рекомендациям, истории образов. После регистрации вы сразу сможете приступить
+												к созданию своего идеального стиля</p>
+										</div>
+										<div class="how-work__item-trigger"></div>
+									</div>
+								</div>
+								<div class="how-work__item how-work__item--2">
+									<div class="how-work__num">
+										<span>02</span>
+									</div>
+									<div class="how-work__group">
+										<h3 class="how-work__name item-title">Загрузите фото и заполните анкету</h3>
+										<div class="how-work__text text">
+											<p>Для максимально точных рекомендаций сервису нужно немного информации о вас: Загрузите своё
+												фото — желательно при хорошем освещении, с открытым лицом. Дополнительно можно загрузить фото
+												в полный рост. ИИ проанализирует черты лица, оттенок кожи, глаз, волос и силуэт фигуры.</p>
+											<p>Заполните мини-анкету — отметьте: ваш образ жизни (офис, контент, отдых и т. д.), любимые
+												и нелюбимые цвета, цель подбора: гардероб на каждый день, событие, съёмка, капсула и др.
+												предпочитаемые фасоны или стили (кэжуал, минимализм, спорт-шик и т. д.).</p>
+											<p>Эта информация помогает системе не просто «угадывать», а давать рекомендации, основанные
+												на реальных предпочтениях и визуальных данных.</p>
+										</div>
+										<div class="how-work__item-trigger"></div>
+									</div>
+								</div>
+								<div class="how-work__item how-work__item--3">
+									<div class="how-work__num">
+										<span>03</span>
+									</div>
+									<div class="how-work__group">
+										<h3 class="how-work__name item-title">Получите подборку образов от ИИ</h3>
+										<div class="how-work__text text">
+											<p>На основе ваших фото и ответов нейросеть сформирует точно выверенные образы, которые
+												соответствуют: вашему цветотипу (оттенки, которые подчёркивают внешность), вашему типу фигуры
+												(фасоны, подчеркивающие достоинства), вашему стилю и цели подбора.</p>
+											<p>Подборка выглядит как полноценный стилизованный коллаж или карточки вещей с описаниями
+												и ссылками</p>
+										</div>
+										<div class="how-work__item-trigger"></div>
+									</div>
+								</div>
+								<div class="how-work__item how-work__item--4">
+									<div class="how-work__num">
+										<span>04</span>
+									</div>
+									<div class="how-work__group">
+										<h3 class="how-work__name item-title">Понравилось? Купите сразу!</h3>
+										<div class="how-work__text text">
+											<p>Все понравившиеся вещи - уже с прямыми ссылками на маркетплейсы. Не нужно искать их вручную:
+												просто нажмите на вещь из образа и переходите к покупке. Сервис показывает только актуальные
+												товары в наличии.</p>
+											<p>Вы экономите время и сразу получаете доступ к стильным находкам, которые подходят именно вам.
+												Удобно, быстро и без лишних шагов — всё, что подошло вам по стилю, цвету и фигуре, уже ждёт вас
+												онлайн</p>
+										</div>
+										<div class="how-work__item-trigger"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- faq -->
+			<section class="faq section-m" id="faq">
+				<div class="container">
+					<div class="faq__block">
+						<div class="faq__header">
+							<h2 class="section-title faq__title">Вопросы и ответы</h2>
+						</div>
+						<div class="faq__content">
+							<div class="accordion faq-accordion">
+								<div class="accordion__item accordion__item_show">
+									<div class="accordion__header">
+										<p class="faq-accordion__name item-title">Как работает анализ внешности?</p>
+										<div class="faq-accordion__arrow">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M13 4L11 4L11 16L9 16L9 18L11 18L11 20L13 20L13 18L15 18L15 16L13 16L13 4ZM17 14L17 16L15 16L15 14L17 14ZM17 14L17 12L19 12L19 14L17 14ZM7 14L7 16L9 16L9 14L7 14ZM7 14L7 12L5 12L5 14L7 14Z"
+													fill="#383838" />
+											</svg>
+										</div>
+									</div>
+									<div class="accordion__body">
+										<div class="faq-accordion__text text">
+											<p>ИИ анализирует фото, чтобы определить цветотип, черты лица и особенности фигуры. Это помогает
+												точно подобрать подходящие цвета, фасоны и образы — без угадываний.</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion__item">
+									<div class="accordion__header">
+										<p class="faq-accordion__name item-title">С какими магазинами интегрировано приложение?</p>
+										<div class="faq-accordion__arrow">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M13 4L11 4L11 16L9 16L9 18L11 18L11 20L13 20L13 18L15 18L15 16L13 16L13 4ZM17 14L17 16L15 16L15 14L17 14ZM17 14L17 12L19 12L19 14L17 14ZM7 14L7 16L9 16L9 14L7 14ZM7 14L7 12L5 12L5 14L7 14Z"
+													fill="#383838" />
+											</svg>
+										</div>
+									</div>
+									<div class="accordion__body">
+										<div class="faq-accordion__text text">
+											<p>ИИ анализирует фото, чтобы определить цветотип, черты лица и особенности фигуры. Это помогает
+												точно подобрать подходящие цвета, фасоны и образы — без угадываний.</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion__item">
+									<div class="accordion__header">
+										<p class="faq-accordion__name item-title">Как происходит оплата и можно ли отменить подписку?</p>
+										<div class="faq-accordion__arrow">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M13 4L11 4L11 16L9 16L9 18L11 18L11 20L13 20L13 18L15 18L15 16L13 16L13 4ZM17 14L17 16L15 16L15 14L17 14ZM17 14L17 12L19 12L19 14L17 14ZM7 14L7 16L9 16L9 14L7 14ZM7 14L7 12L5 12L5 14L7 14Z"
+													fill="#383838" />
+											</svg>
+										</div>
+									</div>
+									<div class="accordion__body">
+										<div class="faq-accordion__text text">
+											<p>ИИ анализирует фото, чтобы определить цветотип, черты лица и особенности фигуры. Это помогает
+												точно подобрать подходящие цвета, фасоны и образы — без угадываний.</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion__item">
+									<div class="accordion__header">
+										<p class="faq-accordion__name item-title">Подходит ли сервис мужчинам?</p>
+										<div class="faq-accordion__arrow">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M13 4L11 4L11 16L9 16L9 18L11 18L11 20L13 20L13 18L15 18L15 16L13 16L13 4ZM17 14L17 16L15 16L15 14L17 14ZM17 14L17 12L19 12L19 14L17 14ZM7 14L7 16L9 16L9 14L7 14ZM7 14L7 12L5 12L5 14L7 14Z"
+													fill="#383838" />
+											</svg>
+										</div>
+									</div>
+									<div class="accordion__body">
+										<div class="faq-accordion__text text">
+											<p>ИИ анализирует фото, чтобы определить цветотип, черты лица и особенности фигуры. Это помогает
+												точно подобрать подходящие цвета, фасоны и образы — без угадываний.</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion__item">
+									<div class="accordion__header">
+										<p class="faq-accordion__name item-title">Могу ли я использовать сервис бесплатно?</p>
+										<div class="faq-accordion__arrow">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M13 4L11 4L11 16L9 16L9 18L11 18L11 20L13 20L13 18L15 18L15 16L13 16L13 4ZM17 14L17 16L15 16L15 14L17 14ZM17 14L17 12L19 12L19 14L17 14ZM7 14L7 16L9 16L9 14L7 14ZM7 14L7 12L5 12L5 14L7 14Z"
+													fill="#383838" />
+											</svg>
+										</div>
+									</div>
+									<div class="accordion__body">
+										<div class="faq-accordion__text text">
+											<p>ИИ анализирует фото, чтобы определить цветотип, черты лица и особенности фигуры. Это помогает
+												точно подобрать подходящие цвета, фасоны и образы — без угадываний.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="faq__banner">
+								<div class="faq__icon">
+									<img src="img/faq/star.png" alt="декор">
+								</div>
+								<div class="faq__wrap">
+									<div class="faq__group">
+										<h3 class="item-title faq__name">Не нашли ответ<br> на свой вопрос?</h3>
+										<div class="faq__sub text">
+											<p>Оставьте заявку, мы ответим на все ваши вопросы</p>
+										</div>
+									</div>
+									<button data-modal="faq-modal" class="faq__btn double-btn-light">
+										<span class="double-btn-text">
+											<span>Задать вопрос</span>
+										</span>
+										<span class="double-btn-circles">
+											<span class="double-btn-circle"></span><span class="double-btn-circle"></span><span
+												class="double-btn-circle"></span><span class="double-btn-circle"></span>
+										</span>
+										<span class="double-btn-arrow">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M4 11V13H16V15H18V13H20V11H18V9H16V11H4ZM14 7H16V9H14V7ZM14 7H12V5H14V7ZM14 17H16V15H14V17ZM14 17H12V19H14V17Z"
+													fill="#383838" />
+											</svg>
+										</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Откройте Новый Уровень Стиля -->
+			<section class="banner banner-light section-m">
+				<div class="container">
+					<div class="banner__block">
+						<div class="banner__content">
+							<h2 class="section-title banner__title">Откройте Новый Уровень Стиля</h2>
+							<div class="banner__text text sub">
+								<p>Ощутите магию ИИ! Загрузите фото, ответьте на пару вопросов — и мгновенно получите персональные
+									образы, идеально подобранные для вашей внешности и образа жизни</p>
+							</div>
+							<a href="#" class="main__btn double-btn">
+								<span class="double-btn-text">
+									<span>ЗАРЕГИСТРИРОВАТЬСЯ</span>
+								</span>
+								<span class="double-btn-circles">
+									<span class="double-btn-circle"></span><span class="double-btn-circle"></span><span
+										class="double-btn-circle"></span><span class="double-btn-circle"></span>
+								</span>
+								<span class="double-btn-arrow">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M4 11V13H16V15H18V13H20V11H18V9H16V11H4ZM14 7H16V9H14V7ZM14 7H12V5H14V7ZM14 17H16V15H14V17ZM14 17H12V19H14V17Z"
+											fill="white" />
+									</svg>
+								</span>
+							</a>
+						</div>
+						<div class="banner__images">
+							<div class="banner__image">
+								<img src="img/banner/image-3.png" alt="фото">
+							</div>
+							<div class="banner__stars">
+								<div class="banner__star-1">
+									<img src="img/banner/star-big.png" alt="декор">
+								</div>
+								<div class="banner__star-2">
+									<img src="img/banner/star-big-2.png" alt="декор">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="running">
+				<div class="running__wrap">
+					<div class="running__items">
+						<div class="running__item">
+							<div class="running__image">
+								<img src="img/running/logo.svg" alt="лого">
+							</div>
+						</div>
+						<div class="running__item">
+							<div class="running__image">
+								<img src="img/running/logo.svg" alt="лого">
+							</div>
+						</div>
+						<div class="running__item">
+							<div class="running__image">
+								<img src="img/running/logo.svg" alt="лого">
+							</div>
+						</div>
+						<div class="running__item">
+							<div class="running__image">
+								<img src="img/running/logo.svg" alt="лого">
+							</div>
+						</div>
+						<div class="running__item">
+							<div class="running__image">
+								<img src="img/running/logo.svg" alt="лого">
+							</div>
+						</div>
+						<div class="running__item">
+							<div class="running__image">
+								<img src="img/running/logo.svg" alt="лого">
+							</div>
+						</div>
+						<div class="running__item">
+							<div class="running__image">
+								<img src="img/running/logo.svg" alt="лого">
+							</div>
+						</div>
+						<div class="running__item">
+							<div class="running__image">
+								<img src="img/running/logo.svg" alt="лого">
+							</div>
+						</div>
+						<div class="running__item">
+							<div class="running__image">
+								<img src="img/running/logo.svg" alt="лого">
+							</div>
+						</div>
+						<div class="running__item">
+							<div class="running__image">
+								<img src="img/running/logo.svg" alt="лого">
+							</div>
+						</div>
+						<div class="running__item">
+							<div class="running__image">
+								<img src="img/running/logo.svg" alt="лого">
+							</div>
+						</div>
+						<div class="running__item">
+							<div class="running__image">
+								<img src="img/running/logo.svg" alt="лого">
+							</div>
+						</div>
+					</div>
+					<div class="running__items">
+						<div class="running__item">
+							<div class="running__image">
+								<img src="img/running/logo.svg" alt="лого">
+							</div>
+						</div>
+						<div class="running__item">
+							<div class="running__image">
+								<img src="img/running/logo.svg" alt="лого">
+							</div>
+						</div>
+						<div class="running__item">
+							<div class="running__image">
+								<img src="img/running/logo.svg" alt="лого">
+							</div>
+						</div>
+						<div class="running__item">
+							<div class="running__image">
+								<img src="img/running/logo.svg" alt="лого">
+							</div>
+						</div>
+						<div class="running__item">
+							<div class="running__image">
+								<img src="img/running/logo.svg" alt="лого">
+							</div>
+						</div>
+						<div class="running__item">
+							<div class="running__image">
+								<img src="img/running/logo.svg" alt="лого">
+							</div>
+						</div>
+						<div class="running__item">
+							<div class="running__image">
+								<img src="img/running/logo.svg" alt="лого">
+							</div>
+						</div>
+						<div class="running__item">
+							<div class="running__image">
+								<img src="img/running/logo.svg" alt="лого">
+							</div>
+						</div>
+						<div class="running__item">
+							<div class="running__image">
+								<img src="img/running/logo.svg" alt="лого">
+							</div>
+						</div>
+						<div class="running__item">
+							<div class="running__image">
+								<img src="img/running/logo.svg" alt="лого">
+							</div>
+						</div>
+						<div class="running__item">
+							<div class="running__image">
+								<img src="img/running/logo.svg" alt="лого">
+							</div>
+						</div>
+						<div class="running__item">
+							<div class="running__image">
+								<img src="img/running/logo.svg" alt="лого">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__block">
+					<div class="footer__top">
+						<div class="footer__left">
+							<a href="#" class="footer__logo">
+								<span class="footer__logo-img">
+									<img src="img/footer/logo.svg" alt="лого clothes ai">
+								</span>
+							</a>
+						</div>
+						<div class="footer__right">
+							<div class="footer-menu">
+								<ul>
+									<li><a href="#stages">Как проходит подбор</a></li>
+									<li><a href="#clients">Для кого подходит</a></li>
+									<li><a href="#benefits">Преимущества</a></li>
+									<li><a href="#faq">Вопросы и ответы</a></li>
+								</ul>
+							</div>
+							<a href="#" class="footer__btn accent-btn">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<div class="footer__info">
+							<p class="footer__copyright">© Все права защищены. 2025</p>
+						</div>
+						<div class="footer__links">
+							<a href="privacy.html" target="_blank" class="footer__privacy">Политика конфиденциальности</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+	<script src="js/lottie.min.js"></script>
+
+	<script src="js/script.js"></script>
+</body>
+
+
+</html>

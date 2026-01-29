@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Наши психологи</title>
+  <link rel="icon" href="resources/favicon.ico">
+
+
+  <!-- fonts -->
+  <!-- fonts -->
+
+  <link rel="prefetch" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="prefetch" href="fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="prefetch" href="fonts/OpenSans-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  <!-- STYLES -->
+  <!-- STYLES -->
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  
+  <!-- choices -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" /> -->
+
+  <!-- tooltips -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" /> -->
+
+  <!-- choices -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+
+  <!-- NoUi slider -->
+  <link rel="stylesheet" href="css/nouislider.min.css">
+
+  <!-- my-styles -->
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <!-- JavaScript -->
+  <!-- JavaScript -->
+
+  <!-- accordion -->
+  <!-- <script defer src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+  <!-- <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+
+  <!-- choices -->
+  <!-- <script defer src="js/choices.min.js"></script> -->
+
+  <!-- tabs -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <!-- swiper -->
+  <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- GSAP -->
+  <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script> -->
+
+  <!-- tooltips -->
+  <!-- <script defer src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script> -->
+  <!-- <script defer src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script> -->
+
+  <!-- choices -->
+  <script defer src="js/choices.min.js"></script>
+
+  <!-- jQuery -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+  <!-- NoUi slider -->
+  <script defer src="js/nouislider.min.js"></script>
+
+  <!-- JustValidate -->
+  <script defer src="js/inputmask.min.js"></script>
+  <script defer src="js/just-validate.min.js"></script>
+
+  <!-- my JS -->
+  <script defer src="js/myChoices.js"></script>
+  <script defer src="js/myValidate.js"></script>
+  <script defer src="js/myModals.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+	<header class="header">
+  <div class="container header__container">
+
+    <div class="header__left left">
+      <a class="left__logo-link" href="#"> 
+<picture>
+  <source srcset="img/header-logo-320.webp" media="(max-width: 550px)">
+  <img src="img/header-logo.webp" alt="Логотип">
+</picture>
+      </a>
+    </div>
+
+    <div class="header__mid mid">
+      <button class="mid__burger my-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="mid__list list-reset">
+        <li class="mid__list-item">
+          <a class="mid__list-item-link" href="#">Тесты</a>
+        </li>
+        <li class="mid__list-item">
+          <a class="mid__list-item-link" href="#">Блог</a>
+        </li>
+        <li class="mid__list-item">
+          <a class="mid__list-item-link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="header__right right">
+      <button class="right__btn my-btn purple-btn">Войти</button>
+    </div>
+
+  </div>
+</header>
+	<main>
+
+		<section class="hero" id="hero">
+			<div class="container hero__container">
+				<ul class="hero__breadcrumbs breadcrumbs list-reset">
+					<li class="breadcrumbs__item">
+						<a class="breadcrumbs__item-link" href="#">Главная</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<a class="breadcrumbs__item-link" href="#">&mdash; Наши психологи</a>
+					</li>
+				</ul>
+
+				<h1 class="hero__title">Наши психологи</h1>
+				<div class="hero__descr">
+					<h2>У&nbsp;всех психологов мы&nbsp;проверили:</h2>
+				</div>
+				<ul class="hero__list list-reset">
+					<li class="hero__list-item">
+						<div class="hero__list-item-wrapper">
+							<svg class="skill" width="30" height="30">
+								<use xlink:href="img/sprite.svg#edu"></use>
+							</svg>
+							<span>Образование</span>
+						</div>
+					</li>
+					<li class="hero__list-item">
+						<div class="hero__list-item-wrapper">
+							<svg class="skill" width="30" height="30">
+								<use xlink:href="img/sprite.svg#exp"></use>
+							</svg>
+							<span>Опыт работы</span>
+						</div>
+					</li>
+					<li class="hero__list-item">
+						<div class="hero__list-item-wrapper">
+							<svg class="skill" width="30" height="30">
+								<use xlink:href="img/sprite.svg#kvali"></use>
+							</svg>
+							<span>Квалификацию</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="filter">
+			<div class="container filter__container">
+				<h2 class="filter__title">Выберите специалиста</h2>
+				<ul class="filter__specialist specialist list-reset">
+					<li class="specialist__item">
+						<button class="specialist__btn my-btn active-btn">Психолог</button>
+					</li>
+					<li class="specialist__item">
+						<button class="specialist__btn my-btn">Психотерапевт</button>
+					</li>
+					<li class="specialist__item">
+						<button class="specialist__btn my-btn">Семейный психолог</button>
+					</li>
+					<li class="specialist__item">
+						<button class="specialist__btn my-btn">Детский психолог</button>
+					</li>
+					<li class="specialist__item">
+						<button class="specialist__btn my-btn">Подростковый психолог</button>
+					</li>
+					<li class="specialist__item">
+						<button class="specialist__btn my-btn">Клинический психолог</button>
+					</li>
+					<li class="specialist__item">
+						<button class="specialist__btn my-btn">Коуч</button>
+					</li>
+					<li class="specialist__item">
+						<button class="specialist__btn my-btn">Сексолог</button>
+					</li>
+
+				</ul>
+
+				<div class="filter__choices2 choices2">
+
+					<select class="choices__select multi-default" name="select" id="first-select">
+						<option value="">Выберите специалиста</option>
+						<option>Психолог</option>
+						<option>Психотерапевт</option>
+						<option>Семейный психолог</option>
+						<option>Детский психолог</option>
+						<option>Подростковый психолог</option>
+						<option>Клинический психолог</option>
+						<option>Коуч</option>
+            <option>Сексолог</option>
+					</select>
+
+				</div>
+
+				<h2 class="filter__title margin">Что вас беспокоит?</h2>
+				<div class="filter__filters filters">
+					<div class="filters__choices choices">
+						<select class="choices__select multi-default" name="select" id="second-select">
+							<option value="">Выберите проблему</option>
+							<option>Проблема</option>
+							<option>Проблема</option>
+							<option>Проблема</option>
+							<option>Проблема</option>
+						</select>
+					</div>
+					<div class="filters__range range">
+						<div class="range__descr">Выберите диапозон цены</div>
+						<div class="range__slider-wrap">
+							<div class="range__inputs">
+								<span class="range__text">от</span>
+								<label class="range__label">
+									<input class="range__input" type="number" min="500" max="25000" id="input-0" placeholder="500">
+								</label>
+								<span class="range__text margin">до</span>
+								<label class="range__label">
+									<input class="range__input" type="number" min="500" max="25000" id="input-1" placeholder="25000">
+								</label>
+							</div>
+							<div class="range__slider" id="range-slider">
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="table">
+			<div class="container table__container">
+
+				<ul class="table__list list-reset">
+
+					<li class="table__list-item expert">
+						<article class="expert__card card">
+							<div class="card__left left">
+								<picture>
+									<source srcset="img/card-1-320.webp" media="(max-width: 550px)">
+									<img src="img/card-1.webp" alt="фото специалиста">
+								</picture>
+								<div class="left__rating">
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#half-star"></use>
+									</svg>
+								</div>
+
+								<div class="left__descr">
+									<h3 class="left__name">Кандаусова Наталья</h3>
+									<div class="left__text">
+										<span class="left__age">33 года</span>
+										<span class="left__exp">Опыт работы 12 лет</span>
+									</div>
+								</div>
+
+							</div>
+							<div class="card__right right">
+
+								<div class="right__activity">
+									Арт терапевт, перинатальный психолог
+								</div>
+								<ul class="right__list list-reset">
+									<li class="right__list-item">Психолог</li>
+									<li class="right__list-item">Семейный психолог</li>
+									<li class="right__list-item">Детский психолог</li>
+									<li class="right__list-item">Сексолог</li>
+								</ul>
+
+								<div class="right__rating">
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#half-star"></use>
+									</svg>
+								</div>
+
+								<div class="right__descr common">
+									<h3 class="right__name common__name">Кандаусова Наталья</h3>
+									<div class="right__text common__text">
+										<span class="right__age common__age">33 года</span>
+										<span class="right__exp common__exp">Опыт работы 12 лет</span>
+									</div>
+								</div>
+
+								<div class="right__price price margin">
+									<div class="price__text">
+										<span class="price__descr">Онлайн-консультация</span>
+										<span class="price__subdescr">Чат или видео</span>
+									</div>
+									<div class="price__cost">10 000 р</div>
+								</div>
+
+								<div class="right__price price">
+									<div class="price__text">
+										<span class="price__descr">Экспресс</span>
+										<span class="price__subdescr">Ответы на вопросы</span>
+									</div>
+									<div class="price__cost">200 р</div>
+								</div>
+
+								<a class="right__btn my-btn purple-btn" href="natalia.html">Подробнее</a>
+							</div>
+						</article>
+					</li>
+
+					<li class="table__list-item expert">
+						<article class="expert__card card">
+							<div class="card__left left">
+								<picture>
+									<source srcset="img/card-2-320.webp" media="(max-width: 550px)">
+									<img src="img/card-2.webp" alt="фото специалиста">
+								</picture>
+								<div class="left__rating">
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#half-star"></use>
+									</svg>
+								</div>
+
+								<div class="left__descr">
+									<h3 class="left__name">Кандаусова Наталья</h3>
+									<div class="left__text">
+										<span class="left__age">33 года</span>
+										<span class="left__exp">Опыт работы 12 лет</span>
+									</div>
+								</div>
+
+							</div>
+							<div class="card__right right">
+
+								<div class="right__activity">
+									Арт терапевт, перинатальный психолог
+								</div>
+								<ul class="right__list list-reset">
+									<li class="right__list-item">Психолог</li>
+									<li class="right__list-item">Семейный психолог</li>
+									<li class="right__list-item">Детский психолог</li>
+									<li class="right__list-item">Сексолог</li>
+								</ul>
+
+								<div class="right__rating">
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#half-star"></use>
+									</svg>
+								</div>
+
+								<div class="right__descr common">
+									<h3 class="right__name common__name">Кандаусова Наталья</h3>
+									<div class="right__text common__text">
+										<span class="right__age common__age">33 года</span>
+										<span class="right__exp common__exp">Опыт работы 12 лет</span>
+									</div>
+								</div>
+
+								<div class="right__price price margin">
+									<div class="price__text">
+										<span class="price__descr">Онлайн-консультация</span>
+										<span class="price__subdescr">Чат или видео</span>
+									</div>
+									<div class="price__cost">10 000 р</div>
+								</div>
+
+								<div class="right__price price">
+									<div class="price__text">
+										<span class="price__descr">Экспресс</span>
+										<span class="price__subdescr">Ответы на вопросы</span>
+									</div>
+									<div class="price__cost">200 р</div>
+								</div>
+
+								<a class="right__btn my-btn purple-btn" href="natalia.html">Подробнее</a>
+							</div>
+						</article>
+					</li>
+
+					<li class="table__list-item expert">
+						<article class="expert__card card">
+							<div class="card__left left">
+								<picture>
+									<source srcset="img/card-2-320.webp" media="(max-width: 550px)">
+									<img src="img/card-2.webp" alt="фото специалиста">
+								</picture>
+								<div class="left__rating">
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#half-star"></use>
+									</svg>
+								</div>
+
+								<div class="left__descr">
+									<h3 class="left__name">Кандаусова Наталья</h3>
+									<div class="left__text">
+										<span class="left__age">33 года</span>
+										<span class="left__exp">Опыт работы 12 лет</span>
+									</div>
+								</div>
+
+							</div>
+							<div class="card__right right">
+
+								<div class="right__activity">
+									Арт терапевт, перинатальный психолог
+								</div>
+								<ul class="right__list list-reset">
+									<li class="right__list-item">Психолог</li>
+									<li class="right__list-item">Семейный психолог</li>
+									<li class="right__list-item">Детский психолог</li>
+									<li class="right__list-item">Сексолог</li>
+								</ul>
+
+								<div class="right__rating">
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#half-star"></use>
+									</svg>
+								</div>
+
+								<div class="right__descr common">
+									<h3 class="right__name common__name">Кандаусова Наталья</h3>
+									<div class="right__text common__text">
+										<span class="right__age common__age">33 года</span>
+										<span class="right__exp common__exp">Опыт работы 12 лет</span>
+									</div>
+								</div>
+
+								<div class="right__price price margin">
+									<div class="price__text">
+										<span class="price__descr">Онлайн-консультация</span>
+										<span class="price__subdescr">Чат или видео</span>
+									</div>
+									<div class="price__cost">10 000 р</div>
+								</div>
+
+								<div class="right__price price">
+									<div class="price__text">
+										<span class="price__descr">Экспресс</span>
+										<span class="price__subdescr">Ответы на вопросы</span>
+									</div>
+									<div class="price__cost">200 р</div>
+								</div>
+
+								<a class="right__btn my-btn purple-btn" href="natalia.html">Подробнее</a>
+							</div>
+						</article>
+					</li>
+
+					<li class="table__list-item expert">
+						<article class="expert__card card">
+							<div class="card__left left">
+								<picture>
+									<source srcset="img/card-1-320.webp" media="(max-width: 550px)">
+									<img src="img/card-1.webp" alt="фото специалиста">
+								</picture>
+								<div class="left__rating">
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#half-star"></use>
+									</svg>
+								</div>
+
+								<div class="left__descr">
+									<h3 class="left__name">Кандаусова Наталья</h3>
+									<div class="left__text">
+										<span class="left__age">33 года</span>
+										<span class="left__exp">Опыт работы 12 лет</span>
+									</div>
+								</div>
+
+							</div>
+							<div class="card__right right">
+
+								<div class="right__activity">
+									Арт терапевт, перинатальный психолог
+								</div>
+								<ul class="right__list list-reset">
+									<li class="right__list-item">Психолог</li>
+									<li class="right__list-item">Семейный психолог</li>
+									<li class="right__list-item">Детский психолог</li>
+									<li class="right__list-item">Сексолог</li>
+								</ul>
+
+								<div class="right__rating">
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#half-star"></use>
+									</svg>
+								</div>
+
+								<div class="right__descr common">
+									<h3 class="right__name common__name">Кандаусова Наталья</h3>
+									<div class="right__text common__text">
+										<span class="right__age common__age">33 года</span>
+										<span class="right__exp common__exp">Опыт работы 12 лет</span>
+									</div>
+								</div>
+
+								<div class="right__price price margin">
+									<div class="price__text">
+										<span class="price__descr">Онлайн-консультация</span>
+										<span class="price__subdescr">Чат или видео</span>
+									</div>
+									<div class="price__cost">10 000 р</div>
+								</div>
+
+								<div class="right__price price">
+									<div class="price__text">
+										<span class="price__descr">Экспресс</span>
+										<span class="price__subdescr">Ответы на вопросы</span>
+									</div>
+									<div class="price__cost">200 р</div>
+								</div>
+
+								<a class="right__btn my-btn purple-btn" href="natalia.html">Подробнее</a>
+							</div>
+						</article>
+					</li>
+
+					<li class="table__list-item expert">
+						<article class="expert__card card">
+							<div class="card__left left">
+								<picture>
+									<source srcset="img/card-1-320.webp" media="(max-width: 550px)">
+									<img src="img/card-1.webp" alt="фото специалиста">
+								</picture>
+								<div class="left__rating">
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#half-star"></use>
+									</svg>
+								</div>
+
+								<div class="left__descr">
+									<h3 class="left__name">Кандаусова Наталья</h3>
+									<div class="left__text">
+										<span class="left__age">33 года</span>
+										<span class="left__exp">Опыт работы 12 лет</span>
+									</div>
+								</div>
+
+							</div>
+							<div class="card__right right">
+
+								<div class="right__activity">
+									Арт терапевт, перинатальный психолог
+								</div>
+								<ul class="right__list list-reset">
+									<li class="right__list-item">Психолог</li>
+									<li class="right__list-item">Семейный психолог</li>
+									<li class="right__list-item">Детский психолог</li>
+									<li class="right__list-item">Сексолог</li>
+								</ul>
+
+								<div class="right__rating">
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#half-star"></use>
+									</svg>
+								</div>
+
+								<div class="right__descr common">
+									<h3 class="right__name common__name">Кандаусова Наталья</h3>
+									<div class="right__text common__text">
+										<span class="right__age common__age">33 года</span>
+										<span class="right__exp common__exp">Опыт работы 12 лет</span>
+									</div>
+								</div>
+
+								<div class="right__price price margin">
+									<div class="price__text">
+										<span class="price__descr">Онлайн-консультация</span>
+										<span class="price__subdescr">Чат или видео</span>
+									</div>
+									<div class="price__cost">10 000 р</div>
+								</div>
+
+								<div class="right__price price">
+									<div class="price__text">
+										<span class="price__descr">Экспресс</span>
+										<span class="price__subdescr">Ответы на вопросы</span>
+									</div>
+									<div class="price__cost">200 р</div>
+								</div>
+
+								<a class="right__btn my-btn purple-btn" href="natalia.html">Подробнее</a>
+							</div>
+						</article>
+					</li>
+
+					<li class="table__list-item expert">
+						<article class="expert__card card">
+							<div class="card__left left">
+								<picture>
+									<source srcset="img/card-2-320.webp" media="(max-width: 550px)">
+									<img src="img/card-2.webp" alt="фото специалиста">
+								</picture>
+								<div class="left__rating">
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#half-star"></use>
+									</svg>
+								</div>
+
+								<div class="left__descr">
+									<h3 class="left__name">Кандаусова Наталья</h3>
+									<div class="left__text">
+										<span class="left__age">33 года</span>
+										<span class="left__exp">Опыт работы 12 лет</span>
+									</div>
+								</div>
+
+							</div>
+							<div class="card__right right">
+
+								<div class="right__activity">
+									Арт терапевт, перинатальный психолог
+								</div>
+								<ul class="right__list list-reset">
+									<li class="right__list-item">Психолог</li>
+									<li class="right__list-item">Семейный психолог</li>
+									<li class="right__list-item">Детский психолог</li>
+									<li class="right__list-item">Сексолог</li>
+								</ul>
+
+								<div class="right__rating">
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#star"></use>
+									</svg>
+									<svg class="star" width="22" height="20.5">
+										<use xlink:href="img/sprite.svg#half-star"></use>
+									</svg>
+								</div>
+
+								<div class="right__descr common">
+									<h3 class="right__name common__name">Кандаусова Наталья</h3>
+									<div class="right__text common__text">
+										<span class="right__age common__age">33 года</span>
+										<span class="right__exp common__exp">Опыт работы 12 лет</span>
+									</div>
+								</div>
+
+								<div class="right__price price margin">
+									<div class="price__text">
+										<span class="price__descr">Онлайн-консультация</span>
+										<span class="price__subdescr">Чат или видео</span>
+									</div>
+									<div class="price__cost">10 000 р</div>
+								</div>
+
+								<div class="right__price price">
+									<div class="price__text">
+										<span class="price__descr">Экспресс</span>
+										<span class="price__subdescr">Ответы на вопросы</span>
+									</div>
+									<div class="price__cost">200 р</div>
+								</div>
+
+								<a class="right__btn my-btn purple-btn" href="natalia.html">Подробнее</a>
+							</div>
+						</article>
+					</li>
+
+				</ul>
+
+				<button class="table__btn my-btn transp-btn">Загрузить ещё</button>
+			</div>
+		</section>
+
+
+	</main>
+	<footer class="footer">
+  <div class="container footer__container">
+
+    <div class="footer__top top">
+      <div class="top__left left">
+        <ul class="left__list list-reset">
+          <li class="left__list-item">
+            <a class="left__list-item-link" href="#">Тесты</a>
+          </li>
+          <li class="left__list-item">
+            <a class="left__list-item-link" href="#">Блог</a>
+          </li>
+          <li class="left__list-item">
+            <a class="left__list-item-link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="left__social list-reset">
+          <li class="left__social-item">
+            <a class="left__social-item-link" href="#">
+              <svg class="social" width="24" height="24">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="left__social-item">
+            <a class="left__social-item-link" href="#">
+              <svg class="social" width="24" height="24">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="left__social-item">
+            <a class="left__social-item-link" href="#">
+              <svg class="social" width="24" height="24">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="left__social-item">
+            <a class="left__social-item-link" href="#">
+              <svg class="social" width="24" height="24">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="left__social-item">
+            <a class="left__social-item-link" href="#">
+              <svg class="social" width="25" height="25" viewbox="0 0 25 25" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.6633 0.620361H7.96272C4.02034 0.620361 0.812988 3.81975 0.812988 7.75235V17.4288C0.812988 21.3614 4.02034 24.5608 7.96272 24.5608H17.6633C21.6056 24.5608 24.813 21.3614 24.813 17.4288V7.75235C24.8129 3.81975 21.6056 0.620361 17.6633 0.620361ZM22.3986 17.4288C22.3986 20.0375 20.2785 22.1524 17.6633 22.1524H7.96272C5.34749 22.1524 3.22739 20.0375 3.22739 17.4288V7.75235C3.22739 5.14356 5.34749 3.02877 7.96272 3.02877H17.6633C20.2785 3.02877 22.3986 5.14356 22.3986 7.75235V17.4288Z"
+                  fill="white" />
+                <path
+                  d="M12.8127 6.39893C9.39004 6.39893 6.60547 9.17661 6.60547 12.5908C6.60547 16.005 9.39004 18.7827 12.8127 18.7827C16.2354 18.7827 19.02 16.005 19.02 12.5908C19.02 9.17657 16.2354 6.39893 12.8127 6.39893ZM12.8127 16.3743C10.718 16.3743 9.01987 14.6804 9.01987 12.5908C9.01987 10.5013 10.718 8.80736 12.8127 8.80736C14.9075 8.80736 16.6056 10.5013 16.6056 12.5908C16.6056 14.6804 14.9074 16.3743 12.8127 16.3743Z"
+                  fill="url(#paint0_linear_49_2)" />
+                <path
+                  d="M19.0323 7.92847C19.8538 7.92847 20.5197 7.26422 20.5197 6.44482C20.5197 5.62543 19.8538 4.96118 19.0323 4.96118C18.2108 4.96118 17.5449 5.62543 17.5449 6.44482C17.5449 7.26422 18.2108 7.92847 19.0323 7.92847Z"
+                  fill="white" />
+                <defs>
+                  <lineargradient id="paint0_linear_49_2" x1="12.8127" y1="24.4915" x2="12.8127" y2="0.806446"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white" />
+                  </lineargradient>
+                </defs>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="top__mid mid">
+        <span>
+          Внимание! Если вам срочно необходима психологическая помощь, а&nbsp;также в&nbsp;ситуациях угрожающих жизни
+          и&nbsp;здоровью, мы&nbsp;рекомендуем обратиться в&nbsp;эти важные организации: срочная психологическая помощь.
+        </span>
+      </div>
+
+      <div class="top__right right">
+        <button class="right__btn my-btn purple-btn">Вход для специалистов</button>
+        <a class="right__link" href="#">Написать в техподдержку</a>
+
+        <ul class="right__social list-reset">
+          <li class="right__social-item">
+            <a class="right__social-item-link" href="#">
+              <svg class="social" width="24" height="24">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="right__social-item">
+            <a class="right__social-item-link" href="#">
+              <svg class="social" width="24" height="24">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="right__social-item">
+            <a class="right__social-item-link" href="#">
+              <svg class="social" width="24" height="24">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="right__social-item">
+            <a class="right__social-item-link" href="#">
+              <svg class="social" width="24" height="24">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="right__social-item">
+            <a class="right__social-item-link" href="#">
+              <svg class="social" width="25" height="25" viewbox="0 0 25 25" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.6633 0.620361H7.96272C4.02034 0.620361 0.812988 3.81975 0.812988 7.75235V17.4288C0.812988 21.3614 4.02034 24.5608 7.96272 24.5608H17.6633C21.6056 24.5608 24.813 21.3614 24.813 17.4288V7.75235C24.8129 3.81975 21.6056 0.620361 17.6633 0.620361ZM22.3986 17.4288C22.3986 20.0375 20.2785 22.1524 17.6633 22.1524H7.96272C5.34749 22.1524 3.22739 20.0375 3.22739 17.4288V7.75235C3.22739 5.14356 5.34749 3.02877 7.96272 3.02877H17.6633C20.2785 3.02877 22.3986 5.14356 22.3986 7.75235V17.4288Z"
+                  fill="white" />
+                <path
+                  d="M12.8127 6.39893C9.39004 6.39893 6.60547 9.17661 6.60547 12.5908C6.60547 16.005 9.39004 18.7827 12.8127 18.7827C16.2354 18.7827 19.02 16.005 19.02 12.5908C19.02 9.17657 16.2354 6.39893 12.8127 6.39893ZM12.8127 16.3743C10.718 16.3743 9.01987 14.6804 9.01987 12.5908C9.01987 10.5013 10.718 8.80736 12.8127 8.80736C14.9075 8.80736 16.6056 10.5013 16.6056 12.5908C16.6056 14.6804 14.9074 16.3743 12.8127 16.3743Z"
+                  fill="url(#paint0_linear_49_3)" />
+                <path
+                  d="M19.0323 7.92847C19.8538 7.92847 20.5197 7.26422 20.5197 6.44482C20.5197 5.62543 19.8538 4.96118 19.0323 4.96118C18.2108 4.96118 17.5449 5.62543 17.5449 6.44482C17.5449 7.26422 18.2108 7.92847 19.0323 7.92847Z"
+                  fill="white" />
+                <defs>
+                  <lineargradient id="paint0_linear_49_3" x1="12.8127" y1="24.4915" x2="12.8127" y2="0.806446"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white" />
+                  </lineargradient>
+                </defs>
+              </svg>
+
+
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer__bottom bottom">
+      <ul class="bottom__list list-reset">
+        <li class="bottom__list-item">
+          2021 Корпорация Психологии: консультации&nbsp;психолога&nbsp;онлайн
+        </li>
+        <li class="bottom__list-item">
+          <a class="bottom__list-item-link" href="#">
+            Политика конфиденциальности
+          </a>
+        </li>
+        <li class="bottom__list-item">
+          <a class="bottom__list-item-link" href="#">
+            Пользовательское соглашение
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+</body>
+
+</html>

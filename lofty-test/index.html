@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Test</title>
+  <!-- <link rel="icon" href="#"> -->
+
+  <!-- fonts -->
+  <!-- fonts -->
+
+  <!-- <link rel="prefetch" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="prefetch" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="prefetch" href="fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin> -->
+
+  <!-- styles -->
+  <!-- styles -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- my-styles -->
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <!-- JavaScript -->
+  <!-- JavaScript -->
+
+  <!-- my JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+
+      <div class="header__content flex">
+
+        <a class="header__logo common-logo" href="##">
+          <svg class="" width="37" height="29">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+          <span>whitepace</span>
+        </a>
+
+
+        <div class="header__right-content flex">
+
+          <nav class="header__nav nav">
+
+            <button class="nav__burger btn-reset" id="hamb" aria-label="Открытие меню">
+              <span></span>
+            </button>
+
+            <ul class="nav__list list-reset flex" id="menu">
+              <li class="nav__list-item list-item">
+                <button class="list-item__btn btn-reset btn-arrow">
+                  <span>Products</span>
+                </button>
+              </li>
+              <li class="nav__list-item list-item">
+                <button class="list-item__btn btn-reset btn-arrow">
+                  <span>Solutions</span>
+                </button>
+              </li>
+              <li class="nav__list-item list-item">
+                <button class="list-item__btn btn-reset btn-arrow">
+                  <span>Resources</span>
+                </button>
+              </li>
+              <li class="nav__list-item list-item">
+                <button class="list-item__btn btn-reset btn-arrow">
+                  <span>Pricing</span>
+                </button>
+              </li>
+              <li class="nav__list-item list-item list-item-btns">
+                <button class="nav__btn btn-reset yellow-btn">Login</button>
+                <button class="nav__btn blue-btn btn-reset">
+                  <span>Try Whitepace free</span>
+                  <svg class="" width="12" height="12">
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+
+            <div class="nav__menu-wrap" id="menuwrap"></div>
+
+
+          </nav>
+
+
+
+
+
+
+          <div class="header__buttons flex">
+            <button class="header__btn btn-reset yellow-btn">Login</button>
+            <button class="header__btn blue-btn btn-reset">
+              <span>Try Whitepace free</span>
+              <svg class="" width="12" height="12">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="hero">
+      <div class="container hero__container">
+
+        <div class="hero__content flex column">
+
+          <div class="hero__descr">
+            <h1 class="hero__title heading-1">Get More Done with whitepace</h1>
+
+            <p class="hero__txt text-com">
+              Project management software that enables your teams to collaborate, plan,
+              analyze and manage everyday tasks
+            </p>
+
+            <button class="hero__btn blue-btn btn-reset">
+              <span>Try Whitepace free</span>
+              <svg class="" width="12" height="12">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="hero__img"></div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="managment">
+
+      <div class="container managment__container">
+        <div class="managment__content flex column">
+
+          <div class="managment__descr">
+
+            <h2 class="managment__title heading-2">Project <br class="for-mob" /> <span class="under">Management</span>
+            </h2>
+            <p class="managment__text text-com">
+              Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the
+              app. Take photos with the mobile app and save them to&nbsp;a&nbsp;note.
+            </p>
+            <button class="managment__btn blue-btn btn-reset">
+              <span>Get started</span>
+              <svg class="" width="14" height="14">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+
+          </div>
+
+          <div class="managment__img"></div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section class="work">
+
+      <div class="container work__container">
+
+        <div class="work__content flex column">
+          <div class="work__img">
+
+            <picture>
+              <source srcset="img/work-together-320.png" media="(max-width: 500px)">
+              <source srcset="img/work-together-768.png" media="(max-width: 800px)">
+              <source srcset="img/work-together-1150.png" media="(max-width: 1200px)">
+              <source srcset="img/work-together-1440.png" media="(max-width: 1440px)">
+              <img src="img/work-together.png" width="710" alt="Картинка">
+            </picture>
+
+          </div>
+
+
+          <div class="work__descr">
+            <h2 class="work__title heading-2">Work <span class="under">together</span></h2>
+            <p class="work__text text-com">
+              With whitepace, share your notes with your colleagues and collaborate on them.
+              You can also publish a note to the internet and share the URL with others.
+            </p>
+            <button class="work__btn blue-btn btn-reset">
+              <span>Try it now</span>
+              <svg class="" width="14" height="14">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="plan">
+      <div class="container plan__container">
+        <div class="plan__content">
+
+          <h2 class="plan__title heading-2">Choose <span class="under">Your Plan</span></h2>
+          <h2 class="plan__title heading-2 mob-title">Choose Your <br /> <span class="under">Plan</span></h2>
+          <p class="plan__text text-com">
+            Whether you want to get organized, keep your personal life on track, or boost workplace productivity,
+            <br class="for-mob" /> Evernote has the right plan for you.
+          </p>
+          <ul class="plan__list list-reset flex">
+            <li class="plan__list-item">
+              <article class="plan__list-item-card card card-1">
+                <div class="card__wrap">
+                  <h5 class="card__title heading-5">Free</h5>
+                  <div class="card__price">$0</div>
+                  <div class="card__descr">Capture ideas and find them quickly</div>
+                  <ul class="card__list list-reset">
+                    <li class="card__list-item flex">
+                      <svg class="hover" width="18" height="18">
+                        <use xlink:href="img/sprite.svg#black-point"></use>
+                      </svg>
+                      <span>Sync unlimited devices</span>
+                    </li>
+                    <li class="card__list-item flex">
+                      <svg class="hover" width="18" height="18">
+                        <use xlink:href="img/sprite.svg#black-point"></use>
+                      </svg>
+                      <span>10 GB monthly uploads </span>
+                    </li>
+                    <li class="card__list-item flex">
+                      <svg class="hover" width="18" height="18">
+                        <use xlink:href="img/sprite.svg#black-point"></use>
+                      </svg>
+                      <span>200 MB max. note size </span>
+                    </li>
+                    <li class="card__list-item flex">
+                      <svg class="hover" width="18" height="18">
+                        <use xlink:href="img/sprite.svg#black-point"></use>
+                      </svg>
+                      <span>Customize Home dashboard and access extra widgets</span>
+                    </li>
+                    <li class="card__list-item flex">
+                      <svg class="hover" width="18" height="18">
+                        <use xlink:href="img/sprite.svg#black-point"></use>
+                      </svg>
+                      <span>Connect primary Google Calendar account</span>
+                    </li>
+                    <li class="card__list-item flex">
+                      <svg class="hover" width="18" height="18">
+                        <use xlink:href="img/sprite.svg#black-point"></use>
+                      </svg>
+                      <span>Add due dates, reminders, and notifications to your tasks</span>
+                    </li>
+                  </ul>
+                  <button class="card__btn transp-btn btn-reset"><span>Get Started</span></button>
+                </div>
+              </article>
+            </li>
+            <li class="plan__list-item">
+              <article class="plan__list-item-card card card-2">
+                <div class="card__wrap wrap">
+                  <h5 class="card__title heading-5">Personal</h5>
+                  <div class="card__price">$11.99</div>
+                  <div class="card__descr">Keep home and family on track</div>
+                  <ul class="card__list list-reset">
+                    <li class="card__list-item flex">
+                      <svg class="hover" width="18" height="18">
+                        <use xlink:href="img/sprite.svg#yellow-point"></use>
+                      </svg>
+                      <span>Sync unlimited devices</span>
+                    </li>
+                    <li class="card__list-item flex">
+                      <svg class="hover" width="18" height="18">
+                        <use xlink:href="img/sprite.svg#yellow-point"></use>
+                      </svg>
+                      <span>10 GB monthly uploads </span>
+                    </li>
+                    <li class="card__list-item flex">
+                      <svg class="hover" width="18" height="18">
+                        <use xlink:href="img/sprite.svg#yellow-point"></use>
+                      </svg>
+                      <span>200 MB max. note size </span>
+                    </li>
+                    <li class="card__list-item flex">
+                      <svg class="hover" width="18" height="18">
+                        <use xlink:href="img/sprite.svg#yellow-point"></use>
+                      </svg>
+                      <span>Customize Home dashboard and access extra widgets</span>
+                    </li>
+                    <li class="card__list-item flex">
+                      <svg class="hover" width="18" height="18">
+                        <use xlink:href="img/sprite.svg#yellow-point"></use>
+                      </svg>
+                      <span>Connect primary Google Calendar account</span>
+                    </li>
+                    <li class="card__list-item flex">
+                      <svg class="hover" width="18" height="18">
+                        <use xlink:href="img/sprite.svg#yellow-point"></use>
+                      </svg>
+                      <span>Add due dates, reminders, and notifications to your tasks</span>
+                    </li>
+                  </ul>
+                  <button class="card__btn blue-btn btn-reset"><span>Get Started</span></button>
+                </div>
+              </article>
+            </li>
+            <li class="plan__list-item">
+              <article class="plan__list-item-card card card-3">
+                <div class="card__wrap">
+                  <h5 class="card__title heading-5">Organization</h5>
+                  <div class="card__price">$49.99</div>
+                  <div class="card__descr">Capture ideas and find them quickly</div>
+                  <ul class="card__list list-reset">
+                    <li class="card__list-item flex">
+                      <svg class="hover" width="18" height="18">
+                        <use xlink:href="img/sprite.svg#black-point"></use>
+                      </svg>
+                      <span>Sync unlimited devices</span>
+                    </li>
+                    <li class="card__list-item flex">
+                      <svg class="hover" width="18" height="18">
+                        <use xlink:href="img/sprite.svg#black-point"></use>
+                      </svg>
+                      <span>10 GB monthly uploads </span>
+                    </li>
+                    <li class="card__list-item flex">
+                      <svg class="hover" width="18" height="18">
+                        <use xlink:href="img/sprite.svg#black-point"></use>
+                      </svg>
+                      <span>200 MB max. note size </span>
+                    </li>
+                    <li class="card__list-item flex">
+                      <svg class="hover" width="18" height="18">
+                        <use xlink:href="img/sprite.svg#black-point"></use>
+                      </svg>
+                      <span>Customize Home dashboard and access extra widgets</span>
+                    </li>
+                    <li class="card__list-item flex">
+                      <svg class="hover" width="18" height="18">
+                        <use xlink:href="img/sprite.svg#black-point"></use>
+                      </svg>
+                      <span>Connect primary Google Calendar account</span>
+                    </li>
+                    <li class="card__list-item flex">
+                      <svg class="hover" width="18" height="18">
+                        <use xlink:href="img/sprite.svg#black-point"></use>
+                      </svg>
+                      <span>Add due dates, reminders, and notifications to your tasks</span>
+                    </li>
+                  </ul>
+                  <button class="card__btn transp-btn btn-reset"><span>Get Started</span></button>
+                </div>
+              </article>
+            </li>
+          </ul>
+
+
+          <div class="plan__swiper swiper">
+            <ul class="plan__swiper-wrapper swiper-wrapper list-reset">
+              <li class="plan__list-item swiper-slide">
+                <article class="plan__list-item-card card card-1">
+                  <div class="card__wrap">
+                    <h5 class="card__title heading-5">Free</h5>
+                    <div class="card__price">$0</div>
+                    <div class="card__descr">Capture ideas and find them quickly</div>
+                    <ul class="card__list list-reset">
+                      <li class="card__list-item flex">
+                        <svg class="hover" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#black-point"></use>
+                        </svg>
+                        <span>Sync unlimited devices</span>
+                      </li>
+                      <li class="card__list-item flex">
+                        <svg class="hover" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#black-point"></use>
+                        </svg>
+                        <span>10 GB monthly uploads </span>
+                      </li>
+                      <li class="card__list-item flex">
+                        <svg class="hover" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#black-point"></use>
+                        </svg>
+                        <span>200 MB max. note size </span>
+                      </li>
+                      <li class="card__list-item flex">
+                        <svg class="hover" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#black-point"></use>
+                        </svg>
+                        <span>Customize Home dashboard and access extra widgets</span>
+                      </li>
+                      <li class="card__list-item flex">
+                        <svg class="hover" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#black-point"></use>
+                        </svg>
+                        <span>Connect primary Google Calendar account</span>
+                      </li>
+                      <li class="card__list-item flex">
+                        <svg class="hover" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#black-point"></use>
+                        </svg>
+                        <span>Add due dates, reminders, and notifications to your tasks</span>
+                      </li>
+                    </ul>
+                    <button class="card__btn transp-btn btn-reset"><span>Get Started</span></button>
+                  </div>
+                </article>
+              </li>
+              <li class="plan__list-item swiper-slide">
+                <article class="plan__list-item-card card card-2">
+                  <div class="card__wrap wrap">
+                    <h5 class="card__title heading-5">Personal</h5>
+                    <div class="card__price">$11.99</div>
+                    <div class="card__descr">Keep home and family on track</div>
+                    <ul class="card__list list-reset">
+                      <li class="card__list-item flex">
+                        <svg class="hover" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#yellow-point"></use>
+                        </svg>
+                        <span>Sync unlimited devices</span>
+                      </li>
+                      <li class="card__list-item flex">
+                        <svg class="hover" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#yellow-point"></use>
+                        </svg>
+                        <span>10 GB monthly uploads </span>
+                      </li>
+                      <li class="card__list-item flex">
+                        <svg class="hover" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#yellow-point"></use>
+                        </svg>
+                        <span>200 MB max. note size </span>
+                      </li>
+                      <li class="card__list-item flex">
+                        <svg class="hover" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#yellow-point"></use>
+                        </svg>
+                        <span>Customize Home dashboard and access extra widgets</span>
+                      </li>
+                      <li class="card__list-item flex">
+                        <svg class="hover" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#yellow-point"></use>
+                        </svg>
+                        <span>Connect primary Google Calendar account</span>
+                      </li>
+                      <li class="card__list-item flex">
+                        <svg class="hover" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#yellow-point"></use>
+                        </svg>
+                        <span>Add due dates, reminders, and notifications to your tasks</span>
+                      </li>
+                    </ul>
+                    <button class="card__btn blue-btn btn-reset"><span>Get Started</span></button>
+                  </div>
+                </article>
+              </li>
+              <li class="plan__list-item swiper-slide">
+                <article class="plan__list-item-card card card-3">
+                  <div class="card__wrap">
+                    <h5 class="card__title heading-5">Organization</h5>
+                    <div class="card__price">$49.99</div>
+                    <div class="card__descr">Capture ideas and find them quickly</div>
+                    <ul class="card__list list-reset">
+                      <li class="card__list-item flex">
+                        <svg class="hover" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#black-point"></use>
+                        </svg>
+                        <span>Sync unlimited devices</span>
+                      </li>
+                      <li class="card__list-item flex">
+                        <svg class="hover" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#black-point"></use>
+                        </svg>
+                        <span>10 GB monthly uploads </span>
+                      </li>
+                      <li class="card__list-item flex">
+                        <svg class="hover" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#black-point"></use>
+                        </svg>
+                        <span>200 MB max. note size </span>
+                      </li>
+                      <li class="card__list-item flex">
+                        <svg class="hover" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#black-point"></use>
+                        </svg>
+                        <span>Customize Home dashboard and access extra widgets</span>
+                      </li>
+                      <li class="card__list-item flex">
+                        <svg class="hover" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#black-point"></use>
+                        </svg>
+                        <span>Connect primary Google Calendar account</span>
+                      </li>
+                      <li class="card__list-item flex">
+                        <svg class="hover" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#black-point"></use>
+                        </svg>
+                        <span>Add due dates, reminders, and notifications to your tasks</span>
+                      </li>
+                    </ul>
+                    <button class="card__btn transp-btn btn-reset"><span>Get Started</span></button>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+          <div class="plan__swiper-pagination swiper-pagination"></div>
+
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section class="last">
+      <div class="container last__container">
+
+        <div class="last__content flex">
+
+          <h3 class="last__title heading-3">Try Whitepace <br class="for-mob" /> today</h3>
+          <p class="last__text">
+            Get started for free. <br />
+            Add your whole team as your needs grow
+          </p>
+          <button class="last__btn blue-btn btn-reset">
+            <span>Try Taskey free</span>
+            <svg class="" width="14" height="14">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+          <p class="last__text">On a big team? Contact sales</p>
+          <ul class="last__list list-reset flex">
+            <li class="last__list-item">
+              <a class="last__list-item-link" href="#">
+                <svg class="hover" width="60" height="60">
+                  <use xlink:href="img/sprite.svg#apple"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="last__list-item">
+              <a class="last__list-item-link" href="#">
+                <svg class="hover" width="60" height="60">
+                  <use xlink:href="img/sprite.svg#windows"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="last__list-item">
+              <a class="last__list-item-link" href="#">
+                <svg class="hover" width="60" height="60">
+                  <use xlink:href="img/sprite.svg#android"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+    <div class="container footer__container">
+
+      <div class="footer__content column">
+
+        <div class="footer__left left">
+
+          <a class="left__logo common-logo" href="##">
+            <svg class="" width="37" height="29">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+            <span>whitepace</span>
+          </a>
+          <p class="left__text">
+            whitepace was created for <br class="for-mob" />
+            the new ways we&nbsp;live and <br class="for-mob" />
+            work. We&nbsp;make a&nbsp;better <br class="for-mob" />
+            workspace around the world
+          </p>
+
+        </div>
+
+        <ul class="footer__list-common list-common list-reset flex column">
+          <li class="list-common__item inside-item">
+            <ul class="inside-item__list list-reset inside-item-list">
+              <li class="inside-item-list__item item-title">Product</li>
+              <li class="inside-item-list__item">
+                <a class="inside-item-list__item-link white-link" href="#">Overview</a>
+              </li>
+              <li class="inside-item-list__item">
+                <a class="inside-item-list__item-link white-link" href="#">Pricing</a>
+              </li>
+              <li class="inside-item-list__item">
+                <a class="inside-item-list__item-link white-link" href="#">Customer stories</a>
+              </li>
+            </ul>
+          </li>
+          <li class="list-common__item inside-item">
+            <ul class="inside-item__list list-reset inside-item-list">
+              <li class="inside-item-list__item item-title">Resources</li>
+              <li class="inside-item-list__item">
+                <a class="inside-item-list__item-link white-link" href="#">Blog</a>
+              </li>
+              <li class="inside-item-list__item">
+                <a class="inside-item-list__item-link white-link" href="#">Guides & tutorials</a>
+              </li>
+              <li class="inside-item-list__item">
+                <a class="inside-item-list__item-link white-link" href="#">Help center</a>
+              </li>
+            </ul>
+          </li>
+          <li class="list-common__item inside-item">
+            <ul class="inside-item__list list-reset inside-item-list">
+              <li class="inside-item-list__item item-title">Company</li>
+              <li class="inside-item-list__item">
+                <a class="inside-item-list__item-link white-link" href="#">About us</a>
+              </li>
+              <li class="inside-item-list__item">
+                <a class="inside-item-list__item-link white-link" href="#">Careers
+                </a>
+              </li>
+              <li class="inside-item-list__item">
+                <a class="inside-item-list__item-link white-link" href="#">Media kit</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="footer__right right">
+          <h4 class="right__title heading-4">Try It Today</h4>
+          <p class="right__text">
+            Get started for free. Add your <br class="for-mob"/>
+            whole team as your needs grow.
+          </p>
+          <button class="right__btn blue-btn btn-reset">
+            <span>Start today</span>
+            <svg class="" width="14" height="14">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom bottom flex">
+
+        <div class="bottom__point point flex">
+
+          <button class="point__lang flex btn-reset btn-arrow">
+            <svg class="lang" width="19" height="19">
+              <use xlink:href="img/sprite.svg#lang"></use>
+            </svg>
+            <span>English</span>
+          </button>
+          <ul class="point__list list-reset flex">
+            <li class="point__list-item">
+              <a class="point__list-item-link white-link" href="#">
+                Terms & privacy
+              </a>
+            </li>
+            <li class="point__list-item">
+              <a class="point__list-item-link white-link" href="#">
+                Security
+              </a>
+            </li>
+            <li class="point__list-item">
+              <a class="point__list-item-link white-link" href="#">
+                Status
+              </a>
+            </li>
+          </ul>
+          <div class="point__copy">
+            &copy;2021 Whitepace LLC.
+          </div>
+
+        </div>
+        <div class="bottom__social social">
+          <ul class="social__list list-reset flex">
+            <li class="social__list-item">
+              <a class="social__list-item-link" href="##">
+                <svg class="" width="9" height="17">
+                  <use xlink:href="img/sprite.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__list-item">
+              <a class="social__list-item-link" href="##">
+                <svg class="" width="17" height="14">
+                  <use xlink:href="img/sprite.svg#twit"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__list-item">
+              <a class="social__list-item-link" href="##">
+                <svg class="" width="15" height="15">
+                  <use xlink:href="img/sprite.svg#in"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>

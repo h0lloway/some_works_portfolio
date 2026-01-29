@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Админка — РумТибет</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f0f2f5;
+      min-height: 100vh;
+      color: #111;
+    }
+
+    /* ===== LOGIN ===== */
+    #loginSection {
+      display: none;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .login-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+      padding: 40px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .login-card__logo {
+      font-size: 20px;
+      font-weight: 800;
+      color: #3b7d4e;
+      margin-bottom: 8px;
+    }
+
+    .login-card__title {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 28px;
+    }
+
+    /* ===== LAYOUT ===== */
+    #adminSection {
+      display: none;
+      min-height: 100vh;
+    }
+
+    .layout {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* ===== SIDEBAR ===== */
+    .sidebar {
+      width: 240px;
+      flex-shrink: 0;
+      background: #1a1f2e;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+    }
+
+    .sidebar__brand {
+      padding: 24px 20px 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .sidebar__logo {
+      font-size: 16px;
+      font-weight: 800;
+      color: #4ead6a;
+      letter-spacing: 0.3px;
+    }
+
+    .sidebar__tagline {
+      font-size: 11px;
+      color: rgba(255,255,255,0.35);
+      margin-top: 2px;
+    }
+
+    .sidebar__nav {
+      padding: 16px 0;
+      flex: 1;
+    }
+
+    .sidebar__section-label {
+      font-size: 10px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.25);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 8px 20px 6px;
+    }
+
+    .sidebar__link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 20px;
+      font-size: 13.5px;
+      font-weight: 500;
+      color: rgba(255,255,255,0.55);
+      cursor: pointer;
+      border-left: 3px solid transparent;
+      transition: color 0.15s, background 0.15s, border-color 0.15s;
+      user-select: none;
+    }
+
+    .sidebar__link:hover {
+      color: rgba(255,255,255,0.85);
+      background: rgba(255,255,255,0.05);
+    }
+
+    .sidebar__link.active {
+      color: #fff;
+      background: rgba(78,173,106,0.12);
+      border-left-color: #4ead6a;
+    }
+
+    .sidebar__link-icon {
+      width: 16px;
+      height: 16px;
+      opacity: 0.7;
+      flex-shrink: 0;
+    }
+
+    .sidebar__link.active .sidebar__link-icon { opacity: 1; }
+
+    .sidebar__footer {
+      padding: 16px 20px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .sidebar__user {
+      font-size: 12px;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .btn-logout {
+      font-size: 12px;
+      color: rgba(255,255,255,0.4);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      transition: color 0.15s;
+    }
+
+    .btn-logout:hover { color: rgba(255,255,255,0.7); }
+
+    /* ===== MAIN ===== */
+    .main {
+      margin-left: 240px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .topbar {
+      background: #fff;
+      border-bottom: 1px solid #e8eaed;
+      padding: 16px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .topbar__title {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .topbar__badge {
+      font-size: 11px;
+      background: #eafaf1;
+      color: #1e8449;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-weight: 600;
+    }
+
+    .content {
+      padding: 32px;
+      flex: 1;
+    }
+
+    /* ===== PANELS ===== */
+    .panel { display: none; }
+    .panel.active { display: block; }
+
+    /* ===== SECTION CARD ===== */
+    .section-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+      margin-bottom: 24px;
+    }
+
+    .section-card__header {
+      padding: 20px 24px 18px;
+      border-bottom: 1px solid #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .section-card__title {
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .section-card__body {
+      padding: 24px;
+    }
+
+    /* ===== GRID ===== */
+    .fields-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .fields-grid .field--full {
+      grid-column: 1 / -1;
+    }
+
+    /* ===== FIELDS ===== */
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    label {
+      font-size: 12px;
+      font-weight: 600;
+      color: #555;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1.5px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 14px;
+      color: #111;
+      outline: none;
+      transition: border-color 0.2s;
+      font-family: inherit;
+      background: #fafafa;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #3b7d4e;
+      background: #fff;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 90px;
+      line-height: 1.5;
+    }
+
+    .field__hint {
+      font-size: 11px;
+      color: #aaa;
+    }
+
+    /* ===== PREVIEW ===== */
+    .preview-box {
+      border-radius: 8px;
+      overflow: hidden;
+      height: 140px;
+      background: #f0f2f5 center / cover no-repeat;
+      border: 1.5px solid #e0e0e0;
+      display: none;
+      margin-top: 8px;
+    }
+
+    .preview-box.visible { display: block; }
+
+    /* ===== ACTIONS ===== */
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 20px 24px;
+      border-top: 1px solid #f0f0f0;
+    }
+
+    /* ===== BUTTONS ===== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 10px 22px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: background 0.2s, opacity 0.2s;
+      font-family: inherit;
+    }
+
+    .btn--primary {
+      background: #3b7d4e;
+      color: #fff;
+    }
+
+    .btn--primary:hover { background: #2e6340; }
+    .btn--primary:disabled { opacity: 0.6; cursor: not-allowed; }
+
+    .btn--ghost {
+      background: transparent;
+      color: #888;
+      border: 1.5px solid #e0e0e0;
+    }
+
+    .btn--ghost:hover { color: #333; border-color: #bbb; }
+
+    /* ===== MESSAGES ===== */
+    .msg {
+      font-size: 13px;
+      padding: 10px 16px;
+      border-radius: 8px;
+      display: none;
+    }
+
+    .msg--error { background: #fdecea; color: #c0392b; }
+    .msg--success { background: #eafaf1; color: #1e8449; }
+    .msg.visible { display: block; }
+  </style>
+</head>
+<body>
+
+<!-- ВХОД -->
+<div id="loginSection">
+  <div class="login-card">
+    <div class="login-card__logo">РумТибет</div>
+    <div class="login-card__title">Вход в панель управления</div>
+    <div class="msg msg--error" id="loginError" style="margin-bottom:16px"></div>
+    <div class="field" style="margin-bottom:16px">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="admin@example.com">
+    </div>
+    <div class="field" style="margin-bottom:24px">
+      <label for="password">Пароль</label>
+      <input type="password" id="password" placeholder="••••••••">
+    </div>
+    <button class="btn btn--primary" id="loginBtn" style="width:100%">Войти</button>
+  </div>
+</div>
+
+<!-- АДМИН ПАНЕЛЬ -->
+<div id="adminSection">
+  <div class="layout">
+
+    <!-- Сайдбар -->
+    <aside class="sidebar">
+      <div class="sidebar__brand">
+        <div class="sidebar__logo">РумТибет</div>
+        <div class="sidebar__tagline">Панель управления</div>
+      </div>
+
+      <nav class="sidebar__nav">
+        <div class="sidebar__section-label">Контент сайта</div>
+        <div class="sidebar__link active" data-panel="hero">
+          <svg class="sidebar__link-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="1" y="1" width="14" height="14" rx="2"/>
+            <path d="M1 6h14"/>
+          </svg>
+          Hero секция
+        </div>
+        <div class="sidebar__link" data-panel="about">
+          <svg class="sidebar__link-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="8" cy="5" r="2.5"/>
+            <path d="M3 14c0-3 2-5 5-5s5 2 5 5"/>
+          </svg>
+          О наших походах
+        </div>
+      </nav>
+
+      <div class="sidebar__footer">
+        <div class="sidebar__user" id="sidebarUser"></div>
+        <button class="btn-logout" id="logoutBtn">Выйти из аккаунта</button>
+      </div>
+    </aside>
+
+    <!-- Основная область -->
+    <div class="main">
+      <div class="topbar">
+        <div class="topbar__title" id="topbarTitle">Hero секция</div>
+        <div class="topbar__badge">Редактирование</div>
+      </div>
+
+      <div class="content">
+
+        <!-- Hero -->
+        <div class="panel active" id="panel-hero">
+          <div class="section-card">
+            <div class="section-card__header">
+              <div class="section-card__title">Заголовок и фон</div>
+            </div>
+            <div class="section-card__body">
+              <div class="msg msg--error" id="heroSaveError" style="margin-bottom:16px"></div>
+              <div class="msg msg--success" id="heroSaveSuccess" style="margin-bottom:16px">Сохранено!</div>
+              <div class="fields-grid">
+                <div class="field field--full">
+                  <label for="heroTitle">Заголовок</label>
+                  <textarea id="heroTitle" placeholder="Введите заголовок..."></textarea>
+                </div>
+                <div class="field field--full">
+                  <label for="heroBgUrl">URL фонового изображения</label>
+                  <input type="url" id="heroBgUrl" placeholder="https://...">
+                  <div class="field__hint">Вставьте прямую ссылку на изображение</div>
+                  <div class="preview-box" id="heroBgPreview"></div>
+                </div>
+              </div>
+            </div>
+            <div class="actions">
+              <button class="btn btn--primary" id="heroSaveBtn">Сохранить</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- About -->
+        <div class="panel" id="panel-about">
+          <div class="section-card">
+            <div class="section-card__header">
+              <div class="section-card__title">Текст и заголовки</div>
+            </div>
+            <div class="section-card__body">
+              <div class="msg msg--error" id="aboutSaveError" style="margin-bottom:16px"></div>
+              <div class="msg msg--success" id="aboutSaveSuccess" style="margin-bottom:16px">Сохранено!</div>
+              <div class="fields-grid">
+                <div class="field">
+                  <label for="aboutSubtitle">Подзаголовок (малый)</label>
+                  <input type="text" id="aboutSubtitle" placeholder="О НАШИХ ПОХОДАХ">
+                </div>
+                <div class="field">
+                  <label for="aboutTitle">Заголовок</label>
+                  <input type="text" id="aboutTitle" placeholder="Исследуйте все горные массивы...">
+                </div>
+                <div class="field field--full">
+                  <label for="aboutText1">Первый абзац</label>
+                  <textarea id="aboutText1" style="min-height:110px" placeholder="Текст первого абзаца..."></textarea>
+                </div>
+                <div class="field field--full">
+                  <label for="aboutText2">Второй абзац</label>
+                  <textarea id="aboutText2" style="min-height:110px" placeholder="Текст второго абзаца..."></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="actions">
+              <button class="btn btn--primary" id="aboutSaveBtn">Сохранить</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="module">
+  import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js';
+  import { getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/10.14.0/firebase-auth.js';
+  import { getFirestore, doc, getDoc, setDoc } from 'https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.js';
+  import { firebaseConfig } from '../firebase-config.js';
+
+  const app  = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const db   = getFirestore(app);
+
+  // Элементы
+  const loginSection  = document.getElementById('loginSection');
+  const adminSection  = document.getElementById('adminSection');
+  const loginError    = document.getElementById('loginError');
+  const loginBtn      = document.getElementById('loginBtn');
+  const logoutBtn     = document.getElementById('logoutBtn');
+  const sidebarUser   = document.getElementById('sidebarUser');
+  const topbarTitle   = document.getElementById('topbarTitle');
+
+  // Сообщения
+  function showMsg(el, text) { el.textContent = text || ''; el.classList.add('visible'); }
+  function hideMsg(el) { el.classList.remove('visible'); }
+
+  // ===== НАВИГАЦИЯ =====
+  const sidebarLinks = document.querySelectorAll('.sidebar__link');
+  const panels = document.querySelectorAll('.panel');
+
+  sidebarLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      const panelId = link.dataset.panel;
+      sidebarLinks.forEach(l => l.classList.remove('active'));
+      panels.forEach(p => p.classList.remove('active'));
+      link.classList.add('active');
+      document.getElementById('panel-' + panelId).classList.add('active');
+      topbarTitle.textContent = link.textContent.trim();
+    });
+  });
+
+  // ===== HERO =====
+  const heroTitle   = document.getElementById('heroTitle');
+  const heroBgUrl   = document.getElementById('heroBgUrl');
+  const heroBgPreview = document.getElementById('heroBgPreview');
+  const heroSaveBtn = document.getElementById('heroSaveBtn');
+  const heroSaveError   = document.getElementById('heroSaveError');
+  const heroSaveSuccess = document.getElementById('heroSaveSuccess');
+
+  heroBgUrl.addEventListener('input', () => {
+    const url = heroBgUrl.value.trim();
+    if (url) {
+      heroBgPreview.style.backgroundImage = `url(${url})`;
+      heroBgPreview.classList.add('visible');
+    } else {
+      heroBgPreview.classList.remove('visible');
+    }
+  });
+
+  heroSaveBtn.addEventListener('click', async () => {
+    hideMsg(heroSaveError);
+    hideMsg(heroSaveSuccess);
+    heroSaveBtn.disabled = true;
+    heroSaveBtn.textContent = 'Сохраняем...';
+    try {
+      await setDoc(doc(db, 'content', 'hero'), {
+        title: heroTitle.value.trim(),
+        bgUrl: heroBgUrl.value.trim()
+      });
+      showMsg(heroSaveSuccess);
+    } catch (e) {
+      showMsg(heroSaveError, 'Ошибка: ' + e.message);
+    }
+    heroSaveBtn.disabled = false;
+    heroSaveBtn.textContent = 'Сохранить';
+  });
+
+  async function loadHero() {
+    try {
+      const snap = await getDoc(doc(db, 'content', 'hero'));
+      if (snap.exists()) {
+        const { title, bgUrl } = snap.data();
+        if (title) heroTitle.value = title;
+        if (bgUrl) {
+          heroBgUrl.value = bgUrl;
+          heroBgPreview.style.backgroundImage = `url(${bgUrl})`;
+          heroBgPreview.classList.add('visible');
+        }
+      }
+    } catch (e) {}
+  }
+
+  // ===== ABOUT =====
+  const aboutSubtitle   = document.getElementById('aboutSubtitle');
+  const aboutTitle      = document.getElementById('aboutTitle');
+  const aboutText1      = document.getElementById('aboutText1');
+  const aboutText2      = document.getElementById('aboutText2');
+  const aboutSaveBtn    = document.getElementById('aboutSaveBtn');
+  const aboutSaveError  = document.getElementById('aboutSaveError');
+  const aboutSaveSuccess = document.getElementById('aboutSaveSuccess');
+
+  aboutSaveBtn.addEventListener('click', async () => {
+    hideMsg(aboutSaveError);
+    hideMsg(aboutSaveSuccess);
+    aboutSaveBtn.disabled = true;
+    aboutSaveBtn.textContent = 'Сохраняем...';
+    try {
+      await setDoc(doc(db, 'content', 'about'), {
+        subtitle: aboutSubtitle.value.trim(),
+        title:    aboutTitle.value.trim(),
+        text1:    aboutText1.value.trim(),
+        text2:    aboutText2.value.trim()
+      });
+      showMsg(aboutSaveSuccess);
+    } catch (e) {
+      showMsg(aboutSaveError, 'Ошибка: ' + e.message);
+    }
+    aboutSaveBtn.disabled = false;
+    aboutSaveBtn.textContent = 'Сохранить';
+  });
+
+  async function loadAbout() {
+    try {
+      const snap = await getDoc(doc(db, 'content', 'about'));
+      if (snap.exists()) {
+        const { subtitle, title, text1, text2 } = snap.data();
+        if (subtitle) aboutSubtitle.value = subtitle;
+        if (title)    aboutTitle.value    = title;
+        if (text1)    aboutText1.value    = text1;
+        if (text2)    aboutText2.value    = text2;
+      }
+    } catch (e) {}
+  }
+
+  // ===== ВХОД / ВЫХОД =====
+  loginBtn.addEventListener('click', async () => {
+    hideMsg(loginError);
+    loginBtn.disabled = true;
+    loginBtn.textContent = 'Входим...';
+    try {
+      await signInWithEmailAndPassword(auth,
+        document.getElementById('email').value.trim(),
+        document.getElementById('password').value
+      );
+    } catch (e) {
+      showMsg(loginError, 'Неверный email или пароль');
+      loginBtn.disabled = false;
+      loginBtn.textContent = 'Войти';
+    }
+  });
+
+  logoutBtn.addEventListener('click', () => signOut(auth));
+
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      loginSection.style.display = 'none';
+      adminSection.style.display = 'block';
+      sidebarUser.textContent = user.email;
+      loadHero();
+      loadAbout();
+    } else {
+      loginSection.style.display = 'flex';
+      adminSection.style.display = 'none';
+    }
+  });
+</script>
+
+</body>
+</html>

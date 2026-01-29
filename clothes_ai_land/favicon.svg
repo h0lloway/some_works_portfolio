@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="8" fill="#1a1a2e"/>
+  <!-- hanger hook -->
+  <path d="M16 5 C16 5 13 5 13 8 C13 10 15 11 16 11" stroke="#a78bfa" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <!-- shirt body -->
+  <path d="M8 13 L11 11 L16 14 L21 11 L24 13 L22 17 L19 15 L19 24 L13 24 L13 15 L10 17 Z" fill="#a78bfa"/>
+</svg>

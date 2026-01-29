@@ -1,0 +1,116 @@
+.sidebar {
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: #F7F9FC;
+  position: fixed;
+  overflow: auto;
+  z-index: 10;
+  width: 450px;
+  padding: 40px;
+  padding-left: 55px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+}
+
+.sidebar__img img {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+
+.sidebar__name {
+  margin-top: 8px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.sidebar__descr {
+  margin-top: 16px;
+  margin-bottom: 5px;
+  color: #47516b;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.18px;
+}
+
+.sidebar__contact-list {
+  margin-top: 21px;
+  padding: 26px 0;
+  border-top: 0.5px solid #e2e6ee;
+  border-bottom: 0.5px solid #e2e6ee;
+}
+
+.sidebar__heading {
+  margin-top: 26px;
+  margin-bottom: 20px;
+  color: #79819A;
+  font: 400 14px/133% 'DM Sans', sans-serif;
+  letter-spacing: 0.06px;
+}
+
+.sidebar__social-list {
+  padding-bottom: 26px;
+  border-bottom: 0.5px solid #e2e6ee;
+}
+
+.sidebar__lang-list {
+  padding-bottom: 26px;
+  border-bottom: 0.5px solid #e2e6ee;
+}
+
+.sidebar__lang-list .img {
+  width: 34px;
+  height: 26px;
+  border-radius: 6px;
+}
+
+.sidebar__lang-list .img img {
+  width: 34px;
+  height: 26px;
+  border-radius: 6px;
+}
+
+.sidebar__hobby-list {
+  padding-bottom: 26px;
+}
+
+.sidebar-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .sidebar {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  .sidebar_isopen {
+    -webkit-transform: translateX(-450px);
+            transform: translateX(-450px);
+  }
+  .sidebar-toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: fixed;
+    left: 0;
+    width: 20px;
+    background: #7b9bc6;
+    height: 100%;
+    top: 0;
+    z-index: 15;
+    cursor: pointer;
+    color: var(--white-color);
+  }
+}
+/*# sourceMappingURL=sidebar.css.map */

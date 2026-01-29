@@ -1,0 +1,123 @@
+// общие слили для блоков в sidebar
+
+.name {
+  margin-bottom: 4px;
+  display: block;
+  color: #79819a;
+  font: 400 14px/133% 'DM Sans', sans-serif;
+  letter-spacing: 0.06px;
+}
+
+.descr {
+  display: block;
+  color: #47516b;
+  font: 500 16px/128% 'DM Sans', sans-serif;
+  letter-spacing: 0.06px;
+
+  a {
+    color: #47516b;
+    transition: .3s ease;
+  }
+
+  a:hover {
+    color: var(--primary-color-hover);
+  }
+}
+
+.common-link {
+  &__wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  .img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &__content {
+    padding-left: 15px;
+  }
+}
+
+.common-link:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.content-common {
+  width: 100%;
+}
+
+.small-circle {
+  position: absolute;
+  left: -39px;
+  top: 4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  background: #2E2E48;
+  box-shadow: 0px 2.017px 2.017px 0px rgba(0, 0, 0, 0.04) inset, 0px 12.101px 48.404px 0px rgba(0, 0, 0, 0.04), 0px 2.017px 8.067px 0px rgba(0, 0, 0, 0.05);
+  z-index: 2;
+}
+
+
+.divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 50px;
+  &__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 100px;
+    background: #fff;
+    box-shadow: 0 1px 1px #0000000a inset, 0 6px 24px #0000000a,
+      0 1px 4px #0000000d;
+  }
+
+  &__circle-inside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    border-radius: 100%;
+  }
+
+  &__circle-inside-viol {
+    width: 9px;
+    height: 9px;
+    background-color: #5531a7;
+    border-radius: 100%;
+  }
+
+  &__line {
+    height: 100%;
+    width: 1px;
+    flex: 1 0 0;
+    background-color: #e2e6ee;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .divider {
+    margin-right: 25px;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .divider {
+    margin-right: 15px;
+  }
+}

@@ -1,0 +1,6 @@
+@media (max-width: 378px) {
+
+  .teachers__list-item img {
+    border-radius: 27px 27px 0 0;
+  }
+}
