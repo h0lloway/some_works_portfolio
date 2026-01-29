@@ -1,0 +1,313 @@
+@media (max-width: 575.98px) {
+  body.lock {
+    overflow: hidden;
+  }
+
+  .header__body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    height: 80px;
+    padding: 0;
+  }
+
+  .header__logo {
+    flex: 0 0 72px;
+    display: block;
+
+    margin-top: 0;
+  }
+
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 20;
+  }
+
+  .header__burger span {
+    position: absolute;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__burger::before,
+  .header__burger::after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__burger::before {
+    top: 0;
+  }
+
+  .header__burger::after {
+    bottom: 0;
+  }
+
+  .header__burger.active::after {
+    width: 100%;
+  }
+
+  .header__burger.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .header__burger.active span {
+    width: 100%;
+    transform: scale(0);
+  }
+
+  .header__burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  .header__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    overflow: auto;
+    transition: all 0.4s ease 0s;
+    background-color: #2F2C45;
+    padding: 70px 10px 20px 0;
+  }
+
+  .header__menu.active {
+    top: 0;
+    left: 0;
+  }
+
+  .header__list {
+    display: block;
+    padding-left: 15px;
+  }
+
+  .header__list li {
+    margin: 0 0 42px 0 !important;
+  }
+
+  .header__link {
+    font-size: 24px;
+  }
+
+  /* description *//* description *//* description *//* description *//* description *//* description *//* description *//* description *//* description *//* description *//* description *//* description */
+
+  .description__desc {
+    padding: 0 15px 50px 12px;
+  }
+
+  .description__hidden {
+    display: none;
+  }
+
+  .description {
+    background: radial-gradient(49% 49% at 67.78% 84.57%, #555681 0%, #2E2B44 100%);
+  }
+
+  .description__image {
+    background-image: none;
+  }
+
+  .description__info-title {
+    margin-top: 51px;
+    margin-bottom: 4px;
+
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+    color: var(--white-color);
+  }
+
+  .description__info-text {
+    margin-bottom: 49px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+
+    color: var(--white-color);
+
+  }
+
+  .description__info-btn {
+    padding: 20px 52.5px;
+
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  /* benefits *//* benefits *//* benefits *//* benefits *//* benefits *//* benefits *//* benefits *//* benefits *//* benefits *//* benefits *//* benefits *//* benefits */
+
+  .benefits__descr {
+    margin-top: 50px;
+    padding-left: 0;
+    background-image: none;
+
+  }
+
+  .benefits__img {
+    display: none;
+  }
+
+  .benefits__title {
+    margin-bottom: 3px;
+
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+
+    color: #2E2B44;
+  }
+
+  .benefits__text {
+
+    /* max-width: 292px; */
+    margin-bottom: 21px;
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: var(--grey-color);
+  }
+
+  .benefits__list {
+    display: block;
+  }
+
+  .benefits__list-item {
+    display: flex;
+
+    margin-bottom: 30px;
+  }
+
+  .item-content {
+    max-width: 296px;
+
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 4px 0 0 110px;
+  }
+
+  .benefits__bottom {
+    margin-top: 0;
+    margin-bottom: 17px;
+
+    padding: 0;
+    padding-bottom: 5px;
+  }
+
+  .update {
+    padding: 0;
+  }
+
+  /* teachers *//* teachers *//* teachers *//* teachers *//* teachers *//* teachers *//* teachers *//* teachers *//* teachers *//* teachers *//* teachers *//* teachers *//* teachers *//* teachers *//* teachers *//* teachers *//* teachers *//* teachers */
+
+  .teachers {
+    padding-top: 47px;
+    padding-bottom: 9px;
+    padding-left: 0;
+    padding-right: 5px;
+  }
+
+  .teachers__title {
+    margin-bottom: 26px;
+
+    font-size: 20px;
+    line-height: 100%
+  }
+
+  .teachers__list-item img {
+    border-radius: 42px 42px 0 0;
+    margin-bottom: 27px;
+  }
+
+  .teachers__list-item:nth-child(n+3) {
+    margin-top: 0;
+  }
+
+  .item-text {
+    margin-bottom: 22px;
+  }
+
+  /* courses *//* courses *//* courses *//* courses *//* courses *//* courses *//* courses *//* courses *//* courses *//* courses *//* courses *//* courses *//* courses *//* courses *//* courses *//* courses *//* courses *//* courses */
+
+  .courses {
+    padding: 0;
+    padding-right: 6px;
+  }
+
+  .courses__title {
+    margin-top: 46px;
+    margin-bottom: 27px;
+
+    font-size: 20px;
+    line-height: 100%;
+  }
+
+  .courses__card-wrap {
+    padding: 32px 24px 30px 29px;
+  }
+
+  .courses__item-title {
+    margin-bottom: 10px;
+  }
+
+  .title-3 {
+    padding-right: 30px;
+  }
+
+  .courses__item-text {
+    margin-bottom: 78px;
+  }
+
+  .text-3 {
+    padding-right: 6px;
+  }
+
+  .text-4 {
+    padding-right: 4px;
+  }
+
+  .courses__card-wrap-bottom {
+    margin-top: 1px;
+  }
+
+  .courses__btn {
+    padding: 20.5px 56px;
+  }
+
+  .test {
+    margin-top: 50px;
+  }
+
+  .test-2 {
+    margin-top: 72px;
+  }
+
+  /* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer *//* footer */
+
+  .footer__top {
+    margin-top: 20px;
+  }
+
+}

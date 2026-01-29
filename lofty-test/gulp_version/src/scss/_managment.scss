@@ -1,0 +1,114 @@
+.managment {
+  padding: 140px 0 50px 0;
+
+  background-image: url('../img/project-img.png');
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: bottom 0px left 0px;
+
+  &__descr {
+    width: 90%;
+    padding-right: 20px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    margin-bottom: 60px;
+  }
+
+  &__img {
+    flex: 95%;
+
+    display: block;
+    height: 547px;
+    width: 100%;
+
+    background-color: var(--stub-color);
+  }
+
+  &__btn {
+    padding: 18px 44px;
+  }
+}
+
+@media screen and (max-width: 1449.98px) {
+
+  .managment {
+
+
+    &__img {
+      height: 448px;
+    }
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .managment {
+
+    background-size: 245px;
+    background-position: top 100px left -50px;
+
+    &__descr {
+      padding-right: 30px;
+    }
+
+    &__img {
+      height: 330px;
+    }
+  }
+}
+
+@media screen and (max-width: 999.98px) {
+  .managment {
+    padding-top: 101px;
+
+    &__title {
+
+      .for-mob {
+        display: none;
+      }
+    }
+
+    &__descr {
+      padding: 0;
+      margin-bottom: 60px;
+    }
+
+    &__img {
+      flex: none;
+      max-width: 560px;
+      height: 349px;
+      width: 100%;
+    }
+
+    &__btn {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 699.98px) {
+  .managment {
+    padding-top: 81px;
+    padding-bottom: 40px;
+
+    &__title {
+      .for-mob {
+        display: block;
+      }
+    }
+
+    &__img {
+      max-width: 286px;
+      height: 177px;
+      width: 100%;
+    }
+
+    &__btn {
+      padding: 22px 44px;
+    }
+  }
+}

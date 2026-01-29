@@ -1,0 +1,15 @@
+@media (max-width: 615px) {
+  .label {
+    margin-top: 0;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .checkmark {
+    top: 9px;
+  }
+
+  .footer__mid-btn {
+    margin-bottom: 20px;
+  }
+}
